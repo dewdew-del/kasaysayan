@@ -9,7 +9,31 @@ place:
   lat: 14.66
   lng: 121.03
 summary: In the last days of August 1896, Andrés Bonifacio and the Katipuneros tore up their tax certificates and launched the revolution against Spain. Exactly where and when it happened is still argued over.
-images: []
+images:
+  - file: pugadlawin-1.webp
+    caption: "Andrés Bonifacio"
+    alt: "Portrait of Andrés Bonifacio"
+    author: "La Ilustración Española y Americana"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andr%C3%A9s_Bonifacio.jpg
+  - file: pugadlawin-2.webp
+    caption: "Bonifacio in a 1922 portrait"
+    alt: "Painted portrait of Bonifacio"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andr%C3%A9s_Bonifacio_(Hermenegildo_Cruz,_1922).gif
+  - file: pugadlawin-3.webp
+    caption: "Pugad Lawin today"
+    alt: "Monument area in Quezon City"
+    author: "Exec8"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Pugad_Lawin_001.jpg
+  - file: pugadlawin-4.webp
+    caption: "Katipunan archway"
+    alt: "Archway with Katipunan name"
+    author: "Marwan Khan"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Katipunan_Archway.jpg
 sources:
   - { title: "The Cry of Pugad Lawin (article)", publisher: "National Commission for Culture and the Arts", url: "https://ncca.gov.ph/?p=1885", accessed: 2026-11-06 }
   - { title: "Where did the Cry of Rebellion happen? (case study of the eyewitness accounts)", publisher: "Readings in Philippine History course material", url: "https://www.scribd.com/document/531569840/First-Cry-of-Revolution-Rex", accessed: 2026-11-06 }
@@ -24,6 +48,8 @@ By August 1896 the Katipunan had thousands of members, and keeping it secret was
 
 Gil went to the police. The shop was searched, and Katipunan papers, receipts and a printing stone were found. Within days, Spanish authorities began arresting suspected members across Manila.[1]
 
+{{photo:2}}
+
 ## Into the hills
 
 Andrés Bonifacio and other leaders slipped out of the city. With hundreds of Katipuneros they gathered in the countryside north of Manila, in what was then the town of Caloocan, among the farms and ravines around Balintawak and the settlements nearby.[1]
@@ -37,6 +63,8 @@ At one of these meetings, the Katipuneros tore up their cédulas personales, the
 For the farmers and workers who did it, tearing the cédula was a real risk. Without it, a person could be arrested on sight. There was no way to pretend afterward that they had not chosen a side.[2]
 
 This moment is remembered as the Cry, or Sigaw: the Cry of Pugad Lawin in today's official history, and for many years before that, the Cry of Balintawak.
+
+{{photo:3}}
 
 ## Which place, which day?
 

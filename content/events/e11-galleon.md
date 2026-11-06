@@ -9,7 +9,37 @@ place:
   lat: 14.48
   lng: 120.90
 summary: For 250 years, huge Spanish ships sailed once or twice a year between Manila and Acapulco, carrying Chinese silk and porcelain east and Mexican silver west, and tying the Philippines to the first global economy.
-images: []
+images:
+  - file: galleon-1.webp
+    caption: "The Manila galleon arriving in the Ladrones (Marianas)"
+    alt: "Old painting of a galleon received by islanders in canoes"
+    author: "Boxer Codex (1590) - Unknown Spanish Author/Compiler with Likely Chinese Artist from Spanish Colonial Manila, Philippine"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Reception_of_the_Manila_Galleon_by_the_Chamorro_in_the_Ladrones_Islands,_ca._1590.jpg
+  - file: galleon-2.webp
+    caption: "Map of the galleon route between the Philippines, Formosa and China"
+    alt: "Old Spanish navigation map"
+    author: "Arapaima"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Mapa_de_Filippinas_Formosa_y_costa_de_China_para_el_Galeon_de_Manila.JPG
+  - file: galleon-3.webp
+    caption: "Goods recovered from the wreck of the galleon San Diego"
+    alt: "Porcelain and objects displayed in a museum"
+    author: "AlejandroLinaresGarcia"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:GoodsManilaGalleonSanDiego.JPG
+  - file: galleon-4.webp
+    caption: "Monument to the Manila–Acapulco galleon trade"
+    alt: "Galleon monument in a park"
+    author: "Elmer B. Domingo"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Manila-Acapulco_Galleon_Trade.JPG
+  - file: galleon-5.webp
+    caption: "A Spanish galleon, from Cabrera Bueno's 1734 navigation guide"
+    alt: "Old engraving of a galleon"
+    author: "RadraS-Sardar"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Galeone,_nach_Gonz%C3%A1lez_Cabrera_Bueno_1734.jpg
 sources:
   - { title: "Manila Galleon trade (entry)", publisher: "Encyclopedia (encyclopedia.pub, MDPI)", url: "https://encyclopedia.pub/entry/29817", accessed: 2026-11-06 }
   - { title: "Commemorating the galleon trade, Pinoy-style", publisher: "GMA News Online", url: "https://gmanetwork.com/news/lifestyle/content/714510/commemorating-the-galleon-trade-pinoy-style/story", accessed: 2026-11-06 }
@@ -26,6 +56,8 @@ In 1565 that changed. A ship from Miguel López de Legazpi's expedition, guided 
 
 With a way there and a way back, a regular link between the Philippines and Spain's American empire became possible. It would last 250 years.
 
+{{photo:2}}
+
 ## Silk for silver
 
 The trade that grew up on this route was simple in idea and enormous in scale. Chinese junks, many from Fujian, brought silk, porcelain, lacquerware, ivory and other luxury goods to Manila. Spanish merchants bought them, mostly with silver, and loaded them onto galleons bound for Acapulco.[1]
@@ -39,6 +71,8 @@ China, whose economy ran on silver, absorbed huge amounts of it. Historians ofte
 Galleons usually left Cavite, the port of Manila, at the end of June or in early July, to catch the summer winds. The eastward crossing to Acapulco could take four to six months. The return trip west, leaving Mexico around March or April, was shorter.[1]
 
 The ships were among the largest of their day. Many were built in the Philippines, at shipyards in Cavite and elsewhere, using hardwoods cut from local forests and labor drawn from Filipino communities.[2] For the men who cut the timber and built the ships, often under forced-labor rules, the trade meant hard work far from home.
+
+{{photo:3}}
 
 ## Shipwrecks and sailors
 

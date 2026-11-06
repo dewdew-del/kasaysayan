@@ -5,7 +5,31 @@ date: { year: 1887, month: 3 }
 era: spanish
 topics: [culture, politics]
 summary: In Berlin, a 25-year-old Filipino doctor published a novel that exposed abuses in the Spanish Philippines. Noli Me Tangere was banned in the colony, smuggled in, and changed how Filipinos saw themselves.
-images: []
+images:
+  - file: noli-1.webp
+    caption: "Title page of the first edition of Noli Me Tangere, 1887"
+    alt: "Old book title page"
+    author: "José Rizal"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Noli_Me_Tangere.jpg
+  - file: noli-2.webp
+    caption: "José Rizal"
+    alt: "Portrait of José Rizal"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Jose_rizal_01.jpg
+  - file: noli-3.webp
+    caption: "Historical marker for Maximo Viola in San Miguel, Bulacan"
+    alt: "Historical marker plaque"
+    author: "Ryomaandres"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:MaximoViola_HistoricalMarker_SanMiguel.jpg
+  - file: noli-4.webp
+    caption: "NHCP historical marker for José Rizal"
+    alt: "Historical marker plaque"
+    author: "Andre Ryan Maceda"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:(NHCP_Historical_Marker)_Jose_Rizal.jpg
 sources:
   - { title: "DID YOU KNOW: 161st birth anniversary of Maximo Viola", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/?p=1043806", accessed: 2026-11-06 }
   - { title: "José Rizal's Noli Me Tangere: technology and printing", publisher: "University of Toronto Libraries, Spatial Humanities exhibit", url: "https://spatial-humanities.library.utoronto.ca/exhibits/show/jose-rizal---s-noli-me-tangere/technology", accessed: 2026-11-06 }
@@ -20,6 +44,8 @@ In the 1880s, José Rizal was one of many young Filipinos studying in Europe. Bo
 
 Rizal and other Filipino students in Europe, later known as the propagandists, wanted reforms in the colony: representation in the Spanish parliament, freedom of speech, equal treatment under the law and an end to the power of the friars over Filipino towns. They wrote essays and newspapers. Rizal decided to write a novel.[3]
 
+{{photo:2}}
+
 ## Writing the Noli
 
 He began the book in Madrid in 1884, continued it in Paris and finished it in Germany in early 1887. He called it Noli Me Tangere, Latin for "Touch me not," words from the Gospel of John that Rizal used to suggest a wound too painful to touch: the "social cancer" of the colony.[3]
@@ -31,6 +57,8 @@ The novel tells the story of Crisóstomo Ibarra, a young Filipino who comes home
 Rizal was nearly broke and could not pay a printer. His friend Maximo Viola, a doctor from Bulacan, lent him the money to print 2,000 copies, about 300 pesos.[1]
 
 The book was printed in Berlin by a printing company called the Berliner Buchdruckerei-Actien-Gesellschaft. It came off the press in March 1887. Sources give slightly different dates, around 21 to 29 March.[1][2] Rizal gave Viola the first copy, along with the galley proofs and the pen he had used.[1]
+
+{{photo:3}}
 
 ## Banned and smuggled
 

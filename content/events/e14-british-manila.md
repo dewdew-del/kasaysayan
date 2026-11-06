@@ -9,7 +9,37 @@ place:
   lat: 14.59
   lng: 120.97
 summary: During the Seven Years' War, a British fleet captured Manila and held it for about 18 months, while Simón de Anda kept up Spanish resistance from Pampanga and revolts broke out in the provinces.
-images: []
+images:
+  - file: british-manila-1.webp
+    caption: "The British attack on Manila, October 1762"
+    alt: "Old print of ships bombarding a walled city"
+    author: "Unspecified"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:The_Attack_of_Manilla,_October_1762.png
+  - file: british-manila-2.webp
+    caption: "Map of the British conquest of Manila, 1762"
+    alt: "Old military map of Manila"
+    author: "Presidential Communications Development and Strategic Planning Office"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Map_of_British_Conquest_of_Manila_1762.jpg
+  - file: british-manila-3.webp
+    caption: "Map of British troop movements in 1762"
+    alt: "Old map with troop positions"
+    author: "Presidential Communications Development and Strategic Planning Office"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Map_British_troop_movement_Philippines_1762.jpg
+  - file: british-manila-4.webp
+    caption: "Allegory of the defense of the Philippines"
+    alt: "Old Spanish allegorical painting"
+    author: "Francinehihao"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Alegor%C3%ADa_de_la_defensa_de_Filipinas_10.jpg
+  - file: british-manila-5.webp
+    caption: "Fort Santiago in Intramuros"
+    alt: "Stone fort gate"
+    author: "Andrew Moore from Johannesburg, South Africa"
+    license: CC BY-SA 2.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Fort_Santiago_(33442542824).jpg
 sources:
   - { title: "Philippines: A Country Study, the Spanish period", publisher: "Library of Congress Federal Research Division (via countrystudies.us)", url: "https://countrystudies.us/philippines/5.htm", accessed: 2026-11-06 }
   - { title: "Battlefield diplomacy and empire-building in the Indo-Pacific world during the Seven Years' War", publisher: "Itinerario, Cambridge University Press", url: "https://www.cambridge.org/core/product/455FADCE6A78311CF5C7223863CE10C4", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ Between 1756 and 1763, Britain and France fought a war that spread across Europe
 
 The attack on Manila was organized from British India. A fleet sailed from Madras carrying British soldiers, sailors and Indian sepoys of the East India Company.[2]
 
+{{photo:2}}
+
 ## The siege
 
 The fleet arrived in Manila Bay in late September 1762. The city's defenders had little warning. Spain's war with Britain had begun months earlier, but the news had not yet reached the islands.[1]
@@ -35,6 +67,8 @@ The British landed south of the walls and bombarded Intramuros. Spanish soldiers
 Not every Spanish official accepted the surrender. Simón de Anda y Salazar, a judge of the royal court, slipped out of the city before it fell and made his way to Bacolor, in Pampanga. There he declared himself governor and set up a Spanish government in the provinces.[1][2]
 
 With the help of Filipino and Spanish fighters, Anda kept the British largely confined to Manila and the nearby coast. The British controlled the capital, but not the country around it.[2]
+
+{{photo:3}}
 
 ## A ransom that was never paid
 

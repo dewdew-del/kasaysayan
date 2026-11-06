@@ -9,7 +9,37 @@ place:
   lat: 14.58
   lng: 120.98
 summary: After a mutiny at the Cavite arsenal, the Spanish government executed three Filipino priests, Mariano Gómez, José Burgos and Jacinto Zamora. Their deaths stirred a generation toward nationalism.
-images: []
+images:
+  - file: gomburza-1.webp
+    caption: "Fathers Gómez, Burgos and Zamora"
+    alt: "Old portrait of three priests"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Gomburza.jpg
+  - file: gomburza-2.webp
+    caption: "Father José Burgos"
+    alt: "Portrait of a young priest"
+    author: "Jose N. Sevilla"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Jose_burgos_PG.jpg
+  - file: gomburza-3.webp
+    caption: "The execution at Bagumbayan, as depicted later"
+    alt: "Painting of the execution of the three priests"
+    author: "Ryomaandres"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Gomburza_execution_2.jpg
+  - file: gomburza-4.webp
+    caption: "The Gomburza memorial at Paco Park"
+    alt: "Memorial in a park"
+    author: "Eugene Alvin Villar (seav)"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Paco_Park_-_Gomburza_memorial.jpg
+  - file: gomburza-5.webp
+    caption: "Historical marker for Gomburza"
+    alt: "Historical marker plaque"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Bantayog_ng_Gomburza_historical_marker.jpg
 sources:
   - { title: "NHCP to lead martyrdom anniversary of GomBurZa priests", publisher: "GMA News Online", url: "https://www.gmanetwork.com/news/topstories/nation/976653/nhcp-martyrdom-anniversary-gomburza-priests/story", accessed: 2026-11-06 }
   - { title: "The Execution of Gomburza", publisher: "joserizal.com", url: "https://www.joserizal.com/?p=51767", accessed: 2026-11-06 }
@@ -26,6 +56,8 @@ Leading voices in the movement included Father José Burgos, a young scholar fro
 
 To the friars, the secularization campaign was a threat to their power. To the colonial government, which relied on the friars to run the towns, it looked dangerous too.[2]
 
+{{photo:2}}
+
 ## The night at the arsenal
 
 On 20 January 1872, about two hundred Filipino soldiers and workers at the Spanish arsenal in Cavite rose in revolt. They had just lost their exemption from paying tribute and doing forced labor. They killed several Spanish officers, but the uprising was crushed within days.[2]
@@ -37,6 +69,8 @@ What the mutiny really was is still debated. Governor-General Rafael de Izquierd
 The colonial government in 1872 was nervous. In Spain, a revolution in 1868 had brought a period of liberal reform, and some of those ideas had reached Manila, where Filipino priests, lawyers and students had begun to speak openly about equality. A new, conservative governor-general, Izquierdo, had arrived determined to reverse that trend.[2]
 
 For him, a mutiny in Cavite was proof that reform talk led to rebellion. It gave him the reason he needed to arrest the people he saw as troublemakers, whether or not they had anything to do with the arsenal.[2]
+
+{{photo:3}}
 
 ## A trial without proof
 

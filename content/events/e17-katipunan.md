@@ -9,7 +9,31 @@ place:
   lat: 14.60
   lng: 120.97
 summary: Days after José Rizal was arrested and exiled, a group of Manila men led by Andrés Bonifacio founded a secret society to win independence from Spain by force.
-images: []
+images:
+  - file: katipunan-1.webp
+    caption: "A Katipunan flag"
+    alt: "Red flag with a white sun and the letter K"
+    author: "JL 09"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:1897_Katipunan_flag.png
+  - file: katipunan-2.webp
+    caption: "Andrés Bonifacio"
+    alt: "Portrait of Andrés Bonifacio"
+    author: "La Ilustración Española y Americana"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andr%C3%A9s_Bonifacio.jpg
+  - file: katipunan-3.webp
+    caption: "Mural of the revolution at UP Diliman"
+    alt: "Painted mural of revolutionaries"
+    author: "Rarionite"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Isang_Daang_Taon_sa_Bukang-liwayway,_Palma_Hall,_UP_Diliman.png
+  - file: katipunan-4.webp
+    caption: "Historical marker for Andrés Bonifacio in Tondo"
+    alt: "Historical marker plaque"
+    author: "Ralff Nestor Nacor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andres_Bonifacio_Historical_Marker,_Tondo,_Manila.jpg
 sources:
   - { title: "The Katipunan (article)", publisher: "National Commission for Culture and the Arts", url: "https://ncca.gov.ph/?p=1766", accessed: 2026-11-06 }
   - { title: "La Liga Filipina: The Organization That Lasted Four Days", publisher: "joserizal.com", url: "https://www.joserizal.com/legacy/la-liga-filipina/", accessed: 2026-11-06 }
@@ -27,6 +51,8 @@ Four days later, Spanish authorities arrested him. Pamphlets criticizing the fri
 
 For some of the men who had joined the Liga, Rizal's arrest settled an argument. Peaceful reform, they decided, would never work.[1]
 
+{{photo:2}}
+
 ## A meeting on Azcárraga Street
 
 On the night of 7 July 1892, the same day Rizal's deportation was announced, a small group met in a house on Calle Azcárraga, near the border of Tondo and San Nicolás. Among them were Andrés Bonifacio, Ladislao Diwa, Teodoro Plata, Deodato Arellano, Valentín Díaz and José Dizon.[1][3]
@@ -40,6 +66,8 @@ Some historians note that newly found documents suggest the group may have begun
 Bonifacio was 28 years old. Born in Tondo in 1863, he had been orphaned young and supported his younger siblings by making canes and paper fans, then by working as a clerk and agent for trading firms. He had little formal schooling but read widely, including Rizal's novels, books about the French Revolution and the lives of the presidents of the United States.[1][3]
 
 He was not the first president of the Katipunan, but he soon became its leader and its guiding spirit, known as the Supremo.[1]
+
+{{photo:3}}
 
 ## Why a secret society
 
