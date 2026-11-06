@@ -328,3 +328,79 @@
 }
 .music[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
 @media (max-width: 860px) { .music { left: 14px; top: 14px; } }
+
+/* ---------- event page (long read) ---------- */
+.reading-progress { position: fixed; top: 0; left: 0; right: 0; height: 4px; background: var(--red); transform-origin: 0 50%; z-index: 40; }
+.event { max-width: 760px; margin: 0 auto; padding: 32px 24px 72px; display: flex; flex-direction: column; }
+.event .back { font-family: var(--font-display), Georgia, serif; font-size: 16px; text-decoration: none; align-self: flex-start; }
+.event .draft-badge { margin-top: 16px; }
+.event .year { font-family: var(--font-display), Georgia, serif; font-size: 64px; line-height: 1; text-align: center; margin-top: 24px; }
+.event .year:has(+ .era-tag) { margin-bottom: 4px; }
+.event .era-tag { font-family: var(--font-display), Georgia, serif; font-size: 15px; letter-spacing: 0.12em; color: var(--faded); display: flex; align-items: center; gap: 10px; }
+.event .era-tag::before, .event .era-tag::after { content: ""; flex: 1; border-top: 1px solid #b9a47a; }
+.event h1 { font-size: clamp(30px, 4.5vw, 44px); text-align: center; line-height: 1.1; margin: 10px 0 8px; }
+.event .byline { text-align: center; font-style: italic; color: var(--faded); margin: 0; }
+.zoom { display: block; width: 100%; padding: 0; border: 0; background: none; cursor: zoom-in; }
+.photo { margin: 24px 0 0; padding: 10px; background: #fbf5e3; border: 1px solid #b9a47a; box-shadow: 3px 3px 0 rgba(42, 33, 24, 0.2); }
+.photo img { display: block; width: 100%; height: auto; filter: sepia(0.55) contrast(1.05); }
+.photo.hero { transform: rotate(-0.5deg); }
+.photo figcaption, .gcell figcaption { font-style: italic; font-size: 13px; line-height: 1.35; color: var(--faded); margin-top: 6px; }
+.photo .cap, .gcell .cap, .lightbox .cap { color: var(--ink); }
+.engraving-box { display: flex; align-items: center; justify-content: center; background: #e9dcb8; min-height: 160px; }
+.note { border: 1px solid var(--red); padding: 10px 14px; margin: 22px 0 0; font-size: 17px; }
+.note b { font-family: var(--font-display), Georgia, serif; font-weight: 400; color: var(--red); }
+.longread { margin-top: 28px; font-size: 19px; line-height: 1.75; }
+.chapter { max-width: 65ch; margin: 0 auto; }
+.chapter::after { content: ""; display: block; clear: both; }
+.chapter h2 { font-size: 26px; margin: 34px 0 12px; display: flex; align-items: baseline; gap: 12px; }
+.chapter h2 .num { color: var(--red); font-size: 18px; }
+.chapter p { margin: 0 0 16px; }
+.chapter:first-child p:first-of-type::first-letter { font-family: var(--font-display), Georgia, serif; font-size: 3.4em; float: left; line-height: 0.8; margin: 6px 8px 0 0; color: var(--red); }
+.chapter sup a { text-decoration: none; font-size: 0.75em; }
+.photo.inline { width: 46%; margin: 6px 0 12px; }
+.photo.inline.left { float: left; margin-right: 24px; transform: rotate(-0.9deg); }
+.photo.inline.right { float: right; margin-left: 24px; transform: rotate(0.8deg); }
+.gallery { margin-top: 44px; }
+.gallery h2 { font-size: 24px; text-align: center; margin: 0 0 16px; }
+.gallery .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 18px; }
+.gcell { margin: 0; padding: 8px; background: #fbf5e3; border: 1px solid #b9a47a; box-shadow: 3px 3px 0 rgba(42, 33, 24, 0.2); }
+.gcell:nth-child(odd) { transform: rotate(-0.7deg); }
+.gcell:nth-child(even) { transform: rotate(0.6deg); }
+.gcell img { display: block; width: 100%; height: 160px; object-fit: cover; filter: sepia(0.55); }
+.placebox { width: 100%; max-width: 420px; margin: 40px auto 0; }
+.mini-map { border: 2px solid var(--ink); background: var(--paper); }
+.mini-map-canvas { height: 300px; filter: sepia(0.35); }
+.mini-map-fallback { height: 120px; display: flex; align-items: center; justify-content: center; font-style: italic; margin: 0; }
+.mini-map small { display: block; font-style: italic; font-size: 14px; padding: 5px 10px; border-top: 1px solid var(--ink); }
+.sources h2 { font-size: 22px; margin: 36px 0 8px; border-bottom: 1px solid #b9a47a; }
+.sources ol { padding-left: 22px; margin: 0; font-size: 16px; }
+.sources li { margin-bottom: 6px; scroll-margin-top: 80px; }
+.sources li:target { background: rgba(163, 50, 42, 0.12); }
+.pn { display: flex; justify-content: space-between; gap: 16px; border-top: 3px double var(--ink); margin-top: 36px; padding-top: 14px; }
+.pn a { text-decoration: none; max-width: 48%; }
+.pn .later { text-align: right; }
+.pn small { display: block; font-family: var(--font-display), Georgia, serif; color: var(--faded); }
+
+.lightbox { position: fixed; inset: 0; z-index: 60; background: rgba(30, 22, 14, 0.9); display: flex; align-items: center; justify-content: center; gap: 12px; padding: 20px; }
+.lightbox figure { margin: 0; max-width: min(900px, 80vw); background: var(--paper); padding: 12px; border: 2px solid var(--ink); }
+.lightbox img { display: block; max-width: 100%; max-height: 72vh; margin: 0 auto; filter: sepia(0.35); }
+.lightbox figcaption { font-style: italic; font-size: 14px; color: var(--faded); margin-top: 8px; }
+.lightbox .count { float: right; font-family: var(--font-display), Georgia, serif; margin-left: 12px; }
+.lightbox button { background: var(--paper); color: var(--ink); border: 2px solid var(--ink); font-size: 24px; width: 44px; height: 44px; cursor: pointer; line-height: 1; flex: 0 0 auto; }
+.lightbox .lb-close { position: absolute; top: 16px; right: 16px; }
+
+/* simple text pages (about, credits, 404) */
+.page { max-width: 900px; margin: 0 auto; padding: 36px 24px 72px; }
+.page.narrow { max-width: 640px; }
+.page.center { text-align: center; display: flex; flex-direction: column; align-items: center; }
+.page h1 { font-size: 38px; margin: 0 0 10px; }
+.page .lead { color: var(--faded); max-width: 65ch; font-style: italic; }
+
+@media (max-width: 700px) {
+  .photo.inline, .photo.inline.left, .photo.inline.right { float: none; width: 100%; margin: 10px 0 18px; transform: none; }
+  .event .year { font-size: 48px; }
+  .lightbox figure { max-width: 94vw; }
+  .lightbox .lb-prev, .lightbox .lb-next { position: absolute; bottom: 18px; }
+  .lightbox .lb-prev { left: 18px; }
+  .lightbox .lb-next { right: 18px; }
+}
