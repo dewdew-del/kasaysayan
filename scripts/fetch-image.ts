@@ -27,6 +27,7 @@ async function download(url: string): Promise<Buffer> {
   throw new Error(`could not download ${url}`);
 }
 
+async function main() {
 fs.mkdirSync(IMAGE_DIR, { recursive: true });
 const entries = [];
 for (const [k, raw] of titles.entries()) {
@@ -56,3 +57,9 @@ console.log("images:");
 for (const e of entries) {
   console.log(`  - file: ${e.file}\n    caption: ${e.caption}\n    alt: ${e.alt}\n    author: ${JSON.stringify(e.author)}\n    license: ${e.license}\n    sourceUrl: ${e.sourceUrl}`);
 }
+}
+
+main().catch((e) => {
+  console.error(e);
+  process.exit(1);
+});
