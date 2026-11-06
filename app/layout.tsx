@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { IM_Fell_English, IM_Fell_English_SC } from "next/font/google";
 import "./globals.css";
+import "@/components/vintage.css";
 
 const body = IM_Fell_English({
   weight: "400",
