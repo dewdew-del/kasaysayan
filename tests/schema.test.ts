@@ -83,6 +83,16 @@ describe("EventSchema", () => {
     expect(issuePaths(e)).toContain("sources.0.url");
   });
 
+  test("verified events cannot keep TODO captions or alt text", () => {
+    const e = { ...valid(), verified: true };
+    e.images[0].caption = "TODO";
+    e.images[0].alt = "TODO";
+    const paths = issuePaths(e);
+    expect(paths).toContain("images.0.caption");
+    expect(paths).toContain("images.0.alt");
+    expect(EventSchema.safeParse({ ...e, verified: false }).success).toBe(true);
+  });
+
   test("place is optional", () => {
     const { place: _omit, ...e } = valid();
     expect(EventSchema.safeParse(e).success).toBe(true);

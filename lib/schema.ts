@@ -76,6 +76,15 @@ export const EventSchema = z
     if (e.contested && !e.contestedNote.trim()) {
       ctx.addIssue({ code: "custom", path: ["contestedNote"], message: "contested events need a note saying where sources differ" });
     }
+    if (e.verified) {
+      e.images.forEach((img, i) => {
+        for (const field of ["caption", "alt"] as const) {
+          if (img[field].trim().toUpperCase() === "TODO") {
+            ctx.addIssue({ code: "custom", path: ["images", i, field], message: `write a real ${field} before marking the event verified` });
+          }
+        }
+      });
+    }
     e.sources.forEach((s, i) => {
       if (/(^|\.)wikipedia\.org$/i.test(new URL(s.url).hostname)) {
         ctx.addIssue({ code: "custom", path: ["sources", i, "url"], message: "Wikipedia can point to sources but is never cited as one" });
