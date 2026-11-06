@@ -86,6 +86,11 @@ describe("StoryStep", () => {
     expect(screen.getByText("The whole archipelago")).toBeInTheDocument();
   });
 
+  test("StoryStep marks drafts as not fact-checked", () => {
+    render(<StoryStep event={makeEvent({ id: "d", verified: false })} index={0} active={false} />);
+    expect(screen.getByText("Draft · not fact-checked")).toBeInTheDocument();
+  });
+
   test("StoryStep shows Sources differ when contested", () => {
     const e = makeEvent({ id: "a", contested: true, contestedNote: "Dates differ." });
     render(<StoryStep event={e} index={0} active={false} />);

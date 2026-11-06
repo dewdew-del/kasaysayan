@@ -1,9 +1,15 @@
-// Placeholder home page. The storyteller map replaces this in Task 6.
+import { Suspense } from "react";
+import { getPublishedEvents } from "@/lib/events";
+import Storyteller, { StorytellerFallback } from "@/components/Storyteller";
+
+// Server component: reads and validates the event files at build time.
 export default function Home() {
+  const events = getPublishedEvents();
   return (
-    <main style={{ maxWidth: 640, margin: "80px auto", padding: "0 20px", textAlign: "center" }}>
-      <h1 style={{ fontSize: 44, margin: 0 }}>Kasaysayan</h1>
-      <p style={{ fontStyle: "italic", color: "var(--faded)" }}>A history of the islands. Coming soon.</p>
-    </main>
+    // useSearchParams (for ?topic=) needs a Suspense boundary in a static export.
+    // The fallback is the full page, so the static HTML is never empty.
+    <Suspense fallback={<StorytellerFallback events={events} />}>
+      <Storyteller events={events} />
+    </Suspense>
   );
 }

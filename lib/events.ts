@@ -22,7 +22,11 @@ export type LoadResult = { events: Event[]; unverified: string[]; errors: string
  * Every problem becomes one "<file>: <field>: <message>" line in `errors`.
  * Files whose names start with "_" (the template) are skipped.
  */
-export function loadAllEvents(dir: string = CONTENT_DIR, imageDir: string = IMAGE_DIR): LoadResult {
+export function loadAllEvents(
+  dir: string = CONTENT_DIR,
+  imageDir: string = IMAGE_DIR,
+  opts: { includeDrafts?: boolean } = {},
+): LoadResult {
   const errors: string[] = [];
   const unverified: string[] = [];
   const events: Event[] = [];
@@ -82,7 +86,7 @@ export function loadAllEvents(dir: string = CONTENT_DIR, imageDir: string = IMAG
     if (errors.length > before) continue;
     if (!meta.verified) {
       unverified.push(meta.id);
-      continue;
+      if (!opts.includeDrafts) continue;
     }
     events.push({ ...meta, body: parsed.content, slug: file.replace(/\.md$/, ""), story });
   }
@@ -91,12 +95,17 @@ export function loadAllEvents(dir: string = CONTENT_DIR, imageDir: string = IMAG
   return { events, unverified, errors };
 }
 
+/** Drafts can be previewed locally with SHOW_DRAFTS=1, but never in a production build. */
+export function showDrafts(env: Record<string, string | undefined> = process.env): boolean {
+  return env.SHOW_DRAFTS === "1" && env.NODE_ENV !== "production";
+}
+
 let cache: Event[] | null = null;
 
-/** Verified events in time order. Throws if any event file has an error, so a bad file fails the build. */
+/** Verified events (plus drafts when showDrafts()) in time order. Throws if any event file has an error, so a bad file fails the build. */
 export function getPublishedEvents(): Event[] {
   if (cache) return cache;
-  const { events, errors } = loadAllEvents();
+  const { events, errors } = loadAllEvents(CONTENT_DIR, IMAGE_DIR, { includeDrafts: showDrafts() });
   if (errors.length) throw new Error(`Event content has ${errors.length} error(s):\n${errors.join("\n")}`);
   cache = events;
   return events;

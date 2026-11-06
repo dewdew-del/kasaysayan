@@ -56,7 +56,7 @@ export default function StoryMap({ events, current, onMarkerClick, viewBox }: St
       {SEA_LABELS.map(([t, lng, lat, rot]) => {
         const [x, y] = project(lng, lat);
         return (
-          <text key={t} className="sea-label" x={rot ? undefined : x} y={rot ? undefined : y} transform={rot ? `translate(${x},${y}) rotate(${rot})` : undefined}>
+          <text key={t} className="sea-label" fontSize={15 * s} x={rot ? undefined : x} y={rot ? undefined : y} transform={rot ? `translate(${x},${y}) rotate(${rot})` : undefined}>
             {t}
           </text>
         );
@@ -94,7 +94,9 @@ export default function StoryMap({ events, current, onMarkerClick, viewBox }: St
         ))}
       </g>
       <g className="doodles" aria-hidden="true">
-        {DOODLES.map((o, i) =>
+        {DOODLES.map((o, i) => (
+          <g key={i} transform={`translate(${o.x},${o.y}) scale(${s}) translate(${-o.x},${-o.y})`}>
+          {
           o.kind === "palm" ? (
             <g key={i} className="palm">
               <path d={`M${o.x},${o.y} q1,-8 3,-13`} />
@@ -105,13 +107,14 @@ export default function StoryMap({ events, current, onMarkerClick, viewBox }: St
               <path className="mound" d={`M${o.x - 9},${o.y} L${o.x},${o.y - 11} L${o.x + 9},${o.y} Z`} />
               <path d={`M${o.x},${o.y - 11} l-3,6 M${o.x + 2},${o.y - 8} l2,5`} />
             </g>
-          ),
-        )}
+          )}
+          </g>
+        ))}
       </g>
       {ISLAND_LABELS.map(([t, lng, lat]) => {
         const [x, y] = project(lng, lat);
         return (
-          <text key={t} className="island-label" x={x} y={y} textAnchor="middle">
+          <text key={t} className="island-label" x={x} y={y} textAnchor="middle" fontSize={12 * s}>
             {t}
           </text>
         );

@@ -47,13 +47,11 @@
   fill: #163f3b;
   fill-opacity: 0.75;
   letter-spacing: 0.5em;
-  font-size: 15px;
 }
 .storymap .island-label {
   font-family: var(--font-body), Georgia, serif;
   font-style: italic;
   fill: var(--ink);
-  font-size: 12px;
   letter-spacing: 0.15em;
   pointer-events: none;
 }
@@ -171,3 +169,145 @@
 .read-btn:hover { transform: translate(-1px, -1px); box-shadow: 4px 4px 0 var(--ink); }
 .read-btn:active { transform: translate(2px, 2px); box-shadow: 1px 1px 0 var(--ink); }
 .read-btn span { font-family: var(--font-body), Georgia, serif; font-size: 20px; }
+
+/* ---------- site header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  height: 57px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 24px;
+  background: var(--paper);
+  border-bottom: 3px double var(--ink);
+}
+.site-header .brand { display: flex; align-items: baseline; gap: 12px; text-decoration: none; color: var(--ink); }
+.site-header .brand b { font-family: var(--font-display), Georgia, serif; font-weight: 400; font-size: 28px; letter-spacing: 0.06em; }
+.site-header .brand span { font-style: italic; font-size: 15px; color: var(--faded); }
+.site-header nav { display: flex; gap: 18px; font-family: var(--font-display), Georgia, serif; font-size: 16px; }
+.site-header nav a { color: var(--faded); text-decoration: none; }
+.site-header nav a:hover { color: var(--ink); text-decoration: underline; text-underline-offset: 4px; }
+
+/* ---------- storyteller layout ---------- */
+.stage { display: grid; grid-template-columns: minmax(320px, 430px) minmax(0, 1fr); }
+.story { padding: 0 30px 40vh; border-right: 3px double var(--ink); }
+.intro { padding: 48px 0 24px; text-align: center; }
+.intro .orn { font-size: 22px; color: var(--faded); letter-spacing: 0.5em; }
+.intro h1 { font-size: 40px; line-height: 1.1; margin: 10px 0; }
+.intro p { font-style: italic; color: var(--faded); margin: 0 auto 18px; }
+.empty { text-align: center; font-style: italic; color: var(--red); padding: 40px 0; }
+.draft-badge {
+  align-self: center;
+  margin-bottom: 8px;
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 13px;
+  color: var(--red);
+  border: 1px dashed var(--red);
+  padding: 1px 10px;
+}
+
+.topics { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; }
+.topics button {
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 14px;
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid #b9a47a;
+  padding: 3px 12px;
+  cursor: pointer;
+}
+.topics button[aria-pressed="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+.mapside {
+  position: sticky;
+  top: 57px;
+  height: calc(100vh - 57px);
+  display: flex;
+  flex-direction: column;
+  background: var(--sea);
+  box-shadow: inset 0 0 120px rgba(40, 25, 5, 0.45);
+}
+.mapwrap {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+  border: 10px solid var(--paper);
+  outline: 2px solid var(--ink);
+  outline-offset: -14px;
+  cursor: grab;
+  overflow: hidden;
+}
+.mapwrap:active { cursor: grabbing; }
+.mapwrap .storymap { position: absolute; inset: 10px; width: calc(100% - 20px); height: calc(100% - 20px); }
+
+.zoomctl {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.zoomctl button { width: 38px; height: 34px; background: none; border: 0; font-family: var(--font-display), Georgia, serif; font-size: 22px; cursor: pointer; color: var(--ink); }
+.zoomctl button + span, .zoomctl span + button, .zoomctl button + button { border-top: 1px solid #b9a47a; }
+.zoomctl span { font-family: var(--font-display), Georgia, serif; font-size: 12px; color: var(--faded); padding: 2px 0; width: 100%; text-align: center; }
+
+.place-card {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  z-index: 10;
+  width: 280px;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  box-shadow: 4px 4px 0 rgba(42, 33, 24, 0.35);
+}
+.place-card .close { position: absolute; right: 6px; top: 6px; z-index: 2; width: 28px; height: 28px; background: var(--paper); border: 1px solid var(--ink); cursor: pointer; font-size: 14px; line-height: 1; }
+.place-card .cover { display: block; width: 100%; height: 150px; object-fit: cover; filter: sepia(0.5) contrast(1.05); border-bottom: 2px solid var(--ink); }
+.place-card .engraving-box { display: flex; align-items: center; justify-content: center; background: #e9dcb8; }
+.place-card .body { padding: 10px 14px 14px; display: flex; flex-direction: column; }
+.place-card .when { font-family: var(--font-display), Georgia, serif; font-size: 14px; color: var(--faded); }
+.place-card h3 { font-size: 21px; line-height: 1.15; margin: 2px 0 4px; }
+.place-card .where { font-style: italic; font-size: 15px; color: var(--faded); }
+.read-btn.small { align-self: flex-start; font-size: 16px; padding: 7px 16px; margin-top: 12px; }
+.place-card .also { margin-top: 12px; border-top: 1px solid #b9a47a; padding-top: 6px; display: flex; flex-direction: column; gap: 4px; }
+.place-card .also small { font-family: var(--font-display), Georgia, serif; color: var(--faded); }
+.place-card .also button { display: flex; align-items: center; gap: 8px; text-align: left; background: none; border: 0; padding: 2px 0; cursor: pointer; font: inherit; font-size: 14px; color: var(--ink); }
+.place-card .also img { width: 42px; height: 30px; object-fit: cover; filter: sepia(0.6); border: 1px solid #b9a47a; }
+
+.ruler { background: var(--paper); border-top: 3px double var(--ink); padding: 10px 20px 12px; display: grid; grid-template-columns: auto 1fr; gap: 16px; align-items: center; }
+.play { background: var(--red); color: var(--paper); border: 2px solid var(--ink); font-family: var(--font-display), Georgia, serif; font-size: 16px; padding: 6px 16px; cursor: pointer; min-width: 100px; box-shadow: 2px 2px 0 var(--ink); }
+.play:disabled { opacity: 0.5; cursor: default; }
+.track { position: relative; height: 46px; }
+.track .bands { position: absolute; left: 0; right: 0; top: 9px; height: 8px; display: flex; border: 1px solid var(--ink); }
+.track .bands i { display: block; height: 100%; border-right: 1px solid var(--ink); }
+.track .bands i:nth-child(odd) { background: var(--ink); }
+.track .bands i:last-child { border-right: 0; }
+.track .ticks { position: absolute; left: 0; right: 0; top: 22px; font-style: italic; font-size: 13px; color: var(--faded); }
+.track .ticks span { position: absolute; transform: translateX(-50%); white-space: nowrap; }
+.track input { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 26px; margin: 0; background: transparent; appearance: none; cursor: pointer; }
+.track input::-webkit-slider-thumb { appearance: none; width: 14px; height: 22px; background: var(--red); border: 2px solid var(--ink); clip-path: polygon(50% 100%, 0 0, 100% 0); }
+.track input::-moz-range-thumb { width: 12px; height: 18px; border-radius: 0; background: var(--red); border: 2px solid var(--ink); }
+
+/* phones: map pinned to the top half, stories scroll underneath */
+@media (max-width: 860px) {
+  .site-header { padding: 0 14px; height: 53px; }
+  .site-header .brand span { display: none; }
+  .site-header nav { gap: 10px; font-size: 14px; }
+  .stage { grid-template-columns: 1fr; }
+  .mapside { order: -1; top: 53px; height: 50vh; z-index: 10; }
+  .story { border-right: 0; padding: 0 18px 30vh; }
+  .intro { padding: 24px 0 8px; }
+  .intro h1 { font-size: 30px; }
+  .place-card { left: 14px; right: 14px; top: 14px; width: auto; }
+  .place-card .cover { height: 110px; }
+  .zoomctl { right: 14px; bottom: 14px; }
+}

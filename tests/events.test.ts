@@ -81,6 +81,25 @@ describe("loadAllEvents", () => {
     expect(r.events.map((e) => e.id)).toEqual(["a"]);
   });
 
+  test("includeDrafts also returns unverified events, marked as drafts", () => {
+    const { content, images } = workspace();
+    write(content, "1521-a.md", eventFile({ id: "a", year: 1521 }));
+    write(content, "1600-draft.md", eventFile({ id: "draft", year: 1600, verified: false, body: "Short draft." }));
+    const r = loadAllEvents(content, images, { includeDrafts: true });
+    expect(r.events.map((e) => [e.id, e.verified])).toEqual([
+      ["a", true],
+      ["draft", false],
+    ]);
+    expect(r.unverified).toEqual(["draft"]);
+  });
+
+  test("drafts are never shown in a production build, even with SHOW_DRAFTS=1", async () => {
+    const { showDrafts } = await import("@/lib/events");
+    expect(showDrafts({ SHOW_DRAFTS: "1", NODE_ENV: "production" })).toBe(false);
+    expect(showDrafts({ SHOW_DRAFTS: "1", NODE_ENV: "development" })).toBe(true);
+    expect(showDrafts({ NODE_ENV: "development" })).toBe(false);
+  });
+
   test("ignores files starting with an underscore (the template)", () => {
     const { content, images } = workspace();
     write(content, "_template.md", "not valid at all");

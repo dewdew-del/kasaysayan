@@ -24,6 +24,7 @@ export default function StoryStep({ event: e, index, active }: StoryStepProps) {
           <Engraving era={e.era} />
         )}
       </Link>
+      {!e.verified && <div className="draft-badge">Draft · not fact-checked</div>}
       <div className="era-tag">{ERA_LABELS[e.era]}</div>
       <div className={`year${label.length > 6 ? " long" : ""}`}>{label}</div>
       <h2>{e.title}</h2>

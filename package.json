@@ -9,7 +9,8 @@
     "lint": "eslint",
     "test": "vitest run",
     "check": "tsx scripts/check.ts",
-    "new-event": "tsx scripts/new-event.ts"
+    "new-event": "tsx scripts/new-event.ts",
+    "dev:drafts": "node scripts/dev-drafts.mjs"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
