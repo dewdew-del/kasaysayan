@@ -404,3 +404,16 @@
   .lightbox .lb-prev { left: 18px; }
   .lightbox .lb-next { right: 18px; }
 }
+
+/* credits and about */
+.page h2 { font-size: 24px; margin: 32px 0 10px; }
+.tablewrap { overflow-x: auto; margin-top: 18px; border: 1px solid #b9a47a; }
+.tablewrap table { border-collapse: collapse; width: 100%; font-size: 15px; background: #fbf5e3; }
+.tablewrap th, .tablewrap td { text-align: left; padding: 8px 12px; border-bottom: 1px solid #d8c9a3; vertical-align: top; }
+.tablewrap th { font-family: var(--font-display), Georgia, serif; font-weight: 400; color: var(--faded); }
+.other-credits { padding-left: 20px; }
+.other-credits li { margin-bottom: 6px; }
+.rules { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 20px; }
+.rule { background: #fbf5e3; border: 1px solid #b9a47a; padding: 14px; }
+.rule h2 { font-size: 20px; margin: 0 0 4px; }
+.rule p { margin: 0; font-size: 16px; color: var(--faded); }
