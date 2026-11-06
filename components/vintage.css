@@ -311,3 +311,20 @@
   .place-card .cover { height: 110px; }
   .zoomctl { right: 14px; bottom: 14px; }
 }
+
+.music {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  z-index: 5;
+  background: var(--paper);
+  color: var(--ink);
+  border: 2px solid var(--ink);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: 15px;
+  padding: 5px 12px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.music[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+@media (max-width: 860px) { .music { left: 14px; top: 14px; } }

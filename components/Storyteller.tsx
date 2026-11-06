@@ -14,6 +14,7 @@ import StoryStep from "./StoryStep";
 import ScaleBar from "./ScaleBar";
 import TopicFilter from "./TopicFilter";
 import Engraving from "./Engraving";
+import MusicToggle from "./MusicToggle";
 
 export const PLAY_INTERVAL_MS = 2200;
 const ZOOM_STEP = 1.6;
@@ -255,6 +256,7 @@ function ZoomableMap({ view, setView, children }: { view: View; setView: (f: (v:
       onClickCapture={onClickCapture}
     >
       {children}
+      <MusicToggle />
       <div className="zoomctl" role="group" aria-label="Map zoom">
         <button type="button" aria-label="Zoom in" onClick={() => setView((v) => zoomView(v, ZOOM_STEP, ...center(v)))}>
           +
