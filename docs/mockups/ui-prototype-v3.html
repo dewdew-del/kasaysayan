@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kasaysayan Vintage Map</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: a 1930s pictorial map of the islands. Story pages on aged paper scroll on the left; the teal-sea map stays pinned on the right, inked with each event as history advances; an old scale bar is the timeline. */
+:root{
+  --sea:#4f9e96;
+  --sea-deep:#2f6f69;
+  --land:#f2e7c9;
+  --paper:#efe3c4;
+  --ink:#2a2118;
+  --faded:#6b5a45;
+  --red:#a3322a;
+  --display:"IM Fell English SC", "Iowan Old Style", Georgia, serif;
+  --body:"IM Fell English", "Iowan Old Style", Georgia, serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:18px;line-height:1.55;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .35 0 0 0 0 .25 0 0 0 0 .12 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"),radial-gradient(ellipse at 15% 8%,rgba(255,250,235,.55),transparent 55%),radial-gradient(ellipse at 85% 95%,rgba(120,80,30,.22),transparent 50%),radial-gradient(circle at 70% 30%,rgba(140,100,40,.10),transparent 25%)}
+.mapside{box-shadow:inset 0 0 120px rgba(40,25,5,.45)}
+.mapside::after{content:"";position:absolute;inset:0;pointer-events:none;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.7' numOctaves='3'/%3E%3CfeColorMatrix values='0 0 0 0 .3 0 0 0 0 .22 0 0 0 0 .1 0 0 0 .28 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");mix-blend-mode:multiply}
+.landp{filter:sepia(.2)}
+.snap{margin:0 auto 14px;padding:8px 8px 6px;background:#fbf5e3;border:1px solid #b9a47a;box-shadow:3px 3px 0 rgba(42,33,24,.25);transform:rotate(-1.2deg);max-width:300px}
+.step:nth-of-type(even) .snap{transform:rotate(1.1deg)}
+.snap img,.photo img{display:block;width:100%;height:auto;max-height:240px;object-fit:cover;filter:sepia(.55) contrast(1.05)}
+.photo img{max-height:none}
+.snap figcaption{font-style:italic;font-size:12px;color:var(--faded);margin-top:5px;line-height:1.3}
+.vig{display:flex;justify-content:center;margin-bottom:6px}
+.vig svg{width:170px;height:auto}
+.eng{fill:none;stroke:var(--ink);stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.eng .f{fill:var(--land)}
+.eng .d{fill:var(--ink)}
+.eng .r{fill:var(--red);stroke:var(--ink)}
+.photo .img .vig svg{width:46%}
+.photo .img{background:#e9dcb8 !important;filter:none !important;flex-direction:column;color:var(--faded) !important}
+.deco{fill:none;stroke:var(--ink);stroke-width:1;stroke-linecap:round;opacity:.75}
+.deco .t{fill:#7aa06a;stroke:var(--ink)}
+.deco .m{fill:#e3d3a8}
+.music{position:absolute;left:26px;top:26px;z-index:5;background:var(--paper);border:2px solid var(--ink);font-family:var(--display);font-size:15px;padding:5px 12px;cursor:pointer;box-shadow:2px 2px 0 var(--ink)}
+.music[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+a{color:var(--red)}
+:focus-visible{outline:2px dashed var(--red);outline-offset:3px}
+h1,h2,h3{font-family:var(--display);font-weight:400;text-wrap:balance;margin:0}
+button{font:inherit;color:inherit}
+
+.top{position:sticky;top:0;z-index:30;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 24px;background:var(--paper);border-bottom:3px double var(--ink)}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--ink)}
+.brand b{font-family:var(--display);font-weight:400;font-size:28px;letter-spacing:.06em}
+.brand span{font-style:italic;font-size:15px;color:var(--faded)}
+.top nav{display:flex;gap:16px;font-family:var(--display);font-size:16px}
+.top nav a{color:var(--faded);text-decoration:none}
+.top nav a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-underline-offset:4px}
+.proto{font-style:italic;font-size:14px;color:var(--red);padding:5px 24px;border-bottom:1px solid #c9b88f}
+
+.stage{display:grid;grid-template-columns:minmax(320px,430px) minmax(0,1fr)}
+.story{padding:0 30px 40vh;border-right:3px double var(--ink)}
+.intro{padding:48px 0 36px;text-align:center}
+.intro .orn{font-size:22px;color:var(--faded);letter-spacing:.5em}
+.intro h1{font-size:40px;line-height:1.1;margin:10px 0}
+.intro p{font-style:italic;color:var(--faded);margin:0 auto;max-width:32ch}
+
+.step{min-height:62vh;padding:28px 0;display:flex;flex-direction:column;justify-content:center;opacity:.4;transition:opacity .3s}
+.step.on{opacity:1}
+.era-tag{font-family:var(--display);font-size:15px;letter-spacing:.12em;color:var(--faded);display:flex;align-items:center;gap:10px}
+.era-tag::before,.era-tag::after{content:"";flex:1;border-top:1px solid #b9a47a}
+.step .yr{font-family:var(--display);font-size:60px;line-height:1;text-align:center;margin:10px 0 6px;font-variant-numeric:oldstyle-nums}
+.step .yr.long{font-size:38px}
+.step h2{font-size:26px;line-height:1.15;text-align:center}
+.step p{margin:12px 0 0}
+.step p::first-letter{font-family:var(--display);font-size:2.4em;float:left;line-height:.85;margin:4px 6px 0 0;color:var(--red)}
+.meta{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:12px;font-style:italic;font-size:15px;color:var(--faded)}
+.meta .contested{color:var(--red)}
+.open{align-self:center;margin-top:14px;font-family:var(--display);font-size:16px;text-decoration:none;border-bottom:1px solid currentColor}
+
+.mapside{position:sticky;top:57px;height:calc(100vh - 57px);display:flex;flex-direction:column;background:var(--sea)}
+.mapwrap{flex:1;min-height:0;position:relative;display:flex;align-items:center;justify-content:center;padding:10px;border:10px solid var(--paper);outline:2px solid var(--ink);outline-offset:-14px}
+.mapwrap svg{position:absolute;inset:10px;width:calc(100% - 20px);height:calc(100% - 20px);display:block}
+.coast1,.coast2,.landp,.deco path{vector-effect:non-scaling-stroke}
+.coast1{fill:none;stroke:#fff;stroke-opacity:.18;stroke-width:16;stroke-linejoin:round}
+.coast2{fill:none;stroke:#fff;stroke-opacity:.25;stroke-width:8;stroke-linejoin:round}
+.landp{fill:var(--land);stroke:var(--ink);stroke-width:1.6;stroke-linejoin:round;transition:fill .6s}
+.nationwide .landp{fill:#e6c98f}
+.sealbl{font-family:var(--display);fill:#163f3b;fill-opacity:.75;letter-spacing:.5em;font-size:15px}
+.islbl{font-family:var(--body);font-style:italic;fill:var(--ink);font-size:12px;letter-spacing:.15em}
+.mk circle{fill:var(--red);stroke:var(--land);stroke-width:1.5}
+.mk.ev{cursor:pointer}
+.mk.future circle{fill:none;stroke:var(--ink);stroke-opacity:.45;stroke-dasharray:2 2}
+.ring{fill:none;stroke:var(--red);stroke-width:2}
+@media (prefers-reduced-motion:no-preference){.ring{animation:pulse 1.8s ease-out infinite;transform-box:fill-box;transform-origin:center}}
+@keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(2);opacity:0}}
+.flag rect{fill:var(--paper);stroke:var(--ink);stroke-width:1.2}
+.flag text{font-family:var(--body);font-style:italic;font-size:14px;fill:var(--ink)}
+.cart rect{fill:var(--paper);stroke:var(--ink);stroke-width:1.5}
+.cart text{font-family:var(--display);fill:var(--ink)}
+.ship{fill:none;stroke:var(--ink);stroke-width:1.2;stroke-linecap:round}
+.ship .sail{fill:var(--land)}
+.rose line,.rose circle{stroke:var(--ink);fill:none;stroke-width:1}
+.rose path{stroke:var(--ink);stroke-width:1}
+.rose text{font-family:var(--display);font-size:13px;fill:var(--ink)}
+.panel{position:absolute;right:26px;top:26px;width:250px;background:var(--paper);border:2px solid var(--ink);box-shadow:4px 4px 0 rgba(42,33,24,.35);padding:12px 14px;font-size:16px;display:none}
+.panel.show{display:block}
+.panel h3{font-size:18px;margin-bottom:6px}
+.panel ul{margin:0;padding-left:18px}
+.panel button.x{float:right;background:none;border:0;cursor:pointer;font-size:16px}
+
+.ruler{background:var(--paper);border-top:3px double var(--ink);padding:10px 20px 12px;display:grid;grid-template-columns:auto 1fr;gap:16px;align-items:center}
+.play{background:var(--red);color:var(--paper);border:2px solid var(--ink);font-family:var(--display);font-size:16px;padding:6px 16px;cursor:pointer;min-width:96px;box-shadow:2px 2px 0 var(--ink)}
+.track{position:relative;height:46px}
+.bands{position:absolute;left:0;right:0;top:9px;height:8px;display:flex;border:1px solid var(--ink)}
+.bands i{display:block;height:100%;border-right:1px solid var(--ink)}
+.bands i:nth-child(odd){background:var(--ink)}
+.bands i:last-child{border-right:0}
+.ticks{position:absolute;left:0;right:0;top:22px;font-style:italic;font-size:13px;color:var(--faded)}
+.ticks span{position:absolute;transform:translateX(-50%);white-space:nowrap}
+.track input{position:absolute;left:0;right:0;top:0;width:100%;height:26px;margin:0;background:transparent;-webkit-appearance:none;appearance:none;cursor:pointer}
+.track input::-webkit-slider-thumb{-webkit-appearance:none;width:14px;height:22px;background:var(--red);border:2px solid var(--ink);clip-path:polygon(50% 100%,0 0,100% 0)}
+.track input::-moz-range-thumb{width:12px;height:18px;border-radius:0;background:var(--red);border:2px solid var(--ink)}
+
+/* event page */
+.event{max-width:740px;margin:0 auto;padding:32px 24px 72px}
+.event .back{font-family:var(--display);font-size:16px;text-decoration:none}
+.event .yr{font-family:var(--display);font-size:64px;line-height:1;text-align:center;margin-top:24px}
+.event h1{font-size:clamp(30px,4.5vw,44px);text-align:center;line-height:1.1;margin:8px 0 14px}
+.photo{margin:24px 0 0;padding:10px;background:#fbf5e3;border:1px solid #b9a47a;box-shadow:3px 3px 0 rgba(42,33,24,.2);transform:rotate(-.6deg)}
+.photo .img{aspect-ratio:16/9;background:repeating-linear-gradient(135deg,#8c7a5c 0 10px,#7d6c50 10px 20px);display:flex;align-items:center;justify-content:center;color:#efe3c4;font-style:italic;filter:sepia(.4)}
+.photo figcaption{font-style:italic;font-size:14px;color:var(--faded);margin-top:8px;text-align:center}
+.note{border:1px solid var(--red);padding:10px 14px;margin:22px 0;font-size:17px}
+.note b{font-family:var(--display);font-weight:400;color:var(--red)}
+.cols{display:grid;grid-template-columns:1fr 230px;gap:26px;margin-top:28px}
+.body{font-size:19px;line-height:1.7;max-width:65ch}
+.leaflet{border:2px solid var(--ink)}
+.leaflet .fake{aspect-ratio:1;position:relative;background:linear-gradient(90deg,transparent 49%,#d4d9cf 49% 51%,transparent 51%) 0 0/40px 40px,linear-gradient(0deg,transparent 49%,#d4d9cf 49% 51%,transparent 51%) 0 0/40px 40px,#eef0e4;filter:sepia(.35)}
+.leaflet .fake i{position:absolute;left:50%;top:50%;width:18px;height:18px;margin:-18px 0 0 -9px;border-radius:50% 50% 50% 0;transform:rotate(-45deg);background:var(--red);border:2px solid #fff}
+.leaflet small{display:block;font-style:italic;font-size:13px;padding:5px 8px;background:var(--paper);border-top:1px solid var(--ink)}
+.sources h2{font-size:22px;margin:32px 0 8px;border-bottom:1px solid #b9a47a}
+.sources ol{padding-left:22px;margin:0}
+.pn{display:flex;justify-content:space-between;gap:16px;border-top:3px double var(--ink);margin-top:36px;padding-top:14px}
+.pn a{text-decoration:none;max-width:48%}
+.pn small{display:block;font-family:var(--display);color:var(--faded)}
+
+@media (max-width:860px){
+  .stage{grid-template-columns:1fr}
+  .mapside{order:-1;top:53px;height:50vh;z-index:10}
+  .story{border-right:0;padding-bottom:30vh}
+  .step{min-height:44vh}
+  .intro{padding:24px 0 8px}
+  .intro h1{font-size:30px}
+  .panel{left:20px;right:20px;width:auto}
+  .cols{grid-template-columns:1fr}
+  .top{padding:8px 16px}
+  .brand span{display:none}
+  .top nav{gap:10px;font-size:14px}
+}
+
+/* galleries and long read */
+.snapwrap{display:flex;flex-direction:column;align-items:center;margin-bottom:6px}
+.zoom{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in}
+.snap .cap,.photo .cap,.gcell .cap,.lightbox .cap{color:var(--ink)}
+.strip{display:flex;gap:6px;align-items:center;margin:-4px 0 8px}
+.strip img{width:58px;height:44px;object-fit:cover;filter:sepia(.6);border:3px solid #fbf5e3;box-shadow:1px 1px 0 rgba(42,33,24,.3)}
+.strip span{font-family:var(--display);font-size:14px;color:var(--faded);padding-left:4px}
+.progress{position:fixed;top:0;left:0;height:4px;width:0;background:var(--red);z-index:40}
+.byline{text-align:center;font-style:italic;color:var(--faded);margin:0}
+.longread{margin-top:28px;font-size:19px;line-height:1.75}
+.chapter{max-width:65ch;margin:0 auto}
+.chapter::after{content:"";display:block;clear:both}
+.chapter h2{font-size:26px;margin:34px 0 12px;display:flex;align-items:baseline;gap:12px}
+.chapter h2 span{color:var(--red);font-size:18px}
+.chapter p{margin:0 0 16px}
+.chapter:first-child p:first-of-type::first-letter{font-family:var(--display);font-size:3.4em;float:left;line-height:.8;margin:6px 8px 0 0;color:var(--red)}
+.todo{font-style:italic;color:var(--red);font-size:16px}
+.photo.hero{transform:rotate(-.5deg)}
+.photo.inline{width:46%;margin:6px 0 12px}
+.photo.inline.left{float:left;margin-right:24px;transform:rotate(-.9deg)}
+.photo.inline.right{float:right;margin-left:24px;transform:rotate(.8deg)}
+.photo figcaption{text-align:left;font-size:13px;line-height:1.35}
+.gallery{margin-top:44px}
+.gallery h2{font-size:24px;text-align:center;margin-bottom:16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:18px}
+.gcell{margin:0;padding:8px;background:#fbf5e3;border:1px solid #b9a47a;box-shadow:3px 3px 0 rgba(42,33,24,.2)}
+.gcell:nth-child(odd){transform:rotate(-.7deg)}
+.gcell:nth-child(even){transform:rotate(.6deg)}
+.gcell img{display:block;width:100%;height:160px;object-fit:cover;filter:sepia(.55)}
+.gcell figcaption{font-style:italic;font-size:12px;color:var(--faded);margin-top:6px;line-height:1.3}
+.placebox{max-width:320px;margin:36px auto 0}
+.lightbox{position:fixed;inset:0;z-index:60;background:rgba(30,22,14,.88);display:flex;align-items:center;justify-content:center;gap:12px;padding:20px}
+.lightbox[hidden]{display:none}
+.lightbox figure{margin:0;max-width:min(900px,80vw);background:var(--paper);padding:12px;border:2px solid var(--ink)}
+.lightbox img{display:block;max-width:100%;max-height:72vh;margin:0 auto;filter:sepia(.35)}
+.lightbox figcaption{font-style:italic;font-size:14px;color:var(--faded);margin-top:8px}
+.lightbox .cnt{float:right;font-family:var(--display);margin-left:12px}
+.lightbox button{background:var(--paper);color:var(--ink);border:2px solid var(--ink);font-size:24px;width:44px;height:44px;cursor:pointer;line-height:1;flex:0 0 auto}
+.lbx{position:absolute;top:16px;right:16px}
+@media (max-width:700px){
+  .photo.inline,.photo.inline.left,.photo.inline.right{float:none;width:100%;margin:10px 0 18px}
+  .lightbox figure{max-width:94vw}
+  .lbp,.lbn{position:absolute;bottom:18px}
+  .lbp{left:18px}.lbn{right:18px}
+}
+
+/* popup card, zoom controls, mini map */
+.panel{width:270px;padding:0;overflow:hidden}
+.panel .x{position:absolute;right:6px;top:6px;z-index:2;background:var(--paper);border:1px solid var(--ink);width:26px;height:26px;cursor:pointer;font-size:14px;line-height:1}
+.pcover{display:block;width:100%;height:150px;object-fit:cover;filter:sepia(.5) contrast(1.05);border-bottom:2px solid var(--ink)}
+.vigbox{display:flex;align-items:center;justify-content:center;background:#e9dcb8}
+.vigbox svg{width:60%}
+.pbody{padding:10px 14px 12px}
+.pyr{font-family:var(--display);font-size:14px;color:var(--faded)}
+.panel h3{font-size:20px;line-height:1.15;margin:2px 0 4px}
+.pplace{font-style:italic;font-size:15px;color:var(--faded)}
+.pgo{display:inline-block;margin-top:8px;font-family:var(--display);font-size:16px;text-decoration:none;border-bottom:1px solid currentColor}
+.palso{margin-top:10px;border-top:1px solid #b9a47a;padding-top:6px;display:flex;flex-direction:column;gap:4px}
+.palso small{font-family:var(--display);color:var(--faded)}
+.palso button{display:flex;align-items:center;gap:8px;text-align:left;background:none;border:0;padding:2px 0;cursor:pointer;font-size:14px;color:var(--ink)}
+.palso img{width:40px;height:30px;object-fit:cover;filter:sepia(.6);border:1px solid #b9a47a}
+.zoomctl{position:absolute;right:26px;bottom:26px;z-index:5;display:flex;flex-direction:column;align-items:center;background:var(--paper);border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink)}
+.zoomctl button{width:36px;height:34px;background:none;border:0;font-family:var(--display);font-size:22px;cursor:pointer;color:var(--ink)}
+.zoomctl button+span,.zoomctl span+button{border-top:1px solid #b9a47a}
+.zoomctl #zreset{font-size:18px;border-top:1px solid #b9a47a}
+.zoomctl span{font-family:var(--display);font-size:12px;color:var(--faded);padding:2px 0;width:100%;text-align:center}
+.zhint{position:absolute;left:26px;bottom:26px;z-index:5;font-style:italic;font-size:13px;color:#0e3b37;background:rgba(242,231,201,.75);padding:2px 8px}
+#map{touch-action:none;cursor:grab}
+#map.grabbing{cursor:grabbing}
+/* keep marks and labels the same on-screen size while zooming */
+#map .mk circle{r:calc(5px / var(--z,1))}
+#map .mk circle{stroke-width:calc(1.5px / var(--z,1))}
+#map .flag,#map .ring{transform-box:fill-box}
+.mini{display:block;width:100%;height:auto;aspect-ratio:1}
+.mini .ring{animation:none;stroke-width:1.5}
+@media (max-width:860px){.panel{width:auto}.zhint{display:none}.zoomctl{right:20px;bottom:20px}}
+
+/* calmer story list */
+.step,.step.on{opacity:1 !important}
+.step{min-height:auto;padding:56px 0;border-bottom:1px solid #cdbb92}
+.cardpic{display:block;text-decoration:none}
+.cardpic .snap{cursor:pointer}
+.readbtn{align-self:center;margin-top:20px;display:inline-flex;align-items:center;gap:10px;background:var(--red);color:var(--paper);text-decoration:none;font-family:var(--display);font-size:19px;letter-spacing:.04em;padding:11px 26px;border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);transition:transform .12s, box-shadow .12s}
+.readbtn:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.readbtn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.readbtn span{font-family:var(--body);font-size:20px}
+.step p::first-letter{float:none;font-size:inherit;margin:0;color:inherit;font-family:inherit}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#story"><b>Kasaysayan</b><span>Philippine history, island by island</span></a>
+  <nav aria-label="Main"><a href="#story" aria-current="page">The Map</a><a href="#story">Credits</a><a href="#story">Fact-check rules</a></nav>
+</header>
+<div class="proto">Prototype v3. Sample events, not fact-checked yet. The real map uses accurate coastlines from free OpenStreetMap-based data.</div>
+<div id="app"></div>
+
+<script src="gallery-data.js"></script>
+<script src="stories.js"></script>
+<script>
+const ERAS={precolonial:"Pre-colonial",spanish:"Spanish Era",revolution:"Revolution",american:"American Era",japanese:"Japanese Occupation",third:"Third Republic",martial:"Martial Law",edsa:"EDSA",modern:"Modern Times"};
+const EV=[
+ {id:"tabon",era:"precolonial",yr:"c. 47,000 BP",title:"Tabon Man remains in Palawan",sum:"Human fossils found in the Tabon Caves are among the oldest known in the country.",place:"Quezon, Palawan",lat:9.27,lng:117.97},
+ {id:"lci",era:"precolonial",yr:"900",title:"Laguna Copperplate Inscription",sum:"The oldest known written document from the islands records a cleared debt.",place:"Lumban, Laguna",lat:14.30,lng:121.46},
+ {id:"mactan",era:"spanish",yr:"1521",title:"Battle of Mactan",sum:"Lapulapu's forces defeat Ferdinand Magellan's landing party on Mactan.",place:"Mactan, Cebu",lat:10.31,lng:123.98},
+ {id:"gomburza",era:"spanish",yr:"1872",title:"Execution of Gomburza",sum:"Priests Gomez, Burgos and Zamora are executed at Bagumbayan after the Cavite mutiny.",place:"Bagumbayan, Manila",lat:14.58,lng:120.98},
+ {id:"pugadlawin",era:"revolution",yr:"1896",title:"Cry of Pugad Lawin",sum:"Katipuneros tear their cedulas and start the revolt against Spain.",place:"Quezon City",lat:14.66,lng:121.03,contested:"Sources disagree on the exact date and place. Each version is shown with who supports it."},
+ {id:"kawit",era:"revolution",yr:"1898",title:"Declaration of Independence",sum:"Emilio Aguinaldo proclaims independence from Spain in Kawit.",place:"Kawit, Cavite",lat:14.44,lng:120.90},
+ {id:"commonwealth",era:"american",yr:"1935",title:"The Commonwealth begins",sum:"Manuel L. Quezon becomes president of a transitional government under US rule.",place:"Manila",lat:14.59,lng:120.98},
+ {id:"bataan",era:"japanese",yr:"1942",title:"Fall of Bataan and the Death March",sum:"Filipino and American prisoners are forced to march from Bataan to Tarlac.",place:"Mariveles, Bataan",lat:14.43,lng:120.49,contested:"Death toll estimates differ by source. The range is given with each estimate cited."},
+ {id:"leyte",era:"japanese",yr:"1944",title:"Leyte Landing",sum:"Allied forces land at Palo, starting the campaign to retake the islands.",place:"Palo, Leyte",lat:11.16,lng:125.01},
+ {id:"y1946",era:"third",yr:"1946",title:"Independence recognized",sum:"The Treaty of Manila ends American sovereignty over the islands.",place:"Manila",lat:14.58,lng:120.99},
+ {id:"pd1081",era:"martial",yr:"1972",title:"Proclamation No. 1081",sum:"President Ferdinand Marcos places the whole country under martial law.",place:null,contested:"Dated 21 September, announced 23 September. Both dates are shown with sources."},
+ {id:"edsa",era:"edsa",yr:"1986",title:"People Power Revolution",sum:"Crowds fill EDSA for four days. Marcos leaves and Corazon Aquino takes office.",place:"EDSA, Quezon City",lat:14.59,lng:121.06,contested:"Crowd size estimates vary widely. Figures are attributed to their sources."},
+ {id:"bohol",era:"modern",yr:"2013",title:"Bohol earthquake",sum:"A magnitude 7.2 earthquake damages towns and centuries-old churches across Bohol.",place:"Sagbayan, Bohol",lat:9.88,lng:124.12},
+ {id:"yolanda",era:"modern",yr:"2013",title:"Typhoon Yolanda",sum:"One of the strongest storms ever recorded strikes Eastern Visayas and Tacloban.",place:"Tacloban, Leyte",lat:11.24,lng:125.00}
+];
+
+/* ---------- inked map ---------- */
+const K=40,LNG0=116.4,LAT0=19.4;
+const P=(lng,lat)=>[(lng-LNG0)*K,(LAT0-lat)*K];
+const W=(127.2-LNG0)*K,H=(LAT0-4.6)*K;
+const ISL=[
+ ["Luzon",[[120.6,18.5],[121.2,18.6],[122.2,18.5],[122.4,17],[122.2,16.2],[121.6,15.8],[121.6,14.6],[122,14],[122.6,14.2],[123,13.8],[124,13.2],[124.1,12.6],[123.3,13],[122.6,13.5],[121.8,13.9],[121,13.7],[120.6,14.2],[120.6,14.8],[120,15],[119.8,16.3],[120.4,16.6],[120.4,17.6]]],
+ ["Mindoro",[[120.4,13.5],[121.2,13.4],[121.5,12.6],[121.1,12.2],[120.6,12.6]]],
+ ["Panay",[[121.9,11.9],[122.9,11.6],[123.1,11],[122.5,10.6],[122,10.6]]],
+ ["Negros",[[122.9,11],[123.5,10.7],[123.2,9.3],[122.6,9.6],[122.4,10.5]]],
+ ["Cebu",[[123.9,11.3],[124.1,10.6],[123.5,9.6],[123.3,9.5],[123.7,10.4]]],
+ ["Bohol",[[123.8,10.1],[124.5,10.1],[124.6,9.7],[124.1,9.6],[123.8,9.8]]],
+ ["Leyte",[[124.3,11.6],[125,11.3],[125.2,10.2],[124.8,10],[124.4,10.8]]],
+ ["Samar",[[124.3,12.5],[125.4,12.5],[125.7,11.1],[125,11.2],[124.6,11.7]]],
+ ["Palawan",[[119.3,11.4],[119.7,10.9],[118.8,9.8],[117.4,8.4],[117.2,8.5],[118.2,9.8]]],
+ ["Mindanao",[[122,8],[123,8.6],[123.8,8.7],[124.4,8.6],[125.2,9.8],[125.6,9.5],[126.2,9.2],[126.6,7.4],[126.2,6.3],[125.4,5.6],[125.2,6.4],[124.2,6.4],[124,7.2],[123.4,7.6],[122.8,7.5],[122.1,6.9],[121.9,7.2]]]
+];
+/* closed Catmull-Rom curve so the coast reads hand-drawn */
+function smooth(pts){const n=pts.length;let d=`M${pts[0][0].toFixed(1)},${pts[0][1].toFixed(1)}`;
+  for(let i=0;i<n;i++){const p0=pts[(i-1+n)%n],p1=pts[i],p2=pts[(i+1)%n],p3=pts[(i+2)%n];
+    d+=`C${(p1[0]+(p2[0]-p0[0])/6).toFixed(1)},${(p1[1]+(p2[1]-p0[1])/6).toFixed(1)} ${(p2[0]-(p3[0]-p1[0])/6).toFixed(1)},${(p2[1]-(p3[1]-p1[1])/6).toFixed(1)} ${p2[0].toFixed(1)},${p2[1].toFixed(1)}`;}
+  return d+"Z";}
+const LAND=ISL.map(([n,p])=>({n,d:smooth(p.map(([a,b])=>P(a,b))),c:p.reduce((s,[a,b])=>[s[0]+a/p.length,s[1]+b/p.length],[0,0])}));
+const ship=(x,y,s=1)=>`<g class="ship" transform="translate(${x},${y}) scale(${s})"><path d="M-14,0 Q0,7 14,0"/><path class="sail" d="M0,-2 L0,-22 L11,-4 Z"/><path d="M-22,6 q4,-3 8,0 t8,0" /></g>`;
+const rose=(x,y)=>`<g class="rose" transform="translate(${x},${y})"><circle r="26"/><circle r="20"/><path d="M0,-34 L5,0 L0,34 L-5,0 Z" fill="#2a2118"/><path d="M-34,0 L0,5 L34,0 L0,-5 Z" fill="#f2e7c9"/><text y="-38" text-anchor="middle">N</text></g>`;
+const PH=GAL;
+const credit=p=>`${p.author}. ${p.license}, via <a href="${p.page}">Wikimedia Commons</a>`;
+const pic=(p,cls,k)=>`<figure class="${cls}"><button class="zoom" data-k="${k}" aria-label="Enlarge photo: ${p.cap}"><img src="photos/${p.file}" alt="${p.cap}" loading="lazy"></button><figcaption><span class="cap">${p.cap}.</span> ${credit(p)}</figcaption></figure>`;
+const strip=e=>{const g=PH[e.id]||[];if(g.length<2)return "";return `<div class="strip">${g.slice(1,4).map(p=>`<img src="photos/${p.file}" alt="" loading="lazy">`).join("")}${g.length>4?`<span>+${g.length-4}</span>`:""}</div>`;};
+/* ---------- era engravings (original line drawings, sepia ink) ---------- */
+const V={
+ precolonial:`<path d="M10,58 q50,14 100,0"/><path class="f" d="M18,52 Q60,66 102,52 L96,46 L24,46 Z"/><path d="M60,46 V10"/><path class="f" d="M60,12 L88,40 L60,40 Z"/><path class="f" d="M58,16 L36,40 L58,40 Z"/><circle cx="20" cy="18" r="7"/><path d="M8,68 q6,-4 12,0 t12,0 t12,0 M70,70 q6,-4 12,0 t12,0"/>`,
+ spanish:`<path class="f" d="M20,52 L100,52 L92,64 L30,64 Z"/><path d="M28,52 V12 M60,52 V6 M88,52 V16"/><path class="f" d="M22,16 q6,8 0,16 h12 q6,-8 0,-16 Z M50,10 q8,10 0,22 h20 q8,-12 0,-22 Z M50,36 q6,6 0,12 h20 q6,-6 0,-12 Z M82,20 q5,7 0,14 h12 q5,-7 0,-14 Z"/><path class="r" d="M60,6 l10,3 l-10,3 Z"/><path d="M6,70 q8,-5 16,0 t16,0 t16,0 t16,0 t16,0 t16,0"/>`,
+ revolution:`<path d="M24,70 V8"/><path class="r" d="M24,10 h70 v34 h-70 Z"/><circle cx="59" cy="27" r="7" class="f"/><path d="M59,14 v-2 M59,42 v-2 M46,27 h-2 M74,27 h-2 M50,18 l-2,-2 M68,36 l2,2 M68,18 l2,-2 M50,36 l-2,2"/><text x="59" y="31" font-size="9" text-anchor="middle" fill="#2a2118" stroke="none" font-family="serif">K</text><path d="M14,70 h20"/>`,
+ american:`<path class="f" d="M14,30 L60,10 L106,30 Z"/><path class="f" d="M18,30 h84 v6 h-84 Z"/><path d="M26,36 v26 M40,36 v26 M54,36 v26 M66,36 v26 M80,36 v26 M94,36 v26"/><path class="f" d="M12,62 h96 v6 h-96 Z"/><path d="M8,72 h104"/>`,
+ japanese:`<path class="f" d="M22,40 h76 l-8,6 h-60 Z"/><path d="M60,40 V30"/><path class="f" d="M30,30 h60 l-6,-4 h-48 Z"/><path d="M20,62 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6 l8,-6 l8,6"/><path d="M14,58 h92"/><path d="M34,14 l12,4 l12,-4 M70,10 l8,3 l8,-3"/>`,
+ third:`<path d="M20,72 V6"/><path class="f" d="M20,8 h74 v22 h-74 Z"/><path class="d" d="M20,30 h74 v22 h-74 Z" opacity=".55"/><path class="f" d="M20,8 L48,30 L20,52 Z"/><circle cx="30" cy="30" r="5" class="r"/><path d="M24,14 l1,2 M24,46 l1,-2 M42,30 h2"/>`,
+ martial:`<path class="f" d="M30,8 h60 v58 h-60 Z"/><path d="M38,18 h44 M38,26 h44 M38,34 h36 M38,42 h44 M38,50 h28"/><circle cx="74" cy="56" r="8" class="r"/><text x="60" y="76" font-size="8" text-anchor="middle" fill="#2a2118" stroke="none" font-family="serif">No. 1081</text>`,
+ edsa:`${[14,28,42,56,70,84,98].map((x,i)=>`<circle cx="${x+3}" cy="${44-(i%2)*4}" r="5" class="f"/><path d="M${x-3},${66} q6,-18 12,0"/>`).join("")}<path d="M26,36 L22,14 M60,32 L62,10 M94,36 L98,14"/><path class="r" d="M58,8 q6,6 12,0 l-4,10 Z"/>`,
+ modern:`<path d="M60,40 m0,-4 a4,4 0 1,1 -4,4 a10,10 0 1,1 10,10 a18,18 0 1,1 -18,-18 a26,26 0 0,1 26,26"/><path class="r" d="M14,66 l14,-6 l-6,-4 l14,-6 M78,66 l10,-8 l-4,-2 l10,-8"/>`
+};
+const vig=k=>`<svg class="eng" viewBox="0 0 120 80" aria-hidden="true">${V[k]}</svg>`;
+
+/* ---------- pictorial map doodles: palms and hills like old tourist maps ---------- */
+function inside(x,y,poly){let c=false;for(let i=0,j=poly.length-1;i<poly.length;j=i++){const[xi,yi]=poly[i],[xj,yj]=poly[j];if(((yi>y)!=(yj>y))&&(x<(xj-xi)*(y-yi)/(yj-yi)+xi))c=!c;}return c;}
+const POLY=ISL.map(([n,p])=>p.map(([a,b])=>P(a,b)));
+let seed=7;const rnd=()=>(seed=(seed*16807)%2147483647)/2147483647;
+const palm=(x,y)=>`<g class="deco"><path d="M${x},${y} q1,-8 3,-13"/><path class="t" d="M${x+3},${y-13} q-7,-2 -9,3 q5,-3 9,-3 q7,-3 9,2 q-5,-2 -9,-2 q-2,-6 2,-8 q-1,4 -2,8"/></g>`;
+const hill=(x,y)=>`<g class="deco"><path class="m" d="M${x-9},${y} L${x},${y-11} L${x+9},${y} Z"/><path d="M${x},${y-11} l-3,6 M${x+2},${y-8} l2,5"/></g>`;
+function doodles(){let out="";for(let n=0;n<70;n++){const x=rnd()*W,y=rnd()*H;const k=POLY.findIndex(p=>inside(x,y,p));if(k<0)continue;
+  const big=[0,9].includes(k);out+= big&&rnd()<.55?hill(x,y):palm(x,y);}return out;}
+const DOODLES=doodles();
+
+/* stagger markers that share a place so each stays clickable */
+const spots={};EV.forEach((e,i)=>{if(e.lat==null)return;let[x,y]=P(e.lng,e.lat);const k=Math.round(x/14)+","+Math.round(y/14);const n=spots[k]=(spots[k]||0)+1;if(n>1){x+=(n-1)*9;y-=(n-1)*7;}e.x=x;e.y=y;});
+
+function mapSVG(){
+  const coasts=LAND.map(l=>`<path class="coast1" d="${l.d}"/><path class="coast2" d="${l.d}"/>`).join("");
+  const lands=LAND.map(l=>`<path class="landp" d="${l.d}"/>`).join("");
+  const labels=LAND.filter(l=>["Luzon","Mindanao","Palawan","Samar","Panay","Mindoro","Negros"].includes(l.n)).map(l=>{const[x,y]=P(l.c[0],l.c[1]);return `<text class="islbl" x="${x}" y="${y}" text-anchor="middle">${l.n.toUpperCase()}</text>`}).join("");
+  const marks=EV.map((e,i)=>e.x==null?"":`<g class="mk ev future" data-i="${i}" tabindex="0" role="button" aria-label="${e.title}, ${e.place}"><circle cx="${e.x}" cy="${e.y}" r="5"/></g>`).join("");
+  return `<svg id="map" viewBox="0 0 ${W} ${H}" role="img" aria-label="Old-style map of the Philippine Islands with event markers">
+    <text class="sealbl" transform="translate(${P(126.2,15.5).join(",")}) rotate(68)">PACIFIC OCEAN</text>
+    <text class="sealbl" x="${P(118.6,7.6)[0]}" y="${P(118.6,7.6)[1]}">SULU SEA</text>
+    <text class="sealbl" x="${P(121.7,12.4)[0]}" y="${P(121.7,12.4)[1]}" style="font-size:11px;letter-spacing:.3em">SIBUYAN SEA</text>
+    ${ship(P(118.4,14.6)[0],P(118.4,14.6)[1],1.1)}${ship(P(125.9,13.6)[0],P(125.9,13.6)[1],.9)}${ship(P(120.8,8.3)[0],P(120.8,8.3)[1],.8)}
+    ${rose(P(117.3,17.6)[0],P(117.3,17.6)[1])}
+    <g class="cart" transform="translate(${W-200},14)"><rect width="186" height="74" rx="3"/><rect x="5" y="5" width="176" height="64" rx="2" fill="none"/><text x="93" y="32" text-anchor="middle" font-size="20">Kasaysayan</text><text x="93" y="54" text-anchor="middle" font-size="13">of the Philippine Islands</text></g>
+    ${coasts}${lands}${DOODLES}${labels}
+    <g id="marks">${marks}</g><g id="fx"></g>
+  </svg>`;
+}
+
+function storyView(){
+  const order=Object.keys(ERAS);
+  const bands=order.map(k=>{const n=EV.filter(e=>e.era===k).length;return n?`<i style="flex:${n}"></i>`:"";}).join("");
+  const ticks=[0,2,4,7,10,12,13].map(i=>`<span style="left:${i/(EV.length-1)*100}%">${EV[i].yr.replace("c. ","")}</span>`).join("");
+  return `<div class="stage">
+  <section class="story" aria-label="Story">
+    <div class="intro"><div class="orn">❦</div><h1>A History of the Islands</h1><p>Scroll down to travel through time.</p></div>
+    ${EV.map((e,i)=>`<article class="step" data-i="${i}">
+      <a class="cardpic" href="#e-${e.id}" tabindex="-1" aria-hidden="true">${(PH[e.id]||[]).length?`<figure class="snap"><img src="photos/${PH[e.id][0].file}" alt="" loading="lazy"></figure>`:`<div class="vig">${vig(e.era)}</div>`}</a>
+      <div class="era-tag">${ERAS[e.era]}</div>
+      <div class="yr ${e.yr.length>6?"long":""}">${e.yr}</div>
+      <h2>${e.title}</h2>
+      <p>${e.sum}</p>
+      <div class="meta"><span>${e.place||"The whole archipelago"}</span>${e.contested?`<span class="contested">· Sources differ</span>`:""}</div>
+      <a class="readbtn" href="#e-${e.id}">Read the story <span aria-hidden="true">→</span></a>
+    </article>`).join("")}
+  </section>
+  <aside class="mapside" aria-label="Map">
+    <div class="mapwrap"><button class="music" id="music" aria-pressed="false">♪ Music</button><div class="panel" id="panel" role="dialog" aria-label="Event at this place"></div><div class="zoomctl" role="group" aria-label="Map zoom"><button id="zin" aria-label="Zoom in">+</button><span id="zlvl">1.0×</span><button id="zout" aria-label="Zoom out">−</button><button id="zreset" aria-label="Show whole map">⤢</button></div>${mapSVG()}</div>
+    <div class="ruler">
+      <button class="play" id="play" aria-pressed="false">▶ Play</button>
+      <div class="track"><div class="bands">${bands}</div>
+        <input type="range" id="scrub" min="0" max="${EV.length-1}" value="0" step="1" aria-label="Move through events">
+        <div class="ticks">${ticks}</div></div>
+    </div>
+  </aside></div>`;
+}
+
+let cur=-1,timer=null,obs=null,lastStep=0;
+function setCurrent(i){
+  if(i===cur)return;cur=i;const e=EV[i];
+  document.querySelectorAll(".step").forEach(s=>s.classList.toggle("on",+s.dataset.i===i));
+  document.querySelectorAll(".mk").forEach(m=>m.classList.toggle("future",+m.dataset.i>i));
+  document.getElementById("map").classList.toggle("nationwide",e.x==null);
+  drawFx();
+  const s=document.getElementById("scrub");if(s)s.value=i;
+  if(e.x!=null&&vb.w<W*.98&&(e.x<vb.x+vb.w*.15||e.x>vb.x+vb.w*.85||e.y<vb.y+vb.h*.15||e.y>vb.y+vb.h*.85))centerOn(e.x,e.y);
+}
+function drawFx(){
+  const fx=document.getElementById("fx");if(!fx||cur<0)return;const e=EV[cur],z=W/vb.w;
+  if(e.x!=null){const right=e.x>vb.x+vb.w*.62,tw=e.place.length*7+20;
+    const g=`<g transform="translate(${e.x},${e.y}) scale(${(1/z).toFixed(3)})"><circle class="ring" r="9"/><g class="flag" transform="translate(${right?-14-tw:14},0)"><rect y="-13" width="${tw}" height="24"/><text x="10" y="4">${e.place}</text></g></g>`;
+    fx.innerHTML=g;}
+  else fx.innerHTML=`<g transform="translate(${vb.x+vb.w/2},${vb.y+vb.h-32/z}) scale(${(1/z).toFixed(3)})"><g class="flag"><rect x="-120" y="-14" width="240" height="28"/><text y="5" text-anchor="middle">The whole archipelago</text></g></g>`;
+}
+function goTo(i){const s=document.querySelector(`.step[data-i="${i}"]`);if(s)s.scrollIntoView({block:"center",behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});setCurrent(i);}
+function stopPlay(){clearInterval(timer);timer=null;const b=document.getElementById("play");if(b){b.textContent="▶ Play";b.setAttribute("aria-pressed","false");}}
+let popAt=-1;
+function openPanel(i){
+  const e=EV[i],p=document.getElementById("panel");popAt=i;
+  const same=EV.map((x,j)=>[x,j]).filter(([x,j])=>j!==i&&x.x!=null&&Math.hypot(x.x-e.x,x.y-e.y)<30);
+  const cover=(PH[e.id]||[])[0];
+  p.innerHTML=`<button class="x" aria-label="Close">✕</button>
+    ${cover?`<img class="pcover" src="photos/${cover.file}" alt="${cover.cap}">`:`<div class="pcover vigbox">${vig(e.era)}</div>`}
+    <div class="pbody"><div class="pyr">${e.yr} · ${ERAS[e.era]}</div><h3>${e.title}</h3><div class="pplace">${e.place}</div>
+    <a class="pgo" href="#e-${e.id}">Read the story →</a>
+    ${same.length?`<div class="palso"><small>Also at this place</small>${same.map(([x,j])=>`<button data-j="${j}">${(PH[x.id]||[])[0]?`<img src="photos/${PH[x.id][0].file}" alt="">`:""}<span>${x.yr} · ${x.title}</span></button>`).join("")}</div>`:""}</div>`;
+  p.classList.add("show");placePanel();
+  p.querySelector(".x").onclick=()=>{p.classList.remove("show");popAt=-1;};
+  p.querySelectorAll(".palso button").forEach(b=>b.onclick=()=>openPanel(+b.dataset.j));
+}
+/* keep the card beside its marker, inside the map frame */
+function placePanel(){
+  const p=document.getElementById("panel");if(!p||popAt<0||!p.classList.contains("show"))return;
+  const e=EV[popAt],svg=document.getElementById("map"),wrap=p.parentElement;
+  const m=svg.getScreenCTM(),wr=wrap.getBoundingClientRect();
+  const sx=m.a*e.x+m.e-wr.left,sy=m.d*e.y+m.f-wr.top;
+  const pw=p.offsetWidth,ph=p.offsetHeight;
+  let left=sx+16,top=sy-ph/2;
+  if(left+pw>wr.width-14)left=sx-16-pw;
+  left=Math.max(14,Math.min(left,wr.width-pw-14));top=Math.max(14,Math.min(top,wr.height-ph-14));
+  p.style.left=left+"px";p.style.top=top+"px";p.style.right="auto";
+}
+
+/* ---------- zoom and pan on the SVG viewBox ---------- */
+let vb={x:0,y:0,w:W,h:H};
+function applyVB(){const s=document.getElementById("map");if(!s)return;
+  vb.w=Math.max(W/6,Math.min(W,vb.w));vb.h=vb.w*H/W;
+  vb.x=Math.max(-W*.05,Math.min(vb.x,W*1.05-vb.w));vb.y=Math.max(-H*.05,Math.min(vb.y,H*1.05-vb.h));
+  s.setAttribute("viewBox",`${vb.x} ${vb.y} ${vb.w} ${vb.h}`);
+  s.style.setProperty("--z",(W/vb.w).toFixed(2));
+  const zl=document.getElementById("zlvl");if(zl)zl.textContent=(W/vb.w).toFixed(1)+"×";
+  drawFx();placePanel();}
+function zoomAt(f,cx,cy){const nw=Math.max(W/6,Math.min(W,vb.w/f));const k=nw/vb.w;
+  vb.x=cx-(cx-vb.x)*k;vb.y=cy-(cy-vb.y)*k;vb.w=nw;applyVB();}
+function svgPt(svg,clientX,clientY){const m=svg.getScreenCTM().inverse();return[m.a*clientX+m.c*clientY+m.e,m.b*clientX+m.d*clientY+m.f];}
+function centerOn(x,y){vb.x=x-vb.w/2;vb.y=y-vb.h/2;applyVB();}
+function wireZoom(){
+  const svg=document.getElementById("map");applyVB();
+  document.getElementById("zin").onclick=()=>zoomAt(1.6,vb.x+vb.w/2,vb.y+vb.h/2);
+  document.getElementById("zout").onclick=()=>zoomAt(1/1.6,vb.x+vb.w/2,vb.y+vb.h/2);
+  document.getElementById("zreset").onclick=()=>{vb={x:0,y:0,w:W,h:H};applyVB();};
+  svg.addEventListener("wheel",ev=>{ev.preventDefault();const[x,y]=svgPt(svg,ev.clientX,ev.clientY);zoomAt(ev.deltaY<0?1.25:0.8,x,y);},{passive:false});
+  const pts=new Map();let last=null,moved=0,pinch=null;
+  svg.addEventListener("pointerdown",ev=>{pts.set(ev.pointerId,[ev.clientX,ev.clientY]);moved=0;last=[ev.clientX,ev.clientY];
+    if(pts.size===2){const[a,b]=[...pts.values()];pinch=Math.hypot(a[0]-b[0],a[1]-b[1]);}});
+  svg.addEventListener("pointermove",ev=>{if(!pts.has(ev.pointerId))return;pts.set(ev.pointerId,[ev.clientX,ev.clientY]);
+    if(pts.size===2&&pinch){const[a,b]=[...pts.values()],d=Math.hypot(a[0]-b[0],a[1]-b[1]);const[x,y]=svgPt(svg,(a[0]+b[0])/2,(a[1]+b[1])/2);zoomAt(d/pinch,x,y);pinch=d;moved=99;return;}
+    const m=svg.getScreenCTM();const dx=(ev.clientX-last[0])/m.a,dy=(ev.clientY-last[1])/m.d;moved+=Math.abs(ev.clientX-last[0])+Math.abs(ev.clientY-last[1]);
+    if(moved>4){svg.setPointerCapture(ev.pointerId);svg.classList.add("grabbing");vb.x-=dx;vb.y-=dy;applyVB();}last=[ev.clientX,ev.clientY];});
+  const up=ev=>{pts.delete(ev.pointerId);if(pts.size<2)pinch=null;svg.classList.remove("grabbing");};
+  svg.addEventListener("pointerup",up);svg.addEventListener("pointercancel",up);
+  /* a drag should not count as a click on a marker */
+  svg.addEventListener("click",ev=>{if(moved>4){ev.stopPropagation();ev.preventDefault();}},true);
+  addEventListener("resize",placePanel);
+}
+function wireStory(){
+  cur=-1;setCurrent(0);
+  if(obs)obs.disconnect();
+  obs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting&&!timer)setCurrent(+en.target.dataset.i);}),{rootMargin:"-45% 0px -45% 0px"});
+  document.querySelectorAll(".step").forEach(s=>obs.observe(s));
+  document.getElementById("scrub").oninput=ev=>{stopPlay();goTo(+ev.target.value);};
+  document.getElementById("play").onclick=ev=>{
+    if(timer){stopPlay();return;}
+    const b=ev.currentTarget;b.textContent="❚❚ Pause";b.setAttribute("aria-pressed","true");
+    if(cur>=EV.length-1)goTo(0);
+    timer=setInterval(()=>{if(cur>=EV.length-1){stopPlay();return;}goTo(cur+1);},2200);
+  };
+  const mb=document.getElementById("music");mb.setAttribute("aria-pressed",musicOn);mb.textContent=musicOn?"♪ Music on":"♪ Music";
+  mb.onclick=()=>{musicOn?stopMusic():startMusic();mb.setAttribute("aria-pressed",musicOn);mb.textContent=musicOn?"♪ Music on":"♪ Music";};
+  wireZoom();
+  document.querySelectorAll(".mk.ev").forEach(m=>{m.onclick=()=>openPanel(+m.dataset.i);m.onkeydown=ev=>{if(ev.key==="Enter")openPanel(+m.dataset.i);};});
+}
+
+/* ---------- music: an original, slow plucked-string waltz in A minor, made live with Web Audio ---------- */
+let actx=null,musicOn=false,mTimer=null,beat=0;
+const NOTE=n=>440*Math.pow(2,(n-69)/12);
+const BARS=[[45,57,60,64],[50,57,62,65],[52,56,59,64],[45,57,60,64],[53,57,60,65],[50,57,62,65],[52,56,59,62],[45,57,60,64]];
+const MEL=[76,null,74,72,null,71,72,null,null,69,null,71,72,74,76,77,null,76,74,null,72,71,null,null];
+function pluck(f,t,v,dur){const o=actx.createOscillator(),g=actx.createGain(),lp=actx.createBiquadFilter();
+  o.type="triangle";o.frequency.value=f;lp.type="lowpass";lp.frequency.value=1800;
+  g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(v,t+.01);g.gain.exponentialRampToValueAtTime(.0001,t+dur);
+  o.connect(lp).connect(g).connect(actx.destination);o.start(t);o.stop(t+dur+.05);}
+function tick(){const t=actx.currentTime+.05,bar=BARS[Math.floor(beat/3)%BARS.length],b=beat%3;
+  if(b===0)pluck(NOTE(bar[0]),t,.18,2.2);else{pluck(NOTE(bar[1]),t,.07,1.2);pluck(NOTE(bar[2]),t,.06,1.2);pluck(NOTE(bar[3]),t,.05,1.2);}
+  const m=MEL[beat%MEL.length];if(m)pluck(NOTE(m),t,.09,1.6);beat++;}
+function startMusic(){try{actx=actx||new (window.AudioContext||window.webkitAudioContext)();actx.resume();musicOn=true;tick();mTimer=setInterval(tick,520);}catch(err){musicOn=false;}}
+function stopMusic(){clearInterval(mTimer);musicOn=false;}
+
+function miniMap(e){
+  const span=150,x0=e.x-span/2,y0=e.y-span/2;
+  return `<svg class="mini" viewBox="${x0} ${y0} ${span} ${span}" role="img" aria-label="Map of ${e.place}">
+    <rect x="${x0}" y="${y0}" width="${span}" height="${span}" fill="var(--sea)"/>
+    ${LAND.map(l=>`<path class="coast1" d="${l.d}"/><path class="coast2" d="${l.d}"/>`).join("")}${LAND.map(l=>`<path class="landp" d="${l.d}"/>`).join("")}${DOODLES}
+    <circle cx="${e.x}" cy="${e.y}" r="12" class="ring"/><circle cx="${e.x}" cy="${e.y}" r="4.5" fill="var(--red)" stroke="var(--land)" stroke-width="1.5"/>
+  </svg>`;
+}
+function eventView(id){
+  const i=EV.findIndex(e=>e.id===id),e=EV[i],pv=EV[i-1],nx=EV[i+1],g=PH[e.id]||[],st=STORIES[e.id];
+  const ROMAN=["I","II","III","IV","V","VI"];
+  let k=1,chapters;
+  if(st){
+    chapters=st.chapters.map((c,ci)=>{
+      const body=c.p.map(p=>`<p>${p.replace(/\[(\d)\]/g,"<sup>[$1]</sup>")}</p>`).join("");
+      const photo=(ci<st.chapters.length-1&&g[k])?pic(g[k],"photo inline "+(ci%2?"right":"left"),k++):"";
+      return `<section class="chapter"><h2><span>${ROMAN[ci]}</span>${c.h}</h2>${photo}${body}</section>`;
+    }).join("");
+  } else {
+    chapters=`<section class="chapter"><p>${e.sum}</p><p class="todo">The long version of this story, about 800 to 1,200 words in four or five chapters, gets written and fact-checked during the research phase.</p></section>`;
+  }
+  const rest=g.map((p,n)=>[p,n]).slice(k);
+  const srcs=st?st.sources:["National Historical Commission of the Philippines (link added during research)","Official Gazette of the Republic of the Philippines (link added during research)"];
+  return `<div class="progress" id="progress"></div><article class="event">
+    <a class="back" href="#story">← Back to the map</a>
+    <div class="yr">${e.yr}</div>
+    <div class="era-tag">${ERAS[e.era]}</div>
+    <h1>${e.title}</h1>
+    <p class="byline">${e.place||"The whole archipelago"}${st?` · ${st.read} min read`:""} · ${g.length} photo${g.length===1?"":"s"}</p>
+    ${g.length?pic(g[0],"photo hero",0):`<figure class="photo"><div class="img"><div class="vig">${vig(e.era)}</div>No free photo found yet</div></figure>`}
+    ${e.contested?`<div class="note"><b>Sources differ.</b> ${e.contested}</div>`:""}
+    <div class="longread">${chapters}</div>
+    ${rest.length?`<section class="gallery"><h2>More photographs</h2><div class="grid">${rest.map(([p,n])=>pic(p,"gcell",n)).join("")}</div></section>`:""}
+    <div class="placebox">${e.lat!=null?`<div class="leaflet">${miniMap(e)}<small>${e.place}. On the real site this becomes a zoomable street map (Leaflet + OpenStreetMap, sepia style).</small></div>`:`<div class="note">This happened across the whole archipelago, so there is no pin.</div>`}</div>
+    <section class="sources"><h2>Sources</h2><ol>${srcs.map(s=>`<li>${s}</li>`).join("")}</ol><p class="todo">Draft. Every source gets opened, read and linked before the event is marked verified.</p></section>
+    <nav class="pn">${pv?`<a href="#e-${pv.id}"><small>← Earlier</small>${pv.title}</a>`:"<span></span>"}${nx?`<a href="#e-${nx.id}" style="text-align:right"><small>Later →</small>${nx.title}</a>`:"<span></span>"}</nav>
+  </article>
+  <div class="lightbox" id="lb" hidden role="dialog" aria-label="Photo viewer"><button class="lbx" aria-label="Close">✕</button><button class="lbp" aria-label="Previous photo">‹</button><figure><img alt=""><figcaption></figcaption></figure><button class="lbn" aria-label="Next photo">›</button></div>`;
+}
+function wireEvent(id){
+  const g=PH[id]||[],lb=document.getElementById("lb");let at=0;
+  const show=n=>{if(!g.length)return;at=(n+g.length)%g.length;const p=g[at],img=lb.querySelector("img");img.src="photos/"+p.file;img.alt=p.cap;
+    lb.querySelector("figcaption").innerHTML=`<span class="cnt">${at+1} / ${g.length}</span><span class="cap">${p.cap}.</span> ${credit(p)}`;lb.hidden=false;lb.querySelector(".lbx").focus();};
+  document.querySelectorAll(".zoom").forEach(b=>b.onclick=()=>show(+b.dataset.k));
+  lb.querySelector(".lbx").onclick=()=>lb.hidden=true;
+  lb.querySelector(".lbp").onclick=()=>show(at-1);
+  lb.querySelector(".lbn").onclick=()=>show(at+1);
+  lb.onclick=ev=>{if(ev.target===lb)lb.hidden=true;};
+  onkeydown=ev=>{if(lb.hidden)return;if(ev.key==="Escape")lb.hidden=true;if(ev.key==="ArrowRight")show(at+1);if(ev.key==="ArrowLeft")show(at-1);};
+  const bar=document.getElementById("progress");
+  onscroll=()=>{const d=document.documentElement;bar.style.width=Math.min(100,100*d.scrollTop/Math.max(1,d.scrollHeight-d.clientHeight))+"%";};
+}
+function route(){
+  const h=location.hash.slice(1),app=document.getElementById("app");stopPlay();
+  const e=h.startsWith("e-")&&EV.find(x=>x.id===h.slice(2));
+  if(e){if(cur>=0)lastStep=cur;app.innerHTML=eventView(e.id);wireEvent(e.id);window.scrollTo(0,0);}
+  else{onscroll=null;onkeydown=null;app.innerHTML=storyView();wireStory();if(lastStep)goTo(lastStep);}
+}
+addEventListener("hashchange",route);
+route();
+</script>
+</body>
+</html>
