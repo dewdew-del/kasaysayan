@@ -9,7 +9,31 @@ place:
   lat: 14.26
   lng: 120.73
 summary: The founder of the Katipunan was tried by his fellow revolutionaries and executed in the hills of Maragondon, a painful split at the heart of the revolution.
-images: []
+images:
+  - file: bonifacio-1.webp
+    caption: "Gat Andrés Bonifacio"
+    alt: "Portrait of Andrés Bonifacio"
+    author: "La Ilustración Española y Americana"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Gat_Andr%C3%A9s_Bonifacio.jpg
+  - file: bonifacio-2.webp
+    caption: "Bonifacio painted by Hermenegildo Cruz, 1922"
+    alt: "Painted portrait"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andr%C3%A9s_Bonifacio_(Hermenegildo_Cruz,_1922).gif
+  - file: bonifacio-3.webp
+    caption: "Historical marker for Bonifacio at Lawton"
+    alt: "Historical marker plaque"
+    author: "Jonathan Blaza"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Historical_Marker_for_Andr%C3%A9s_Bonifacio_at_Lawton.jpg
+  - file: bonifacio-4.webp
+    caption: "NHCP marker at Liwasang Bonifacio"
+    alt: "Historical marker plaque"
+    author: "Kej Andrés (Ryomaandres)"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Andres_Bonifacio_Liwasang_Bonifacio_NHCP_Historical_Marker.jpg
 sources:
   - { title: "The tragedy of Andres Bonifacio (Ambeth Ocampo)", publisher: "Philippine Daily Inquirer, Opinion", url: "https://opinion.inquirer.net/99584/tragedy-andres-bonifacio", accessed: 2026-11-06 }
   - { title: "How fellow Filipinos murdered the Bonifacio brothers", publisher: "The Manila Times", url: "https://manilatimes.net/2024/11/25/news/national/how-fellow-filipinos-murdered-the-bonifacio-brothers/2010339", accessed: 2026-11-06 }
@@ -25,6 +49,8 @@ By early 1897 the revolution against Spain was strongest in Cavite. But the Kati
 
 Andrés Bonifacio, the Supremo who had founded the Katipunan in Manila, came to Cavite in December 1896 to help settle the conflict. He was an outsider there, from Tondo, without the land and family ties of the Cavite leaders.[1]
 
+{{photo:2}}
+
 ## Tejeros
 
 On 22 March 1897, revolutionary leaders met at the estate house in Tejeros, in what is now General Trias. Bonifacio presided. The meeting decided to replace the Katipunan with a revolutionary government and to elect its officers.[2]
@@ -38,6 +64,8 @@ For Bonifacio, the Tejeros results were null. For Aguinaldo's side, the Katipuna
 Bonifacio and his followers drew up documents rejecting the Tejeros government and began organizing on their own. Aguinaldo's side saw this as sedition. In late April 1897, Aguinaldo ordered Bonifacio's arrest, after reports that he was plotting against the revolutionary government.[2]
 
 Soldiers found Bonifacio's group at Indang. A fight broke out. Bonifacio was wounded, his brother Ciriaco was killed, and his wife, Gregoria de Jesús, was mistreated.[1][2]
+
+{{photo:3}}
 
 ## The trial in Maragondon
 

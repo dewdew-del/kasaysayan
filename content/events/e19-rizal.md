@@ -9,7 +9,37 @@ place:
   lat: 14.58
   lng: 120.98
 summary: Accused of leading a revolution he had not joined, José Rizal was shot by a Spanish firing squad at Bagumbayan. The night before, he wrote his farewell poem, Mi último adiós.
-images: []
+images:
+  - file: rizal-1.webp
+    caption: "José Rizal in 1896"
+    alt: "Portrait photograph of José Rizal"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Jos%C3%A9_Rizal_-_1896.jpg
+  - file: rizal-2.webp
+    caption: "The execution of Rizal at Bagumbayan"
+    alt: "Photograph of a firing squad and crowd"
+    author: "Manuel Arias Rodríguez"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Fusilamiento_de_rizal.jpg
+  - file: rizal-3.webp
+    caption: "Entrance to Rizal's cell at Fort Santiago"
+    alt: "Doorway inside an old fort"
+    author: "Ramon FVelasquez"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Entrance_to_Jos%C3%A9_Rizal%27s_prison_cell_inside_Rizal_Shrine.jpg
+  - file: rizal-4.webp
+    caption: "Rizal's execution site in Rizal Park"
+    alt: "Statues reenacting the execution"
+    author: "Judgefloro"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:9989Rizal%27s_execution_site_22.jpg
+  - file: rizal-5.webp
+    caption: "Rizal with Pío Valenzuela"
+    alt: "Old illustration of two men talking"
+    author: "Renz Nathaniel B. Luyao"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Jose_Rizal_and_Pio_Valenzuela.jpg
 sources:
   - { title: "Dec. 30, 1896: Dr. Jose Rizal executed in Bagumbayan", publisher: "Inquirer USA", url: "https://usa.inquirer.net/186502/dec-30-1896-dr-jose-rizal-executed-in-bagumbayan", accessed: 2026-11-06 }
   - { title: "Mi Último Adiós: The Original Spanish Poem by Jose Rizal", publisher: "joserizal.com", url: "https://www.joserizal.com/works/mi-ultimo-adios/", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ After his arrest in July 1892, José Rizal spent four years in exile in Dapitan,
 
 When the Katipunan was founded, its members admired Rizal and used his name as a password. In 1896 they sent Pío Valenzuela to Dapitan to ask his support for a revolution. Rizal refused, saying the people were not ready and had too few weapons.[3]
 
+{{photo:2}}
+
 ## A volunteer doctor
 
 Rizal had volunteered to serve as an army doctor in Cuba, where Spain was fighting a rebellion, and in 1896 his request was granted. He was on his way to Spain by ship when the revolution broke out in August.[1][3]
@@ -36,6 +68,8 @@ During the voyage, the Spanish authorities decided he was a danger after all. He
 On 26 December 1896, Rizal was tried by a military court in Manila. He was accused of rebellion, sedition and forming illegal associations, and of being the brains behind the revolution.[1][3]
 
 The trial was quick, and its outcome was never really in doubt. Rizal's defense lawyer, a young Spanish army officer named Luis Taviel de Andrade, argued well, but the court sentenced Rizal to death. The governor-general, Camilo de Polavieja, confirmed the sentence on 28 December and set the execution for seven o'clock on the morning of 30 December.[3]
+
+{{photo:3}}
 
 ## The last night
 

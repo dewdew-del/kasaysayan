@@ -9,7 +9,37 @@ place:
   lat: 10.30
   lng: 123.89
 summary: On Palm Sunday 1898, Katipuneros led by León Kilat attacked the Spanish in Cebu City and held most of the town for days, bringing the revolution to the Visayas.
-images: []
+images:
+  - file: tres-de-abril-1.webp
+    caption: "NHCP marker for Pantaleón Villegas, León Kilat"
+    alt: "Historical marker plaque"
+    author: "Kej Andres (Ryomaandres)"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Pantaleon_Villegas_Leon_Kilat_1873-1898_NHCP_Historical_Marker.jpg
+  - file: tres-de-abril-2.webp
+    caption: "Monument to León Kilat"
+    alt: "Bronze statue of León Kilat"
+    author: "Carlo Joseph Moskito"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Pantaleon_Villegas_(Leon_Kilat)_monument.jpg
+  - file: tres-de-abril-3.webp
+    caption: "Tres de Abril historical marker"
+    alt: "Historical marker plaque"
+    author: "Carlo Joseph Moskito"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tres_de_Abril_historical_marker.jpg
+  - file: tres-de-abril-4.webp
+    caption: "The Battle of Tres de Abril"
+    alt: "Illustration of the battle"
+    author: "Delirium333"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Labanan_ng_Tres_de_Abril.png
+  - file: tres-de-abril-5.webp
+    caption: "Marker on Tres de Abril Street, Cebu City"
+    alt: "Street marker"
+    author: "Carlo Joseph Moskito"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tres_de_Abril_Street,_Cebu_City,_historical_marker.jpg
 sources:
   - { title: "Cebuanos launch revolt against Spanish rule", publisher: "Cebu Daily News", url: "https://cebudailynews.inquirer.net/?p=59480", accessed: 2026-11-06 }
   - { title: "Visayan Katipunero led 1898 Cebuano revolt vs Spain", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/?p=385775", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ The revolution that began near Manila in August 1896 was at first mostly a Luzon
 
 In the Visayas, though, the Katipunan was still growing. In Cebu, local members had been organizing in secret, angered by the same abuses as their brothers in Luzon: heavy taxes, forced labor, friar power and the arrest of suspected rebels.[1]
 
+{{photo:2}}
+
 ## León Kilat
 
 Their leader was not from Cebu. Pantaleón Villegas was born in Bacong, Negros Oriental, and had worked as a laborer, a horse handler and a performer before joining the Katipunan in Manila. He became known as León Kilat, "Lightning Lion."[2]
@@ -38,6 +70,8 @@ The rebels planned to strike in early April. On Sunday, 3 April 1898, Palm Sunda
 The Spanish garrison was taken by surprise. Soldiers and Spanish residents retreated into Fort San Pedro, the old stone fort by the harbor, and into a few other strongholds. For several days, the rebels controlled most of the city.[1][4]
 
 Estimates of how many fought vary widely, from a few hundred in the first attack to several thousand who joined over the following days.[1]
+
+{{photo:3}}
 
 ## Four days of freedom
 

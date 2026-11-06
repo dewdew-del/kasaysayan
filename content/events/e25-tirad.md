@@ -9,7 +9,37 @@ place:
   lat: 17.00
   lng: 120.65
 summary: On a narrow mountain trail in Ilocos Sur, 24-year-old General Gregorio del Pilar and a small rearguard held off American troops so that President Aguinaldo could escape. Del Pilar died in the fight.
-images: []
+images:
+  - file: tirad-1.webp
+    caption: "Gregorio del Pilar and his troops, about 1898"
+    alt: "Old photograph of a general on horseback with soldiers"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Gregorio_del_Pilar_and_his_troops,_around_1898.jpg
+  - file: tirad-2.webp
+    caption: "General Gregorio del Pilar"
+    alt: "Portrait of Gregorio del Pilar"
+    author: "David P. Barrows"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:General_Gregorio_del_Pilar_1.jpg
+  - file: tirad-3.webp
+    caption: "Battle of Tirad Pass historical marker"
+    alt: "Historical marker plaque"
+    author: "Photo: Andre Ryan Maceda; perspective correction: Eugene Alvin Villar (seav)"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Battle_of_Tirad_Pass_PHC_historical_marker.jpg
+  - file: tirad-4.webp
+    caption: "Relief of the Battle of Tirad Pass"
+    alt: "Bronze relief of soldiers on a mountain trail"
+    author: "Defenestrated Juan"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Quezon_Memorial_Shrine_-_Bas_Relief_Murals_-_Battle_of_Tirad_Pass.jpg
+  - file: tirad-5.webp
+    caption: "Gregorio del Pilar monument in Baguio"
+    alt: "Statue in a park"
+    author: "Irvin Parco Sto. Tomas"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Gregorio_del_Pilar_Monument_in_Baguio_City.JPG
 sources:
   - { title: "Gen. Gregorio H. del Pilar", publisher: "Philippine Military Academy", url: "https://pma.edu.ph/pages/goyo.html", accessed: 2026-11-06 }
   - { title: "Katipunan General Gregorio del Pilar (1875–1899)", publisher: "Mandirigma.org", url: "https://mandirigma.org/?p=325", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ By late 1899, the Philippine–American War was going badly for the Republic. Am
 
 American columns were close behind him. If Aguinaldo were captured, the Republic's government would collapse.
 
+{{photo:2}}
+
 ## The boy general
 
 Among the officers protecting him was Gregorio del Pilar, a brigadier general only 24 years old. Born in Bulakan, Bulacan, in 1875, he was a nephew of the propagandist Marcelo H. del Pilar. He had joined the revolution as a teenager, fought in many battles against the Spanish and the Americans, and become one of the youngest generals of the revolutionary army.[1][2]
@@ -35,6 +67,8 @@ He was brave, dashing and popular, known for his fine uniforms and his love of h
 Aguinaldo's route north crossed the mountains of Ilocos Sur by a steep, narrow trail through Tirad Pass, more than 1,300 meters above sea level. To slow the Americans, Aguinaldo asked del Pilar to stay behind with a rearguard and hold the pass.[1][2]
 
 Del Pilar had about sixty men. They built stone barricades along the trail where it climbed between cliffs, a position where a few soldiers could stop a much larger force.[2][3]
+
+{{photo:3}}
 
 ## The second of December
 

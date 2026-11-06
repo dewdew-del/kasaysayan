@@ -9,7 +9,37 @@ place:
   lat: 14.85
   lng: 120.81
 summary: In a church in Malolos, Bulacan, the revolutionary government inaugurated the Philippine Republic under a written constitution, the first republic in Asia.
-images: []
+images:
+  - file: malolos-1.webp
+    caption: "The Malolos Congress in session"
+    alt: "Old photograph of delegates in a church"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Malolos_congress.jpg
+  - file: malolos-2.webp
+    caption: "Members of the Malolos Congress"
+    alt: "Old group photograph"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Malolos_Congress.png
+  - file: malolos-3.webp
+    caption: "Commemoration of the opening of the Malolos Congress"
+    alt: "Ceremony at Barasoain Church"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Opening_of_the_Malolos_Congress_124th_Commemoration.jpg
+  - file: malolos-4.webp
+    caption: "The taking of Malolos, 1899"
+    alt: "Old photograph of soldiers in a town"
+    author: "Miscellaneous Items in High Demand, PPOC, Library of Congress"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:At_the_taking_of_Malolos,_the_provincial_capital_LCCN95513559.jpg
+  - file: malolos-5.webp
+    caption: "Malolos after the fighting, 1899"
+    alt: "Old photograph of a burned town"
+    author: "Miscellaneous Items in High Demand, PPOC, Library of Congress"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:City_of_Malolos,_after_being_fired_LCCN95513561.jpg
 sources:
   - { title: "Proclamation No. 533, s. 2013 (on the Malolos Constitution and the First Republic)", publisher: "The LawPhil Project", url: "https://lawphil.net/executive/proc/proc2013/proc_533_2013.html", accessed: 2026-11-06 }
   - { title: "Malolos Congress", publisher: "Barasoain Church (official site)", url: "https://barasoainchurch.org/about-us/malolos-congress", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ After declaring independence in June 1898, Emilio Aguinaldo's government needed 
 
 Aguinaldo called a congress of representatives from the provinces. Some were elected, others appointed where fighting made elections impossible. They were mostly educated, wealthy men: lawyers, doctors, landowners and merchants.[2]
 
+{{photo:2}}
+
 ## A congress in a church
 
 The congress opened on 15 September 1898 in the Barasoain Church in Malolos, a town in Bulacan north of Manila, chosen because it was safer than the capital, where American troops were stationed.[2]
@@ -36,6 +68,8 @@ Its most important task was writing a constitution. Debates were long and someti
 The constitution set up a republic with three branches of government: an executive led by a president, a single-chamber assembly of representatives, and courts. It included a bill of rights protecting freedom of speech, religion and association.[1][2]
 
 The congress approved the document in January 1899, and it was promulgated on 21 January. It was the first democratic constitution in Asia.[1]
+
+{{photo:3}}
 
 ## Who could vote
 

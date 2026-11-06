@@ -9,7 +9,37 @@ place:
   lat: 14.44
   lng: 120.90
 summary: From the window of his family home in Kawit, Emilio Aguinaldo's government proclaimed the Philippines independent of Spain. Neither Spain nor the United States recognized it.
-images: []
+images:
+  - file: kawit-1.webp
+    caption: "Emilio Aguinaldo, about 1898"
+    alt: "Portrait of Emilio Aguinaldo"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Emilio_Aguinaldo_(ca._1898).jpg
+  - file: kawit-2.webp
+    caption: "First page of the Act of the Declaration of Independence"
+    alt: "Old handwritten document page"
+    author: "Ambrosio Rianzares Bautista"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Page_01_Philippine_Declaration_of_Independence.jpg
+  - file: kawit-3.webp
+    caption: "The Aguinaldo house in Kawit, now a shrine"
+    alt: "Large house with a tower"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aguinaldo_Shrine_from_the_East_Garden_-_NHCP.jpg
+  - file: kawit-4.webp
+    caption: "The flag at the Aguinaldo Shrine"
+    alt: "Philippine flag flying at the shrine"
+    author: "Ralff Nestor Nacor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Philippine_National_Flag_at_Aguinaldo_Shrine,_Kawit,_Cavite.jpg
+  - file: kawit-5.webp
+    caption: "Aguinaldo's train, 1898"
+    alt: "Old photograph of a train with people"
+    author: "M. Halstead; L. Liongson"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aguinaldo_Train_1898.png
 sources:
   - { title: "Remembering June 12, 1898", publisher: "Manila Bulletin", url: "https://mb.com.ph/2026/06/12/remembering-june-12-1898", accessed: 2026-11-06 }
   - { title: "Flag unites archipelago into one nation", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/?p=999863", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ verified: true
 By the end of 1897, the revolution against Spain had reached a stalemate. In December, under the Pact of Biak-na-Bato, Emilio Aguinaldo and other revolutionary leaders agreed to stop fighting and leave the country in exchange for money and promises of reform. They sailed to Hong Kong.[1]
 
 Then the world changed around them. In April 1898, the United States and Spain went to war over Cuba. On 1 May, an American squadron under Commodore George Dewey destroyed the Spanish fleet in Manila Bay in a single morning.[1][3]
+
+{{photo:2}}
 
 ## The return
 
@@ -40,6 +72,8 @@ On the afternoon of 12 June 1898, a large crowd gathered outside the house. Ambr
 The flag was formally displayed to the people. It had been sewn in Hong Kong by Marcela Agoncillo, her daughter Lorenza, and Delfina Herbosa de Natividad, a niece of José Rizal. Its white triangle, red and blue fields, sun with eight rays and three stars carried meanings the revolutionaries spelled out in the declaration.[1][2]
 
 The band of San Francisco de Malabon played a march composed by Julián Felipe, a music teacher from Cavite. Then called the Marcha Filipina Magdalo, it was later renamed the Marcha Nacional Filipina and, with words added afterward, became the national anthem.[3][4]
+
+{{photo:3}}
 
 ## What the flag meant
 
