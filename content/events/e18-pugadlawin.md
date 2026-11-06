@@ -56,6 +56,6 @@ This page shows the official date and place, while marking them as contested. Wh
 
 The first clashes came within days. On 30 August 1896, Bonifacio led an attack on the Spanish powder magazine at San Juan del Monte, in what is remembered as the Battle of Pinaglabanan. The Katipuneros were driven back with heavy losses.[1]
 
-The same day, the governor-general declared a state of war in eight provinces: Manila, Bulacan, Pampanga, Nueva Ecija, Tarlac, Laguna, Cavite and Batangas. Those provinces are honored by the eight rays of the sun on the Philippine flag.[1]
+The same day, the governor-general declared a state of war in eight provinces: Manila, Bulacan, Pampanga, Nueva Ecija, Tarlac, Laguna, Cavite and Batangas. The eight rays of the sun on the Philippine flag honor the first provinces to rise. The 1898 declaration of independence lists them slightly differently, with Bataan in place of Tarlac.[1]
 
 The revolution spread fastest in Cavite, where Katipunan leaders, among them a young town mayor named Emilio Aguinaldo, won a string of victories. It was the beginning of the struggle that would lead to the declaration of independence two years later.

@@ -9,7 +9,37 @@ place:
   lat: 10.31
   lng: 123.98
 summary: On a reef off Mactan, warriors led by Lapulapu defeated Ferdinand Magellan's landing party and killed the famous navigator.
-images: []
+images:
+  - file: mactan-1.webp
+    caption: "Magellan's death on Mactan, 16th-century print"
+    alt: "Old print of a battle on a beach with ships"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Magellans_Ermordung.jpg
+  - file: mactan-2.webp
+    caption: "The death of Magellan, 19th-century engraving"
+    alt: "Engraving of Magellan falling in battle"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Magellans_death.jpg
+  - file: mactan-3.webp
+    caption: "The shore of Mactan near the battle site"
+    alt: "Calm shallow water and shore"
+    author: "Francisco M. Pajares, Jr."
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Site_of_the_Battle_of_Mactan.jpg
+  - file: mactan-4.webp
+    caption: "The Lapulapu monument at the Mactan Shrine"
+    alt: "Bronze statue of Lapulapu"
+    author: "Ced A. Ngujo"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:MactanShrine.jpg
+  - file: mactan-5.webp
+    caption: "Quincentennial relief of the battle"
+    alt: "Bronze relief showing the battle"
+    author: "Genissa Villegas, National Quincentennial Committee"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Mactan_quincentennial_monument_bas_relief_-_NQC.jpg
 sources:
   - { title: "The Battle of Mactan, according to Pigafetta (Ambeth Ocampo)", publisher: "Philippine Daily Inquirer, Opinion", url: "https://opinion.inquirer.net/?p=122348", accessed: 2026-11-06 }
   - { title: "Battle of Mactan 500th anniversary: Historian shares 10 facts", publisher: "The Philippine Star", url: "https://www.philstar.com/arts-and-culture/2021/04/26/2093944/battle-mactan-500th-anniversary-historian-shares-10-facts", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ In September 1519, five ships left Spain under the command of the Portuguese nav
 
 The voyage was brutal. One ship was wrecked and another turned back. The crossing of the Pacific took more than three months, and sailors ate leather and sawdust to survive. In March 1521 the three remaining ships reached the islands of the Visayas.[2][4]
 
+{{photo:2}}
+
 ## An alliance in Cebu
 
 In April the fleet sailed to Cebu, a busy trading port ruled by Rajah Humabon. Humabon received the Spaniards, traded with them and made a blood compact with Magellan. On 14 April he was baptized, together with his wife and hundreds of his people.[3]
@@ -38,6 +70,8 @@ Before sunrise on 27 April 1521, Magellan crossed to Mactan with a small force. 
 Mactan is surrounded by a wide coral reef. At low tide the ships could not come close to shore, so Magellan's men had to wade a long way through the shallows. That left them out of range of their own ships' guns.[1][3]
 
 Pigafetta, who fought in the battle and was wounded, wrote that only about fifty men went ashore, and that they faced more than a thousand warriors, by one reading about 1,500.[2] Historians treat these numbers with care. They come from a single eyewitness on the losing side, a writer known for vivid storytelling.[1]
+
+{{photo:3}}
 
 ## The weapons of the day
 

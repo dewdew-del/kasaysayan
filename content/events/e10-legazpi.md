@@ -9,7 +9,37 @@ place:
   lat: 10.29
   lng: 123.90
 summary: In April 1565, a Spanish expedition under Miguel López de Legazpi took Cebu by force, found the image of the Santo Niño left from Magellan's time, and began more than three centuries of Spanish rule.
-images: []
+images:
+  - file: legazpi-1.webp
+    caption: "Miguel López de Legazpi, 1871 portrait"
+    alt: "Engraved portrait of Legazpi"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Miguel_Lopez_de_Legazpi.jpg
+  - file: legazpi-2.webp
+    caption: "The Santo Niño de Cebu"
+    alt: "Small statue of the Child Jesus in red robes"
+    author: "Peter Binter at de.wikipedia"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Cebu-santo-nino-old.jpg
+  - file: legazpi-3.webp
+    caption: "The Legazpi monument in Cebu City"
+    alt: "Stone monument with statues"
+    author: "Wolfgang Hägele"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Legazpi_monument_cebu.jpg
+  - file: legazpi-4.webp
+    caption: "Map of Legazpi's route"
+    alt: "Old map showing the route of the expedition"
+    author: "No machine-readable author provided. Txo assumed (based on copyright claims)."
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Itinerario_legazpi.jpg
+  - file: legazpi-5.webp
+    caption: "Signatures of Legazpi and other officials"
+    alt: "Old handwritten signatures"
+    author: "Miguel López de Legazpi"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:The_Philippine_Islands,_1493-1803_(1903)_-_Signatures_of_Legazpi_and_other_officials_-_page_179.jpg
 sources:
   - { title: "Some Historical Notes on Kaplag", publisher: "Basilica Minore del Santo Niño de Cebu", url: "https://santoninodecebubasilica.org/chronicles/some-historical-notes-on-kaplag/", accessed: 2026-11-06 }
   - { title: "The Discovery of the Image of the Sto. Niño (by Don Vicente Rama)", publisher: "The Philippine Star", url: "https://philstar.com/opinion/2020/05/29/2017209/discovery-image-sto-nioby-don-vicente-rama", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ After Magellan's death at Mactan in 1521, Spain sent several more expeditions to
 
 His orders were not only to explore, but to settle. With him sailed Augustinian friars, led by Andrés de Urdaneta, a veteran navigator. The plan was to find a way to sail back across the Pacific to Mexico, something no ship had yet managed, so that a lasting link between the islands and the Spanish empire could be built.[3]
 
+{{photo:2}}
+
 ## A town that would not meet them
 
 The fleet reached the Visayas early in 1565 and, in April, arrived at Cebu, the port where Magellan had been welcomed and then turned away.[3]
@@ -38,6 +70,8 @@ Legazpi decided to use force. On 27 April 1565, Spanish ships fired on the town 
 The next day, 28 April, a sailor named Juan de Camus was searching the ruins. In a house that had escaped the worst of the fire, or in its ashes, depending on the account, he found a pine box. Inside was a small wooden image of the Child Jesus, dressed in red, with a cross and globe.[1][2]
 
 The Spaniards recognized it as the image that Magellan had given to Humabon's wife at her baptism 44 years earlier. It had been kept and honored by the people of Cebu all that time.[2][4] The friars saw the discovery as a sign of divine favor. The finding is remembered in Cebu as the Kaplag, from the Cebuano word for "found," and is celebrated every year.[1]
+
+{{photo:3}}
 
 ## Why the image survived
 
