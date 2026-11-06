@@ -9,7 +9,37 @@ place:
   lat: 6.05
   lng: 121.00
 summary: In the 1400s, a Muslim scholar and ruler, Sharif ul-Hashim, founded the Sultanate of Sulu, one of the oldest states in the Philippines and a power in the seas between Mindanao and Borneo.
-images: []
+images:
+  - file: sulu-1.webp
+    caption: "The Sultan of Sulu receiving French visitors, 1886"
+    alt: "Old engraving of a sultan with visitors"
+    author: "J. Montano"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Sultan_of_Sulu_and_French_visitors.jpg
+  - file: sulu-2.webp
+    caption: "Sultan Jamalul Kiram II with William Howard Taft, 1901"
+    alt: "Old photograph of the sultan with American officials"
+    author: "Daniel Roderick Williams"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Judge_William_Howard_Taft_and_the_Sultan_of_Sulu_Jamalul_Kiram_II_(1901).png
+  - file: sulu-3.webp
+    caption: "Sulu boats off Sandakan carrying Mecca pilgrims, 1899"
+    alt: "Old photograph of sailing boats at sea"
+    author: "Robert Taylor Pritchett"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Sulu_Craft_off_Sandakau,_with_Mecca_Pilgrims.jpg
+  - file: sulu-4.webp
+    caption: "The Sultan of Sulu with his brother and companions"
+    alt: "Old group photograph of men in Sulu dress"
+    author: "Bain News Service, publisher"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Sultan_of_Sulu_with_his_brother_and_others_LCCN2014685229.jpg
+  - file: sulu-5.webp
+    caption: "Map of the lands of the Sultanate of Sulu"
+    alt: "Map of the Sulu Archipelago and northern Borneo"
+    author: "Delirium333"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Map_of_the_Sultanate_of_Sulu.png
 sources:
   - { title: "The History of Sulu (Najeeb M. Saleeby, 1908)", publisher: "Bureau of Science, Manila (reprint listing)", url: "https://www.bookfusion.com/books/44993-the-history-of-sulu", accessed: 2026-11-06 }
   - { title: "Sulu Sultanate", publisher: "New World Encyclopedia", url: "https://www.newworldencyclopedia.org/entry/Sulu_Sultanate", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ The Sulu Archipelago is a chain of hundreds of islands strung between the tip of
 
 The largest town, Jolo, sits on a sheltered bay on the island of the same name. Ships could anchor there safely, and the town grew rich on trade in pearls, mother-of-pearl, sea cucumbers and other sea products that were in demand in China.[2]
 
+{{photo:2}}
+
 ## Islam arrives
 
 Islam came to Sulu gradually, carried by traders and teachers from across the Muslim world of Southeast Asia. Sulu tradition remembers several early figures. One, Tuan Masha'ika, is said to have settled in Jolo much earlier. Another, a missionary named Karim ul-Makhdum, is said to have arrived in the late 1300s and built a mosque on the island of Simunul, in Tawi-Tawi.[1][2]
@@ -37,6 +69,8 @@ According to the tarsila, a scholar from Arabia by way of the Malay world, known
 As sultan he is credited with organizing the state along Islamic lines: a council of leaders, laws based on Islamic teaching mixed with local custom, and a system of officials and local datus who owed loyalty to the sultan.[2]
 
 When this happened is one of the open questions of Philippine history. Some sources give a very exact date, 17 November 1405. Many modern historians prefer 1457. Others simply say "around 1450."[2] This site uses the 1400s and marks the date as contested.
+
+{{photo:3}}
 
 ## A state built on the sea
 

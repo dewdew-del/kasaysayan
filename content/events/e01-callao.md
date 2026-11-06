@@ -9,7 +9,37 @@ place:
   lat: 17.70
   lng: 121.82
 summary: Bones found in a limestone cave in northern Luzon turned out to belong to a human species no one had known about, Homo luzonensis.
-images: []
+images:
+  - file: callao-1.webp
+    caption: "The entrance of Callao Cave, Peñablanca"
+    alt: "Wide limestone cave entrance with light coming in"
+    author: "Ervin Malicdem"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Callao_Cave.jpg
+  - file: callao-2.webp
+    caption: "The Homo luzonensis foot bone found in 2007"
+    alt: "Small fossil foot bone on a dark background"
+    author: "Luzonensis"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Homo_luzonensis_metatarsal.jpg
+  - file: callao-3.webp
+    caption: "Fossil teeth of Homo luzonensis"
+    alt: "Several small fossil molar teeth"
+    author: "Luzonensis"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:LuzonensisMolars.jpg
+  - file: callao-4.webp
+    caption: "The Pinacanauan River seen from Callao Cave"
+    alt: "River winding between forested limestone hills"
+    author: "Warrendering"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Pinacanauan_River_from_the_Callao_Caves.jpg
+  - file: callao-5.webp
+    caption: "Archaeologist Armand Salvador Mijares"
+    alt: "Portrait of archaeologist Armand Mijares"
+    author: "Archaeosoc"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Armand_Salvador_Mijares.jpg
 sources:
   - { title: "A new species of Homo from the Late Pleistocene of the Philippines", publisher: "Nature 568 (Détroit, Mijares et al., 2019)", url: "https://www.nature.com/articles/s41586-019-1067-9", accessed: 2026-11-06 }
   - { title: "Researchers Find a New Ancient Human Species in the Philippines", publisher: "Inside Science, American Institute of Physics", url: "https://www.aip.org/inside-science/researchers-find-a-new-ancient-human-species-in-the-philippines", accessed: 2026-11-06 }
@@ -23,6 +53,8 @@ verified: true
 In the hills of Peñablanca, in Cagayan province, the Pinacanauan River cuts through limestone riddled with caves. The largest of them is Callao Cave. For a long time, few people thought of it as a place where the story of humanity might change.
 
 Archaeologists working with the University of the Philippines, led by Armand Salvador Mijares, began digging deeper into the cave floor in the 2000s. Most of what they found was animal bone: deer, pigs and other creatures that had died or been eaten there long ago.[1]
+
+{{photo:2}}
 
 ## One small bone
 
@@ -39,6 +71,8 @@ In April 2019 the team, led by Florent Détroit of the National Museum of Natura
 They gave the species a new name: Homo luzonensis, "human of Luzon."[1] Naming a new human species is rare. It means the scientists were confident that these people were not simply small modern humans, but belonged to a separate branch of the human family tree.
 
 A new species built on a handful of bones from a few individuals will keep being tested as more finds come out of the ground. That kind of checking is normal in science, and it is part of why digging at sites like Callao continues.
+
+{{photo:3}}
 
 ## How old, and how did they get there?
 

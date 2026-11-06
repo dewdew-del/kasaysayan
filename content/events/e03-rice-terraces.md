@@ -9,7 +9,37 @@ place:
   lat: 16.92
   lng: 121.06
 summary: The great rice terraces of the Cordillera are often called 2,000 years old. Archaeologists now think wet-rice terraces there are much younger, and the debate is still going.
-images: []
+images:
+  - file: rice-terraces-1.webp
+    caption: "The rice terraces of Banaue"
+    alt: "Terraced green rice fields climbing a mountainside"
+    author: "Magalhães"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Rice_Terraces_Banaue.jpg
+  - file: rice-terraces-2.webp
+    caption: "The amphitheater-shaped terraces of Batad"
+    alt: "Curved rice terraces in a mountain bowl with houses"
+    author: "Johnkevinreglos"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Batad_Rice_Terraces,_Banaue,_Ifugao,_Philippines.jpg
+  - file: rice-terraces-3.webp
+    caption: "Historical marker for the Ifugao Rice Terraces"
+    alt: "Metal historical marker plaque"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ifugao_Rice_Terraces_historical_marker.jpg
+  - file: rice-terraces-4.webp
+    caption: "Banaue terraces in 2018"
+    alt: "Rice terraces with stone walls and a village"
+    author: "Germartin1"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Banaue_Rice_Terraces_2018-11.jpg
+  - file: rice-terraces-5.webp
+    caption: "An Ifugao elder in Banaue"
+    alt: "Elderly Ifugao man in traditional clothing"
+    author: "CEphoto, Uwe Aranas"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Banaue_Philippines_Ifugao-Tribesman-01.jpg
 sources:
   - { title: "One Grain at a Time: the Ifugao rice terraces", publisher: "Archaeology Magazine (Archaeological Institute of America)", url: "https://archaeology.org/issues/online/collection/philippines-ifugao-rice-terraces/", accessed: 2026-11-06 }
   - { title: "The Origins of the Ifugao Rice Terraces: Challenging the 2,000-Year-Old Narrative", publisher: "Vital Matters, UCLA Fowler Museum (Stephen Acabado)", url: "https://vitalmatters.fowler.ucla.edu/perspectives/v0220", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ In the mountains of the Cordillera Central, in northern Luzon, whole hillsides h
 
 They were built and are still kept by the Ifugao people. Water from the forests at the top of the mountains is channeled down through the terraces, field by field, in a system that farmers have maintained for generations.[3]
 
+{{photo:2}}
+
 ## How the terraces work
 
 A terrace system is only as good as its water. At the top of each mountain, families keep small private woodlots called muyong. The forest holds rainwater and releases it slowly into springs and streams. Bamboo pipes and stone channels carry it to the highest fields, and each field spills into the one below.[3]
@@ -37,6 +69,8 @@ In 1995, UNESCO listed five clusters of Ifugao terraces as a World Heritage Site
 Almost every textbook used to say the terraces were about 2,000 years old. That number goes back to the early 1900s, to the American anthropologists Roy Franklin Barton and Henry Otley Beyer.[1][2]
 
 Neither of them had a way to date the terraces. They estimated how long it would take people to build so many fields by hand and concluded that the work must have taken many centuries. The figure was repeated so often that it became accepted as fact, including on signs and in official descriptions.[2]
+
+{{photo:3}}
 
 ## Digging for an answer
 

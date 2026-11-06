@@ -9,7 +9,37 @@ place:
   lat: 14.30
   lng: 121.46
 summary: A thin copper sheet pulled from a Laguna riverbed turned out to be the oldest known written document from the Philippines, a legal record from 900 AD.
-images: []
+images:
+  - file: lci-1.webp
+    caption: "The Laguna Copperplate Inscription, about 900 AD"
+    alt: "Thin copper plate covered in rows of small script"
+    author: "Gary Todd from Xinzheng, China"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Laguna_Copper-Plate_Inscription,_c._10th_Century_AD_(32154732923).jpg
+  - file: lci-2.webp
+    caption: "A tracing of the inscription's text"
+    alt: "Drawing of the copperplate's lines of Kawi script"
+    author: "Nordenx"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Laguna_Copperplate_Inscription.gif
+  - file: lci-3.webp
+    caption: "The plate on display at the National Museum of Anthropology"
+    alt: "Copper plate in a glass museum case"
+    author: "Chipmunkdavis"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Laguna_Copperplate_Inscription_in_the_National_Museum_of_Anthropology.jpg
+  - file: lci-4.webp
+    caption: "The museum marker for the inscription"
+    alt: "Historical marker plaque"
+    author: "Ralff Nestor Nacor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Laguna_Copper_Plate_Marker,_NMA,_Manila.jpg
+  - file: lci-5.webp
+    caption: "Detail of the Kawi script"
+    alt: "Close-up of engraved letters on copper"
+    author: "Gary Todd from Xinzheng, China"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Laguna_Copper-Plate_Inscription,_c._10th_Century_AD_(32154702683).jpg
 sources:
   - { title: "The Laguna Copper-Plate Inscription: Text and Commentary (Antoon Postma, Philippine Studies 40:2, 1992)", publisher: "Philippine Studies, Ateneo de Manila University", url: "https://www.scribd.com/document/422573349/postma1992laguna-pdf", accessed: 2026-11-06 }
   - { title: "The Laguna Copperplate Inscription: an analysis of an ancient legal document", publisher: "Universitas Muhammadiyah Surakarta journal", url: "https://journals2.ums.ac.id/sosial/article/download/6918/3273/38776", accessed: 2026-11-06 }
@@ -23,6 +53,8 @@ Around 1989, a man dredging sand near the mouth of the Lumbang River, where it e
 
 Like many objects that come out of the ground by chance, it was sold. It passed through the hands of an antiques dealer before reaching the National Museum of the Philippines in Manila. There it waited, a small object with a very large question attached: what did it say?[1]
 
+{{photo:2}}
+
 ## A reader from Mindoro
 
 The answer came from Antoon Postma, a Dutch anthropologist who had spent decades among the Mangyan people of Mindoro, studying their old scripts and poetry. Postma recognized the writing on the plate as a form of Kawi, a script used in Java and other parts of island Southeast Asia in the first millennium.[1]
@@ -34,6 +66,8 @@ He spent months working through it letter by letter and in 1992 published the fi
 The plate begins with a date in the Saka calendar, the calendar used in much of South and Southeast Asia at the time. It names the year 822, the month of Waisaka and the fourth day of the waning moon. Converted to our calendar, that is 21 April 900 AD.[1][2]
 
 That made the Laguna Copperplate Inscription the oldest known written document from the Philippines. It is more than six centuries older than Antonio Pigafetta's account of Magellan's voyage, which for a long time was treated as the start of the islands' written history.[2]
+
+{{photo:3}}
 
 ## A debt is cleared
 

@@ -9,7 +9,37 @@ place:
   lat: 9.27
   lng: 117.97
 summary: In a cave on Lipuun Point, archaeologists found some of the oldest human remains in the Philippines, and later a burial jar that became a national treasure.
-images: []
+images:
+  - file: tabon-1.webp
+    caption: "The mouth of Tabon Cave on Lipuun Point"
+    alt: "Large cave opening in a limestone cliff"
+    author: "Traveler1925"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tabon_cave.jpg
+  - file: tabon-2.webp
+    caption: "The Tabon skullcap, about 16,500 years old"
+    alt: "Fragment of a fossil human skull"
+    author: "RFNirmala"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tabon_skullcap_01.jpg
+  - file: tabon-3.webp
+    caption: "Inside Tabon Cave"
+    alt: "Dim interior of a large limestone cave"
+    author: "Jimaggro"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tabon_Cave_2014_01.JPG
+  - file: tabon-4.webp
+    caption: "Jade ornaments found in the Tabon Caves"
+    alt: "Small carved jade ornaments"
+    author: "Original work by the US Federal Government in collaboration with the US State Universities of California and Utah"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Jade_Ornaments_from_Tabon_Caves_Palawan.png
+  - file: tabon-5.webp
+    caption: "A chamber of the Tabon Cave Complex"
+    alt: "Rocky cave chamber with uneven floor"
+    author: "Jimaggro"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Tabon_Cave_2014_04.JPG
 sources:
   - { title: "Re-dating of the Tabon Man and other human fossil remains (Dizon et al.)", publisher: "Asian Studies journal, University of the Philippines Diliman", url: "https://journals.upd.edu.ph/index.php/asp/article/download/4415/4006", accessed: 2026-11-06 }
   - { title: "Tabon Caves and Manunggul Jar: National Cultural Treasures (NMP Declaration No. 1-2011)", publisher: "List of National Cultural Treasures, compiled from National Museum declarations", url: "https://cavac.at/cavacopedia/Tabon%20Caves", accessed: 2026-11-06 }
@@ -24,6 +54,8 @@ On the west coast of Palawan, near the town of Quezon, a limestone headland call
 
 The largest, Tabon Cave, has a wide mouth high above the water. It is cool and dry, a good shelter from rain and sun. For thousands of years people came back to it, leaving behind stone flakes, animal bones, ash from cooking fires and, later, pottery.[2]
 
+{{photo:2}}
+
 ## The dig
 
 In 1962, the American anthropologist Robert B. Fox of the National Museum of the Philippines began excavating Tabon Cave with a Filipino team. Digging through the layers of the cave floor was like reading a calendar backwards: the deeper they went, the older the finds.[1]
@@ -35,6 +67,8 @@ On 28 May 1962 they recovered part of a human skull, the top of the head or skul
 The layers held more than bones. Fox's team recovered thousands of stone flakes, many made from chert, a hard stone that breaks into sharp edges. People had struck them off larger cores to cut meat, scrape hides and shape wood. The tools changed very little over thousands of years, which suggests the cave was used again and again by people with a long-lasting way of life.[1]
 
 Charcoal from ancient hearths, the remains of animals they ate and the position of each find in the soil helped the team build a sequence of occupation, from the Ice Age down to much more recent times.[1]
+
+{{photo:3}}
 
 ## Two bones, two dates
 

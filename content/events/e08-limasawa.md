@@ -9,7 +9,31 @@ place:
   lat: 9.93
   lng: 125.08
 summary: On Easter Sunday 1521, Magellan's crew held a Mass on an island Pigafetta called Mazaua. Where exactly that was became one of the longest-running debates in Philippine history.
-images: []
+images:
+  - file: limasawa-1.webp
+    caption: "Limasawa Island"
+    alt: "Small green island seen from the sea"
+    author: "Gonchang"
+    license: CC BY 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Limasawa_island_-_panoramio.jpg
+  - file: limasawa-2.webp
+    caption: "Monument to the First Mass at Limasawa"
+    alt: "Monument with a cross on a hill"
+    author: "Andre Ryan Maceda"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:First_Mass_in_the_Philippines.jpg
+  - file: limasawa-3.webp
+    caption: "Reenactment of the First Mass"
+    alt: "People reenacting a historical Mass"
+    author: "Leocvlauzon"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Lakat_Ni_Leo_First_Mass_in_the_Philippines.jpg
+  - file: limasawa-4.webp
+    caption: "Historical marker for Ferdinand Magellan"
+    alt: "Metal historical marker"
+    author: "Kej Andrés (Ryomaandres)"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Fernando_Magallanes_NHCP_Historical_Marker.jpg
 sources:
   - { title: "Historians favor Limasawa as site of Philippines' first Easter Sunday Mass", publisher: "SunStar Tacloban", url: "https://www.sunstar.com.ph/tacloban/local-news/historians-favor-limasawa-as-site-of-philippines-first-easter-sunday-mass", accessed: 2026-11-06 }
   - { title: "First Holy Mass controversy", publisher: "Manila Bulletin", url: "https://mb.com.ph/2021/2/25/first-holy-mass-controversy", accessed: 2026-11-06 }
@@ -24,6 +48,8 @@ In March 1521, the three remaining ships of Ferdinand Magellan's expedition came
 
 A few days later they sailed on, and came to an island the expedition's chronicler, the Italian Antonio Pigafetta, called Mazaua.[1]
 
+{{photo:2}}
+
 ## Two rulers and a blood compact
 
 At Mazaua, Pigafetta wrote, the Europeans met a local ruler, Rajah Kolambu, and his relative Rajah Siagu from a nearby land. Gifts were exchanged. Magellan and Kolambu made a blood compact, a ritual of friendship in which each drank a little of the other's blood mixed with wine.[2]
@@ -35,6 +61,8 @@ Pigafetta described the people's gold ornaments, their boats and their food in d
 On 31 March 1521, which was Easter Sunday, the expedition's chaplain celebrated Mass on the island. Pigafetta wrote that the two rulers attended. After the Mass, a large wooden cross was raised on the highest hill as a sign that the land had been claimed for the Spanish king.[1][2]
 
 The Mass at Mazaua is remembered as the first Catholic Mass in the Philippines, the beginning of a religion that today is practised by most Filipinos. In 2021, the Philippines marked its 500th anniversary.[3]
+
+{{photo:3}}
 
 ## Food, gold and a cross
 
