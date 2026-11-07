@@ -9,7 +9,25 @@ place:
   lat: 14.60
   lng: 120.98
 summary: Grenades thrown at a Liberal Party rally in Manila killed nine people and wounded dozens, including most of the opposition's Senate candidates. Who was behind it has never been proven.
-images: []
+images:
+  - file: plaza-miranda-1.webp
+    caption: "Quiapo Church and Plaza Miranda"
+    alt: "Church facade and plaza"
+    author: "patrickroque01"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Quiapo_Church,_Plaza_Miranda_(Quezon_Boulevard,_Quiapo,_Manila;_01-08-2020).jpg
+  - file: plaza-miranda-2.webp
+    caption: "The Plaza Miranda historical marker"
+    alt: "Historical marker"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Plaza_Miranda_historical_marker.jpg
+  - file: plaza-miranda-3.webp
+    caption: "Plaza Miranda with its NHCP marker"
+    alt: "Busy plaza in front of a church"
+    author: "Ryomaandres"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Plaza_Miranda,_with_Plaza_Miranda_NHCP_Historical_Marker.jpg
 sources:
   - { title: "That other Aug. 21 shocker: Plaza Miranda", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/44985/that-other-aug-21-shocker-plaza-miranda/amp", accessed: 2026-11-06 }
   - { title: "The plaza that time almost forgot", publisher: "VERA Files", url: "https://verafiles.org/articles/the-plaza-that-time-almost-forgot", accessed: 2026-11-06 }
@@ -24,6 +42,8 @@ verified: true
 In August 1971, the Philippines was preparing for midterm elections. The opposition Liberal Party was campaigning hard against President Ferdinand Marcos's Nacionalista Party, and its senatorial candidates were drawing big crowds.[1][3]
 
 On the night of 21 August, the Liberals held their final rally to proclaim their candidates at Plaza Miranda, the square in front of Quiapo Church in the heart of old Manila. Plaza Miranda was the traditional place for political rallies, sometimes called the country's "freedom park." Thousands of people filled it.[1][2]
+
+{{photo:2}}
 
 ## Two grenades
 
@@ -40,6 +60,8 @@ In the moments after the blasts, the plaza was filled with smoke, screaming and 
 Injured candidates and supporters were taken to hospitals around Manila. Doctors worked through the night. Some of the wounded would carry shrapnel in their bodies for the rest of their lives.[1]
 
 The news spread fast on radio. For many Filipinos, the idea that someone would throw grenades at a crowd of voters and candidates in the most famous square in the capital was almost unthinkable.[2]
+
+{{photo:3}}
 
 ## Habeas corpus suspended
 

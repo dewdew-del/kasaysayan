@@ -9,7 +9,37 @@ place:
   lat: 8.00
   lng: 124.29
 summary: Militants linked to the so-called Islamic State seized parts of Marawi, the country's largest Muslim city. Five months of fighting killed more than a thousand people, displaced hundreds of thousands and destroyed the city's heart.
-images: []
+images:
+  - file: marawi-1.webp
+    caption: "Marawi's ground zero after the siege"
+    alt: "Ruined city buildings"
+    author: "Philippine Information Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Marawi_Ground_Zero.jpg
+  - file: marawi-2.webp
+    caption: "Evacuees from Marawi in Iligan"
+    alt: "People in an evacuation center"
+    author: "Angelo Dologmandin for Philippine Information Agency - Region 10"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Marawi_crisis_evacuees_in_Iligan.jpg
+  - file: marawi-3.webp
+    caption: "Government troops in Marawi"
+    alt: "Soldiers in a city street"
+    author: "Philippines Information Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Marawi_crisis_troops.jpg
+  - file: marawi-4.webp
+    caption: "Transitional shelters for displaced families"
+    alt: "Rows of small houses"
+    author: "Philippine Information Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Task_Force_Bangon_Marawi_Barangay_Sagonsongan_Transitional_Shelter.jpg
+  - file: marawi-5.webp
+    caption: "ASEAN aid for Marawi"
+    alt: "Relief goods being delivered"
+    author: "Philippine Information Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:ASEAN_aid_for_Marawi_2.jpg
 sources:
   - { title: "Duterte: Marawi 'liberated' from ISIL-linked fighters", publisher: "Al Jazeera", url: "https://www.aljazeera.com/news/2017/10/18/duterte-marawi-liberated-from-isil-linked-fighters", accessed: 2026-11-07 }
   - { title: "Two years after end of Marawi siege: what's changed?", publisher: "The Philippine Star", url: "https://www.philstar.com/headlines/2019/10/17/1960730/two-years-end-marawi-siege-whats-changed", accessed: 2026-11-07 }
@@ -25,6 +55,8 @@ Marawi sits on the northern shore of Lake Lanao in the highlands of Mindanao. It
 
 In the 2010s, small armed groups in the region declared loyalty to the so-called Islamic State in the Middle East. Among them were the Maute group, led by brothers from Lanao, and a faction of the Abu Sayyaf led by Isnilon Hapilon, whom the Islamic State had named its leader in Southeast Asia.[1][4]
 
+{{photo:2}}
+
 ## 23 May 2017
 
 On 23 May 2017, government troops raided a house in Marawi to capture Hapilon. They met far more fighters than they expected. Hundreds of militants, many of them local and some foreign, came out across the city. They burned buildings, took hostages, including a Catholic priest, and raised black flags.[1][4]
@@ -36,6 +68,8 @@ That night President Rodrigo Duterte declared martial law across all of Mindanao
 Within days, almost the entire population of Marawi fled. Hundreds of thousands of people left their homes, staying in evacuation centers and with relatives in nearby towns and in Iligan.[2][3]
 
 For many families, it was the start of years of displacement.
+
+{{photo:3}}
 
 ## Five months of fighting
 

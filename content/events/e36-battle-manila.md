@@ -9,7 +9,37 @@ place:
   lat: 14.59
   lng: 120.98
 summary: For a month, American and Filipino forces fought Japanese troops street by street for Manila. At least 100,000 civilians died, and much of the city, including Intramuros, was destroyed.
-images: []
+images:
+  - file: battle-manila-1.webp
+    caption: "Intramuros in ruins, May 1945"
+    alt: "Destroyed walled city"
+    author: "Unknown photographer"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Manila_Walled_City_Destruction_May_1945.jpg
+  - file: battle-manila-2.webp
+    caption: "The damaged Manila Post Office, 1945"
+    alt: "Ruined neoclassical building"
+    author: "Private Glenn W. Eve"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Damage_to_the_Manila_Post_Office_1945.jpg
+  - file: battle-manila-3.webp
+    caption: "Ruins of Intramuros"
+    alt: "Rubble of churches and buildings"
+    author: "U.S. Army Signal Corps (SC 203048)"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:ManilaIntramuros.jpg
+  - file: battle-manila-4.webp
+    caption: "Wounded Japanese troops surrender"
+    alt: "Old photograph of soldiers"
+    author: "United States. Office of War Information. Overseas Picture Division."
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Japanese_troops_wounded_surrender_to_US_and_Filipino_soldiers_in_Manila_1945.jpg
+  - file: battle-manila-5.webp
+    caption: "The Memorare Manila 1945 plaque"
+    alt: "Commemorative plaque"
+    author: "Gerald Waldo Luis"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Memorare_Manila_1945_commemorative_plaque.jpg
 sources:
   - { title: "Remembering Manila's 30 days of terror", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/672620/remembering-manilas-30-days-of-terror/amp", accessed: 2026-11-06 }
   - { title: "The Manila massacres", publisher: "Manila Bulletin", url: "https://mb.com.ph/2020/2/16/the-manila-massacres", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ In January 1945, American forces landed at Lingayen Gulf and pushed south across
 
 On the night of 3 February 1945, an American flying column reached the University of Santo Tomas, where some 3,700 internees were held, and freed them.[1][4] Over the next days, American troops entered the northern part of the city.
 
+{{photo:2}}
+
 ## A city that would not be spared
 
 The Japanese army commander in the Philippines, General Tomoyuki Yamashita, had planned to withdraw his main forces into the mountains rather than fight for Manila. But about 16,000 Japanese troops, mostly naval forces under Rear Admiral Sanji Iwabuchi, stayed and decided to fight to the death.[1][2]
@@ -36,6 +68,8 @@ They blew up bridges over the Pasig River, burned buildings north of the river a
 What followed was some of the worst urban fighting of the Second World War. American and Filipino troops, among them guerrillas who knew the city, fought block by block and building by building. To avoid losing soldiers, American commanders used heavy artillery against buildings where Japanese troops were holding out, many of them full of civilians.[2][4]
 
 Some of the grandest buildings of the city became battlefields: the Manila Hotel, the Legislative Building, the post office, the city hall, the old churches and universities.[1]
+
+{{photo:3}}
 
 ## The massacres
 

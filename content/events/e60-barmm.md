@@ -9,7 +9,31 @@ place:
   lat: 7.22
   lng: 124.25
 summary: Voters in Muslim Mindanao approved the Bangsamoro Organic Law, creating a new autonomous region with more powers. It was the result of a peace process between the government and the Moro Islamic Liberation Front after decades of war.
-images: []
+images:
+  - file: barmm-1.webp
+    caption: "The Bangsamoro Transition Authority at the inauguration"
+    alt: "Officials at a ceremony"
+    author: "Richard Madelo for the Presidential Communications Operations Office"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Duterte_with_Bangsamoro_Transition_Authority_members_BARMM_inauguration_A.jpg
+  - file: barmm-2.webp
+    caption: "Map of the Bangsamoro Autonomous Region"
+    alt: "Map of the region in Mindanao"
+    author: "File:Autonomous Region in Muslim Mindanao in Philippines.svg: TUBS"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Bangsamoro_Autonomous_Region_in_Mindanao.png
+  - file: barmm-3.webp
+    caption: "Bangsamoro Islamic art"
+    alt: "Decorative Islamic art"
+    author: "Gary Todd"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Mindanao_Bangsamoro_Islamic_Art.jpg
+  - file: barmm-4.webp
+    caption: "Eid'l Fitr at the Bangsamoro Government Center"
+    alt: "People gathered for prayer"
+    author: "BARMM Bureau of Public Information"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Eid%E2%80%99l_Fitr_Bangsamoro_Government_Center.jpg
 sources:
   - { title: "BOL: A victory for 'people tired of war'", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/1077973/bol-a-victory-for-people-tired-of-war", accessed: 2026-11-07 }
   - { title: "Bangsamoro Organic Law ratified as poll body clears Cotabato results", publisher: "The Philippine Star", url: "https://www.philstar.com/headlines/2019/01/26/1888254/headlines", accessed: 2026-11-07 }
@@ -25,6 +49,8 @@ The Moro peoples of Mindanao, Sulu and Palawan, the Muslim communities of the so
 
 In the early 1970s, an armed rebellion began, led by the Moro National Liberation Front. Tens of thousands of people were killed over the following decades, and many more were displaced.[1]
 
+{{photo:2}}
+
 ## Peace attempts
 
 The government and the MNLF signed peace agreements in 1976 and 1996. In 1989 an Autonomous Region in Muslim Mindanao, the ARMM, was created. But many Moros felt it had little real power and money, and it was troubled by poverty and corruption.[1][3]
@@ -36,6 +62,8 @@ Another group, the Moro Islamic Liberation Front, MILF, which had split from the
 In March 2014, the government of President Benigno Aquino III and the MILF signed the Comprehensive Agreement on the Bangsamoro. It promised to replace the ARMM with a new autonomous region with more powers and a larger share of resources.[1][3]
 
 The law needed to make it real stalled in Congress after a police operation in Mamasapano, Maguindanao, in January 2015 ended in a clash that killed 44 police commandos, along with MILF fighters and civilians. Public anger made passage impossible for a time.[1]
+
+{{photo:3}}
 
 ## The Bangsamoro Organic Law
 

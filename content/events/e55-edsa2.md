@@ -9,7 +9,25 @@ place:
   lat: 14.59
   lng: 121.06
 summary: When senators voted not to open an envelope of bank evidence at President Joseph Estrada's impeachment trial, crowds gathered again at EDSA. Four days later, after the military withdrew its support, Gloria Macapagal Arroyo was sworn in as president.
-images: []
+images:
+  - file: edsa2-1.webp
+    caption: "The EDSA Shrine"
+    alt: "Church with a large statue of the Virgin Mary"
+    author: "Ramon FVelasquez"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EDSAShrinejf0089_14.JPG
+  - file: edsa2-2.webp
+    caption: "The EDSA Shrine from the street"
+    alt: "Shrine at a busy road"
+    author: "Ramon FVelasquez"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EDSAShrinejf0121_02.JPG
+  - file: edsa2-3.webp
+    caption: "Inside the EDSA Shrine grounds"
+    alt: "Shrine courtyard"
+    author: "Ramon FVelasquez"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EDSAShrinejf0121_11.JPG
 sources:
   - { title: "Estrada's last days", publisher: "Philippine Daily Inquirer, Opinion", url: "https://opinion.inquirer.net/84860/estradas-last-days", accessed: 2026-11-06 }
   - { title: "EDSA II to Erap: Resign", publisher: "The Philippine Star", url: "https://www.philstar.com/headlines/2001/01/18/89466/edsa-ii-erap-resign", accessed: 2026-11-06 }
@@ -25,6 +43,8 @@ Joseph Estrada, a popular action-movie star known as "Erap," was elected preside
 
 Within two years his presidency was in crisis. In October 2000, a provincial governor, Luis "Chavit" Singson, accused Estrada of taking millions of pesos in payoffs from illegal gambling and tobacco taxes. Business groups, church leaders and many politicians called on him to resign.[1][2]
 
+{{photo:2}}
+
 ## The impeachment trial
 
 In November 2000, the House of Representatives impeached Estrada. His trial before the Senate opened in December and was broadcast live on television, watched by millions.[1][2]
@@ -36,6 +56,8 @@ The prosecution tried to show that Estrada controlled secret bank accounts, incl
 On 16 January 2001, the prosecution asked the court to open a sealed envelope containing bank records it said would link Estrada to the Velarde account. The senators acting as judges voted 11 to 10 not to open it.[1][2]
 
 The prosecutors walked out in protest. Senate President Aquilino Pimentel resigned his post. Many viewers saw the vote as proof that Estrada's allies in the Senate would never convict him.[1]
+
+{{photo:3}}
 
 ## Back to EDSA
 

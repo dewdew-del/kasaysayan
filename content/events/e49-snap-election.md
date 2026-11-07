@@ -5,7 +5,37 @@ date: { year: 1986, month: 2, day: 7 }
 era: edsa
 topics: [politics]
 summary: Corazon Aquino ran against Ferdinand Marcos in a sudden election. Volunteers guarded ballot boxes with their lives, computer tabulators walked out in protest, and both sides claimed victory.
-images: []
+images:
+  - file: snap-election-1.webp
+    caption: "Ninoy and Cory Aquino on the campaign trail"
+    alt: "Old photograph of a couple at a rally"
+    author: "National Library of the Philippines (distributed by Philippine Presidential Museum and Library)"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aquinos_campaigning.png
+  - file: snap-election-2.webp
+    caption: "Corazon Aquino in 1986"
+    alt: "Portrait of Corazon Aquino"
+    author: "Airman Gerald B. Johnson"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Corazon_Aquino_1986.jpg
+  - file: snap-election-3.webp
+    caption: "Ferdinand Marcos during the 1986 campaign"
+    alt: "Man at a campaign event"
+    author: "Malacanang Palace Presidential Museum and Library"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ailing_Ferdinand_Marcos_during_the_campaign_for_the_1986_Snap_elections.jpg
+  - file: snap-election-4.webp
+    caption: "Official 1986 results by province"
+    alt: "Map of the Philippines colored by province"
+    author: "Howard the Duck"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:1986_Philippine_presidential_election_results_per_province.png
+  - file: snap-election-5.webp
+    caption: "Historical marker for Evelio Javier"
+    alt: "Historical marker"
+    author: "Ertuyotuyo"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Historical_Marker_of_Evelio_B._Javier.jpg
 sources:
   - { title: "1986 snap elections", publisher: "Manila Bulletin", url: "https://mb.com.ph/2021/02/07/1986-snap-elections", accessed: 2026-11-06 }
   - { title: "1986 Comelec tabulators fear Marcos return", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/767885/1986-comelec-tabulators-fear-marcos-return/amp", accessed: 2026-11-06 }
@@ -21,6 +51,8 @@ By late 1985, President Ferdinand Marcos was under heavy pressure. The economy w
 
 In November 1985, in an interview on American television, Marcos announced a "snap" presidential election, early and with little notice, to prove that he still had the people's support. It was set for 7 February 1986.[1][4]
 
+{{photo:2}}
+
 ## Cory
 
 The opposition needed one candidate. Many leaders wanted to run, but the person with the most support was Corazon "Cory" Aquino, Ninoy's widow, a quiet woman who had never held office.[1]
@@ -34,6 +66,8 @@ Marcos mocked her inexperience, saying she was only a housewife. She answered th
 On election day, 7 February 1986, millions of Filipinos voted. Volunteers from the National Citizens' Movement for Free Elections, NAMFREL, and from parishes across the country guarded polling places and ballot boxes. Many reported vote-buying, intimidation, missing names on the voter lists and ballot boxes being stolen.[1][4] Some volunteers were attacked, and some were killed.
 
 As votes were counted, NAMFREL's quick count showed Aquino ahead. The official count by the Commission on Elections, COMELEC, showed Marcos ahead.[1][4]
+
+{{photo:3}}
 
 ## The walkout
 

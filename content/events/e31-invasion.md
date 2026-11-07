@@ -5,7 +5,31 @@ date: { year: 1941, month: 12, day: 8 }
 era: japanese
 topics: [war]
 summary: Hours after the attack on Pearl Harbor, Japanese planes destroyed most American aircraft at Clark Field. Within weeks, Japanese armies landed on Luzon and Manila was declared an open city.
-images: []
+images:
+  - file: invasion-1.webp
+    caption: "The Japanese invasion of the Philippines, 1941"
+    alt: "Old map or photograph of the invasion"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Invasion_of_the_Philippines,_1941.jpg
+  - file: invasion-2.webp
+    caption: "US Marines in the Philippines, January 1942"
+    alt: "Old photograph of soldiers"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:4th_Marines_at_the_philippines_in_January_1942.jpg
+  - file: invasion-3.webp
+    caption: "A Japanese propaganda leaflet dropped on the Philippines"
+    alt: "Old printed leaflet with illustrations"
+    author: "Japanese military personnel"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Japanese_Battle_of_the_Philippines_propaganda_leaflet_1.jpg
+  - file: invasion-4.webp
+    caption: "Occupation money: a Japanese one-peso note, 1942"
+    alt: "Old banknote"
+    author: "National Museum of American History"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:PHI-106-Japanese_Government_(Philippines)-1_Peso_(1942).jpg
 sources:
   - { title: "December 22, 1941: Japanese Imperial Army invades Lingayen Gulf", publisher: "Inquirer USA", url: "https://usa.inquirer.net/162573/december-22-1941-japanese-imperial-army-invades-lingayen-gulf", accessed: 2026-11-06 }
   - { title: "December 13, 1941 (diary entries)", publisher: "The Philippine Diary Project", url: "https://philippinediaryproject.com/1941/12/13/december-13-1941-8/", accessed: 2026-11-06 }
@@ -23,6 +47,8 @@ The Commonwealth government had asked General Douglas MacArthur, a former US Arm
 
 Many people in Manila believed the Americans could hold the islands. They were wrong.
 
+{{photo:2}}
+
 ## Clark Field
 
 Early on 8 December 1941, Philippine time, news arrived that Japan had attacked the American fleet at Pearl Harbor in Hawaii. Across the International Date Line it was still 7 December there.[3]
@@ -32,6 +58,8 @@ American commanders in the Philippines had several hours' warning. Yet around no
 ## Bombs on Manila
 
 In the days that followed, Japanese planes bombed airfields, the naval base at Cavite and the port of Manila. People in the city dug shelters, blacked out their windows and listened to the radio for news. Diaries from those days describe sirens, burning ships in the bay and the sudden fear of a city that had never been bombed.[2][3]
+
+{{photo:3}}
 
 ## The landings
 

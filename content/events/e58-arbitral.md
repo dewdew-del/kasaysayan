@@ -9,7 +9,31 @@ place:
   lat: 15.15
   lng: 117.75
 summary: An international tribunal ruled that China's "nine-dash line" claim to most of the South China Sea had no legal basis under the law of the sea. The Philippines won its case; China rejected the ruling.
-images: []
+images:
+  - file: arbitral-1.webp
+    caption: "Scarborough Shoal seen by Landsat"
+    alt: "Satellite image of a reef"
+    author: "NASA"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Scarborough_Shoal_Landsat.jpg
+  - file: arbitral-2.webp
+    caption: "Scarborough Shoal from the International Space Station"
+    alt: "Reef seen from orbit"
+    author: "Earth Science and Remote Sensing Unit, Lyndon B. Johnson Space Center"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:ISS045-E-77331_-_View_of_Scarborough_Shoal.jpg
+  - file: arbitral-3.webp
+    caption: "Nautical chart of Scarborough Shoal"
+    alt: "Old nautical chart"
+    author: "National Geospatial-Intelligence Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Scarborough_Shoal_(South_China_Sea)_NGA_Nautical_Chart_91004.jpg
+  - file: arbitral-4.webp
+    caption: "Map of the South China Sea"
+    alt: "Map of the region"
+    author: "Hobe / Holger Behr"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Karta_CN_SouthChinaSea.PNG
 sources:
   - { title: "The 2016 Arbitral Award", publisher: "Department of Foreign Affairs, Philippines (West Philippine Sea site)", url: "https://sites.google.com/dfa.gov.ph/wpstest/2016-arbitral-award", accessed: 2026-11-07 }
   - { title: "Tribunal issues landmark ruling in South China Sea arbitration", publisher: "Lawfare", url: "https://www.lawfaremedia.org/article/tribunal-issues-landmark-ruling-south-china-sea-arbitration", accessed: 2026-11-07 }
@@ -25,6 +49,8 @@ The South China Sea lies between mainland Southeast Asia, China, Taiwan, the Phi
 
 Several countries claim parts of it, including the Philippines, China, Vietnam, Malaysia, Brunei and Taiwan. China's claim is the largest. On its maps, a "nine-dash line" loops far south from its coast, around most of the sea, close to the coasts of its neighbors.[2][3]
 
+{{photo:2}}
+
 ## Scarborough Shoal
 
 Tensions rose sharply in 2012. At Scarborough Shoal, a ring of reefs about 220 kilometers west of Luzon where Filipino fishermen had long worked, Philippine and Chinese government ships faced off for weeks. Afterward, Chinese vessels stayed and kept Filipino fishermen away.[3][4]
@@ -36,6 +62,8 @@ China also began building artificial islands on reefs in the Spratly Islands, tu
 In January 2013, under President Benigno Aquino III, the Philippines took a step no country had taken against China before: it started an arbitration case under the United Nations Convention on the Law of the Sea, UNCLOS, which both countries had signed.[1][3]
 
 China refused to take part. It said the tribunal had no jurisdiction over what it called questions of sovereignty. The case went ahead anyway, before a five-member tribunal, with the Permanent Court of Arbitration in The Hague acting as its registry.[2][3]
+
+{{photo:3}}
 
 ## The award
 

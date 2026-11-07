@@ -9,7 +9,19 @@ place:
   lat: 14.60
   lng: 121.00
 summary: On the eve of the first election under martial law, Metro Manila residents banged pots and pans, honked horns and rang church bells for hours in support of jailed opposition leader Ninoy Aquino.
-images: []
+images:
+  - file: noise-barrage-1.webp
+    caption: "Benigno \"Ninoy\" Aquino Jr."
+    alt: "Portrait of Ninoy Aquino"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ninoy_Aquino.jpg
+  - file: noise-barrage-2.webp
+    caption: "Marcos meets Ninoy Aquino"
+    alt: "Two men shaking hands"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:President_Marcos_meets_Ninoy_Aquino.jpg
 sources:
   - { title: "The first election (martial law in the Philippines)", publisher: "Martial Law Museum (Ateneo de Manila University)", url: "https://martiallawmuseum.ph/?p=1109", accessed: 2026-11-06 }
   - { title: "Liberal Party remembers 1978 Interim Batasang Pambansa elections", publisher: "Rappler", url: "https://www.rappler.com/nation/elections/227601-liberal-party-remember-1978-interim-batasang-pambansa-elections/", accessed: 2026-11-06 }
@@ -23,6 +35,8 @@ verified: true
 Six years after declaring martial law, President Ferdinand Marcos announced that the country would elect an Interim Batasang Pambansa, a legislature that would sit alongside him. The election was set for 7 April 1978.[1]
 
 For the government, it was a way to show the world that the Philippines still had democracy. For the opposition, it was a hard choice: take part in an election run by the regime, or boycott it.[1][2]
+
+{{photo:2}}
 
 ## Ninoy runs from prison
 

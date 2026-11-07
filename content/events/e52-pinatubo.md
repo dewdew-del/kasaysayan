@@ -9,7 +9,37 @@ place:
   lat: 15.14
   lng: 120.35
 summary: After five centuries of silence, Mount Pinatubo exploded in the second-largest volcanic eruption of the 20th century. Scientists' warnings and mass evacuations saved thousands of lives, but ash, lahar and a typhoon devastated Central Luzon.
-images: []
+images:
+  - file: pinatubo-1.webp
+    caption: "The eruption of Mount Pinatubo, 15 June 1991"
+    alt: "Huge ash column rising from a volcano"
+    author: "NOAA/NGDC, R. Lapointe, U.S. Air Force."
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Eruption_of_Mount_Pinatubo,_June_15,_1991.jpg
+  - file: pinatubo-2.webp
+    caption: "Vertical eruption column, 1991"
+    alt: "Ash cloud rising into the sky"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Vertical_eruption_at_Pinatubo,_1991.jpg
+  - file: pinatubo-3.webp
+    caption: "Ash from Pinatubo crushes a building at Subic Bay"
+    alt: "Collapsed roof under ash"
+    author: "Service Depicted: NavyCamera Operator: SGT PAUL BISHOP"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ash_from_Mount_Pinatubo_crushes_a_building_at_NS_Subic_Bay.jpg
+  - file: pinatubo-4.webp
+    caption: "Lahar from Pinatubo"
+    alt: "River of mud and rock"
+    author: "Chris Newhall, U.S. Geological Survey"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Lahars_from_Pinatubo_volcano.jpg
+  - file: pinatubo-5.webp
+    caption: "A plane tipped on its tail by the weight of ash"
+    alt: "Aircraft resting on its tail at an airport"
+    author: "USN photo by R. L. Rieger"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:World_Airways_DC-10_setting_on_its_tail_because_of_weight_of_Mt._Pinatubo_ashfall.jpg
 sources:
   - { title: "Pinatubo: Why the biggest volcanic eruption wasn't the deadliest", publisher: "Live Science", url: "https://livescience.com/14603-pinatubo-eruption-20-anniversary.html", accessed: 2026-11-06 }
   - { title: "Pinatubo flashback, June 15, 1991: The big bang", publisher: "Live Science", url: "https://www.livescience.com/14590-pinatubo-flashback-june-15-largest-volcanic-eruption.html", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ Before 1991, few people outside Central Luzon had heard of Mount Pinatubo. It wa
 
 Near its foot lay Clark Air Base, one of the largest American military bases in the world, and towns and cities home to hundreds of thousands of people.
 
+{{photo:2}}
+
 ## The mountain wakes
 
 In March and April 1991, people living on the mountain felt earthquakes and saw steam bursting from its upper slopes. Scientists from the Philippine Institute of Volcanology and Seismology, PHIVOLCS, went to investigate, and were soon joined by volcanologists from the United States Geological Survey.[1][2]
@@ -36,6 +68,8 @@ Together they set up instruments to measure earthquakes, ground swelling and gas
 Persuading people to leave was difficult. Many had never seen an eruption and did not believe one was coming. Scientists showed films of other eruptions to officials and residents to explain the danger.[1]
 
 As alert levels rose in early June, tens of thousands of people were evacuated, including Aeta families from the mountain slopes. On 10 June, the US military evacuated most of Clark Air Base, moving about 15,000 people to Subic Bay.[1][4]
+
+{{photo:3}}
 
 ## 15 June 1991
 

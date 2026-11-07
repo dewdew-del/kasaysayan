@@ -9,7 +9,19 @@ place:
   lat: 10.84
   lng: 123.50
 summary: In a sugar town in northern Negros, government troops and paramilitary forces fired on thousands of farmworkers and activists protesting hunger and martial law. Twenty people were killed.
-images: []
+images:
+  - file: escalante-1.webp
+    caption: "Escalante City Hall"
+    alt: "Government building"
+    author: "TheManFromVisayas"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EscalanteCityHall.jpg
+  - file: escalante-2.webp
+    caption: "The giant cross of Escalante"
+    alt: "Large cross on a hill"
+    author: "NedAnthony"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EscalanteGiantCross.jpg
 sources:
   - { title: "Escalante Massacre", publisher: "Bantayog ng mga Bayani Foundation", url: "https://bantayogngmgabayani.org/?p=1680", accessed: 2026-11-06 }
   - { title: "Negrosanons prepare to mark 34th year of Escalante massacre", publisher: "CBCP News (Laiko)", url: "https://www.cbcplaiko.org/?p=16783", accessed: 2026-11-06 }
@@ -24,6 +36,8 @@ verified: true
 Negros is the sugar island of the Philippines. For more than a century, its plains were divided into great haciendas owned by a few families, worked by tens of thousands of sacadas and farmworkers who cut cane for low wages.[1][4]
 
 In the late 1970s and early 1980s, the price of sugar on the world market collapsed. The government's sugar monopoly, run by a close ally of President Marcos, took much of the profit that remained. Haciendas cut jobs and wages. By 1985, Negros was suffering a famine. Photographs of starving children from the island were seen around the world.[1][3]
+
+{{photo:2}}
 
 ## A strike for the people
 

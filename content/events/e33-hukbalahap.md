@@ -9,7 +9,31 @@ place:
   lat: 15.20
   lng: 120.74
 summary: Peasant leaders in Central Luzon formed the Hukbalahap, the People's Army Against the Japanese, which became one of the strongest guerrilla forces of the war, and later fought the Philippine government itself.
-images: []
+images:
+  - file: hukbalahap-1.webp
+    caption: "Luis Taruc, Huk commander"
+    alt: "Portrait of Luis Taruc"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Luis_Taruc.jpg
+  - file: hukbalahap-2.webp
+    caption: "A Hukbalahap veteran's card"
+    alt: "Old identification card"
+    author: "Brittanice"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Hukbalahap_Veterans_Card.jpg
+  - file: hukbalahap-3.webp
+    caption: "The Hukbalahap monument in San Luis, Pampanga"
+    alt: "Monument with figures of fighters"
+    author: "Unknown author"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Luis_M._Taruc_Hukbalahap_Monument_18.jpg
+  - file: hukbalahap-4.webp
+    caption: "The Luis M. Taruc Freedom Park museum, San Luis"
+    alt: "Museum building in a park"
+    author: "Judgefloro"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:09186jfLuis_M._Taruc_Freedom_Park_Museum_San_Luis,_Pampangafvf_23.jpg
 sources:
   - { title: "Huk founder Taruc finally declared hero by gov't body", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/908702/huk-founder-taruc-finally-declared-hero-by-govt-body", accessed: 2026-11-06 }
   - { title: "The Huk Rebellion (research report)", publisher: "U.S. Defense Technical Information Center", url: "https://apps.dtic.mil/sti/pdfs/AD0773529.pdf", accessed: 2026-11-06 }
@@ -25,6 +49,8 @@ Central Luzon, the great rice plain north of Manila, was a land of tenant farmer
 
 In the 1930s, peasant unions and the Socialist and Communist parties organized these farmers to demand better shares, lower interest and fair treatment. Strikes and clashes with landlords and police were common. Among the organizers was Luis Taruc, a young man from San Luis, Pampanga, who had studied briefly in Manila before returning to work with the unions.[1][2]
 
+{{photo:2}}
+
 ## War comes to the rice fields
 
 When Japan invaded in December 1941, the unions' leaders decided to fight. They saw the occupation as a threat both to the nation and to the gains peasants had won.[2]
@@ -38,6 +64,8 @@ Taruc was chosen as commander. His deputy was Casto Alejandrino. One of the firs
 The Huks were different from most guerrilla groups. They were organized from the villages up, and their fighters were mostly farmers who worked their fields by day and fought by night. Villagers fed them, hid them and passed them information.[2]
 
 They fought Japanese soldiers and the Filipino police and officials who worked with them. They also set up local governments in the areas they controlled, collected taxes, held trials and pushed landlords to give tenants a fairer share.[2][4] Some of the landlords had fled or collaborated with the Japanese, so the Huks often took over their lands.
+
+{{photo:3}}
 
 ## Women in the movement
 

@@ -9,7 +9,37 @@ place:
   lat: 9.88
   lng: 124.12
 summary: A magnitude 7.2 earthquake struck Bohol on a holiday morning, killing more than two hundred people, toppling centuries-old stone churches and revealing a fault no one had mapped.
-images: []
+images:
+  - file: bohol-1.webp
+    caption: "Loboc Church before and after"
+    alt: "Comparison of a church before and after damage"
+    author: "Joelaldor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:San_Pedro_Apostol_Parish_Church,_Loboc,_Bohol_(Before_and_After_2013_Bohol_Earthquake).jpg
+  - file: bohol-2.webp
+    caption: "Baclayon Church before and after"
+    alt: "Comparison of a church before and after damage"
+    author: "Joelaldor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Inmaculada_Concepcion_Parish_Church,_Baclayon,_Bohol_(Before_and_After_2013_Bohol_Earthquake).jpg
+  - file: bohol-3.webp
+    caption: "The Bohol Capitol after the quake"
+    alt: "Damaged government building"
+    author: "P199"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Bohol_Capitol_earthquake.JPG
+  - file: bohol-4.webp
+    caption: "Damage in Loon"
+    alt: "Collapsed buildings"
+    author: "P199"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Loon_1_earthquake.JPG
+  - file: bohol-5.webp
+    caption: "USGS map of the magnitude 7.2 earthquake"
+    alt: "Map of earthquake intensity"
+    author: "USGS"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:7.2_Bohol,_Philippines_quake.jpg
 sources:
   - { title: "'If you see it you would really cry,' says bishop of damaged Bohol churches", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/508347/if-you-see-it-you-would-really-cry-says-bishop-of-damaged-bohol-churches", accessed: 2026-11-07 }
   - { title: "Experts sought to help rebuild quake-hit churches", publisher: "The Philippine Star", url: "https://www.philstar.com/headlines/2014/10/17/1381117/headlines", accessed: 2026-11-07 }
@@ -27,6 +57,8 @@ At 8:12 in the morning the ground began to shake. The earthquake, magnitude 7.2,
 
 Because it was a holiday, some people later said, the toll was lower than it might have been: many schools and government buildings that collapsed were empty.[4]
 
+{{photo:2}}
+
 ## Churches fall
 
 Bohol is famous for its old stone churches, many built by Spanish missionaries and Filipino laborers in the 1700s and 1800s from blocks of coral stone. They were among the island's proudest landmarks and drew visitors from around the world.[1][2]
@@ -40,6 +72,8 @@ In minutes, many of them were cracked or brought down. The church of Our Lady of
 The damage went far beyond the churches. Roads cracked and split. Bridges collapsed, cutting towns off from each other. Landslides covered hillsides, and thousands of houses were damaged or destroyed.[4]
 
 More than two hundred people were killed, with hundreds more injured. Tens of thousands of families were left without homes, many sleeping in tents and makeshift shelters for weeks.[2][4]
+
+{{photo:3}}
 
 ## A fault no one had mapped
 

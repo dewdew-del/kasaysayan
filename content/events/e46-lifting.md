@@ -5,7 +5,25 @@ date: { year: 1981, month: 1, day: 17 }
 era: martial
 topics: [politics]
 summary: Weeks before a visit by Pope John Paul II, Marcos formally ended martial law with Proclamation No. 2045. But he kept the power to rule by decree, and little changed for his critics.
-images: []
+images:
+  - file: lifting-1.webp
+    caption: "Marcos takes his oath in 1981"
+    alt: "Man taking an oath"
+    author: "Philippine Presidential Museum and Library"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:FerdinandMarcos1981Oath.jpg
+  - file: lifting-2.webp
+    caption: "Marcos at a press conference in the 1980s"
+    alt: "Man at a press conference"
+    author: "Malacanang Palace Presidential Museum and Library"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ferdinand_Marcos_at_a_1980s_press_conference,_where_he_denied_rumours_that_he_was_sick;_he_turned_out_to_be_suffering_from_complications_due_to_lupus.jpg
+  - file: lifting-3.webp
+    caption: "Ferdinand E. Marcos"
+    alt: "Portrait of Ferdinand Marcos"
+    author: "Philippine Presidential Museum and Library"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ferdinand_E_Marcos.jpg
 sources:
   - { title: "Why Marcos lifted Martial Law in 1981", publisher: "Inquirer USA", url: "https://usa.inquirer.net/86486/why-marcos-lifted-martial-law-in-1981", accessed: 2026-11-06 }
   - { title: "Lifting of Martial Law (UP Diliman Day of Remembrance 2024)", publisher: "University of the Philippines Diliman, Office for Initiatives in Culture and the Arts", url: "https://oica.upd.edu.ph/wp-content/uploads/2024/09/19_UPDOR2024_Lifting_of_Martial_Law.pdf", accessed: 2026-11-06 }
@@ -23,6 +41,8 @@ The economy, which had grown in the early 1970s, was in trouble. Foreign debt wa
 
 Pressure was building, both inside the country and abroad.
 
+{{photo:2}}
+
 ## A pope is coming
 
 In early 1981, Pope John Paul II was scheduled to visit the Philippines in February, the first papal visit to the country since Paul VI in 1970. The Philippines was the largest Catholic nation in Asia, and the visit would bring the world's media to Manila.[1][3]
@@ -34,6 +54,8 @@ Church leaders, especially Cardinal Jaime Sin, had grown increasingly critical o
 On 17 January 1981, Marcos signed Proclamation No. 2045, formally lifting martial law throughout the country, except in two regions of Mindanao where the government was fighting Muslim separatists. He announced the birth of a "New Republic."[1][2]
 
 Political prisoners were released in larger numbers, and some restrictions on travel and the press were eased.[2]
+
+{{photo:3}}
 
 ## Powers that stayed
 

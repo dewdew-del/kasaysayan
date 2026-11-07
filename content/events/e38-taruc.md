@@ -9,7 +9,31 @@ place:
   lat: 15.10
   lng: 120.70
 summary: After four months of secret talks with a young journalist named Benigno Aquino Jr., the Huk commander Luis Taruc surrendered to the government, effectively ending the Huk rebellion.
-images: []
+images:
+  - file: taruc-1.webp
+    caption: "President Quirino and Luis Taruc"
+    alt: "Old photograph of two men"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:President_Quirino_and_Luis_Taruc.jpg
+  - file: taruc-2.webp
+    caption: "Luis Taruc"
+    alt: "Portrait of Luis Taruc"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Luis_Taruc.jpg
+  - file: taruc-3.webp
+    caption: "The Taruc and Hukbalahap monument"
+    alt: "Monument in a park"
+    author: "Unknown author"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Luis_M._Taruc_Hukbalahap_Monument_28.jpg
+  - file: taruc-4.webp
+    caption: "Inside the Luis M. Taruc museum"
+    alt: "Museum display"
+    author: "Judgefloro"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:09186jfLuis_M._Taruc_Freedom_Park_Museum_San_Luis,_Pampangafvf_26.jpg
 sources:
   - { title: "Luis Taruc: Revolutionary or traitor?", publisher: "The Philippine Star", url: "https://www.philstar.com/headlines/2005/05/06/276486/luis-taruc-revolutionary-or-traitor", accessed: 2026-11-06 }
   - { title: "THE PHILIPPINES: Surrender of a Communist", publisher: "TIME magazine", url: "https://content.time.com/time/subscriber/article/0,33009,823404,00.html", accessed: 2026-11-06 }
@@ -24,6 +48,8 @@ verified: true
 After the Second World War, the Hukbalahap guerrillas of Central Luzon expected to be honored for fighting the Japanese. Instead, many of their leaders were arrested, landlords returned with private armies, and Luis Taruc and other Huk-backed congressmen elected in 1946 were not allowed to take their seats.[1][4]
 
 The Huks went back to the hills and took up arms against the government of the new Republic. By 1950 they had thousands of fighters and controlled large areas of Central Luzon. Some government officials feared they might even march on Manila.[4]
+
+{{photo:2}}
 
 ## Magsaysay's campaign
 
@@ -40,6 +66,8 @@ By early 1954 the Huks were weakened, divided and tired. Taruc himself had broke
 President Magsaysay sent emissaries to talk to him. One was a 21-year-old reporter for the Manila Times, Benigno "Ninoy" Aquino Jr., the son of a prominent Tarlac politician. Aquino first met Taruc in hiding on 10 February 1954 and returned several times for secret talks.[1][3]
 
 The meetings were dangerous. Aquino traveled through rebel territory to reach Taruc's hideouts, and either side could have turned on him.
+
+{{photo:3}}
 
 ## The surrender
 

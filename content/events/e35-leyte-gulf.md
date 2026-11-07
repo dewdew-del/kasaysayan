@@ -9,7 +9,37 @@ place:
   lat: 10.90
   lng: 125.60
 summary: In the waters around the Visayas, Japan threw nearly all its remaining navy against the American landing force. The battle, often called the largest naval battle in history, destroyed Japan's fleet and saw the first organized kamikaze attacks.
-images: []
+images:
+  - file: leyte-gulf-1.webp
+    caption: "The American armada heading for Leyte"
+    alt: "Many warships at sea"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:US_Armada_moving_towards_Leyte_Island.jpg
+  - file: leyte-gulf-2.webp
+    caption: "Map of the Battle of Leyte Gulf"
+    alt: "Annotated battle map"
+    author: "Map_of_Battle_of_Leyte_Gulf.jpg: United States Army derivative work: Gdr at en.wikipedia"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Annotated_map_of_Battle_of_Leyte_Gulf.png
+  - file: leyte-gulf-3.webp
+    caption: "USS Enterprise under attack"
+    alt: "Aircraft carrier with smoke and anti-aircraft fire"
+    author: "Australian armed forces"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:USS_Enterprise_(CV-6)_under_attack_at_Battle_of_Leyte_Gulf_1944.jpg
+  - file: leyte-gulf-4.webp
+    caption: "A Japanese Fuso-class battleship under attack"
+    alt: "Battleship firing at sea"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Fuso-class_Battleship,_Battle_of_Leyte_Gulf,_October_1944.jpg
+  - file: leyte-gulf-5.webp
+    caption: "USS Intrepid during the battle"
+    alt: "Aircraft carrier at sea"
+    author: "U.S. Navy"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:USS_Intrepid_(CV-11)_during_Battle_of_Leyte_Gulf_1944.jpeg
 sources:
   - { title: "The Battle of Leyte Gulf", publisher: "The National WWII Museum", url: "https://www.nationalww2museum.org/war/articles/battle-leyte-gulf", accessed: 2026-11-06 }
   - { title: "Battle of Leyte Gulf", publisher: "New World Encyclopedia", url: "https://www.newworldencyclopedia.org/entry/Battle_of_Leyte_Gulf", accessed: 2026-11-06 }
@@ -23,6 +53,8 @@ verified: true
 When American troops landed on Leyte on 20 October 1944, Japan's leaders knew that losing the Philippines would cut them off from the oil and resources of Southeast Asia. Without those, their navy and war machine could not keep going.[1]
 
 So they decided to risk almost everything. Japan's navy, the Combined Fleet, would attack the American ships off Leyte from several directions at once and destroy the landing force before it could be reinforced.[1][2]
+
+{{photo:2}}
 
 ## A plan in four parts
 
@@ -39,6 +71,8 @@ In the Sibuyan Sea, American carrier planes attacked Kurita's force. They sank t
 In the Surigao Strait, on the night of 24–25 October, American and Australian ships waiting in the dark destroyed the southern Japanese force almost completely. It was the last battle in history in which battleships fought each other.[2][3]
 
 Off Cape Engaño, north of Luzon, American carriers sank the Japanese decoy carriers.[1]
+
+{{photo:3}}
 
 ## The fight off Samar
 

@@ -9,7 +9,37 @@ place:
   lat: 14.43
   lng: 120.49
 summary: After a three-month siege, about 76,000 starving Filipino and American soldiers surrendered on Bataan. On the march to prison camps that followed, thousands died.
-images: []
+images:
+  - file: bataan-1.webp
+    caption: "Japanese troops on Bataan, 1942"
+    alt: "Old photograph of soldiers"
+    author: "Japanese photograph"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:JapaneseTroopsBataan1942.jpg
+  - file: bataan-2.webp
+    caption: "Holding the road to Bataan, January 1942"
+    alt: "Old map of military positions"
+    author: "Louis Morton"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Holding_Road_to_Bataan_Jan_1942.jpg
+  - file: bataan-3.webp
+    caption: "Surrender on Bataan"
+    alt: "Old photograph of soldiers surrendering"
+    author: "Unknown IJA photographer"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Americans_Surrender_Bataan.jpg
+  - file: bataan-4.webp
+    caption: "Burial detail at Camp O'Donnell after the Death March"
+    alt: "Old photograph of prisoners carrying the dead"
+    author: "U.S. Marine Corps"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Burial_detail_at_Camp_O%27Donnell_after_Bataan_Death_March.jpg
+  - file: bataan-5.webp
+    caption: "Kilometer 0 of the Death March, Mariveles"
+    alt: "Death March marker by a road"
+    author: "Patrickroque01"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Bataan_Death_March_KM0_marker_Mariveles_(Roman_Superhighway,_Mariveles,_Bataan;_05-19-2023).jpg
 sources:
   - { title: "Bataan Death March", publisher: "Encyclopaedia Britannica", url: "https://www.britannica.com/event/Bataan-Death-March", accessed: 2026-11-06 }
   - { title: "U.S. surrenders in Bataan (This Day in History, April 9)", publisher: "HISTORY.com", url: "https://www.history.com/this-day-in-history/april-9/u-s-surrenders-in-bataan", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ After Japanese armies landed on Luzon in December 1941, General Douglas MacArthu
 
 But the US Navy had been badly damaged at Pearl Harbor, and America's leaders had decided to focus first on defeating Germany. No reinforcements would come.[2]
 
+{{photo:2}}
+
 ## Three months of siege
 
 From January to April 1942, the defenders of Bataan held a line across the peninsula. They fought off repeated Japanese attacks, and for a time they were one of the few Allied armies anywhere in Asia that was not retreating.[1]
@@ -38,6 +70,8 @@ In March, President Franklin Roosevelt ordered MacArthur to leave for Australia.
 In early April the Japanese, reinforced, broke through the exhausted lines. On 9 April 1942, Major General Edward P. King, commanding the forces on Bataan, surrendered rather than see his starving and sick men slaughtered.[1][2]
 
 About 76,000 soldiers became prisoners of war, roughly 64,000 Filipinos and 12,000 Americans. It was the largest surrender of an army under American command in history.[1]
+
+{{photo:3}}
 
 ## The march
 

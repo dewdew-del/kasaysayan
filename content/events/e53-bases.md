@@ -9,7 +9,31 @@ place:
   lat: 14.82
   lng: 120.28
 summary: By a single vote, 12 to 11, the Philippine Senate rejected a treaty that would have kept the US Navy at Subic Bay. By late 1992, after almost a century, American military bases were gone from the Philippines.
-images: []
+images:
+  - file: bases-1.webp
+    caption: "Aerial view of Subic Bay Naval Base"
+    alt: "Naval base from the air"
+    author: "Service Depicted: NavyCamera Operator: PHC LARRY FOSTER"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aerial_view_of_Naval_Base_Subic_Bay.jpg
+  - file: bases-2.webp
+    caption: "US warships in Subic Bay in the 1950s"
+    alt: "Warships at anchor"
+    author: "U.S. Navy"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:US_warships_in_Subic_Bay_in_the_1950s.jpg
+  - file: bases-3.webp
+    caption: "The Subic Bay deactivation ceremony"
+    alt: "Ceremony with flags"
+    author: "JOC(Aw) Gloria Montgomery"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Subic_Bay_Deactivation_Ceremony.png
+  - file: bases-4.webp
+    caption: "Subic Bay naval base historical marker"
+    alt: "Historical marker"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Naval_Base_of_Subic_Bay_historical_marker_02.jpg
 sources:
   - { title: "Philippine Senate prepares to reject US treaty as protesters march to support retaining naval base", publisher: "The Christian Science Monitor", url: "https://www.csmonitor.com/1991/0911/11032.html", accessed: 2026-11-06 }
   - { title: "Building US-Philippine ties on more than military bases", publisher: "The Christian Science Monitor", url: "https://csmonitor.com/1991/1007/07192.html", accessed: 2026-11-06 }
@@ -25,6 +49,8 @@ American military bases had been in the Philippines since the colonial period. A
 
 The two biggest were Clark Air Base in Pampanga and the Subic Bay Naval Base in Zambales, the largest American naval base outside the United States. They were used in the Korean and Vietnam wars, and tens of thousands of Filipinos worked on or around them.[1]
 
+{{photo:2}}
+
 ## A constitution's condition
 
 The 1987 Constitution said that after the old agreement expired, foreign military bases could stay only under a treaty approved by two-thirds of the Senate, that is, 16 of 24 senators.[3]
@@ -36,6 +62,8 @@ The United States and the Aquino government negotiated a new treaty, the Treaty 
 The debate split the country. Supporters of the treaty said the bases brought jobs, money and security, especially at a time when the economy was weak and Pinatubo had just devastated Central Luzon. President Corazon Aquino supported it and even led a march in its favor.[1]
 
 Opponents said the bases were a leftover of colonial rule, made the country a target in any war, and brought social problems such as prostitution around the bases. They argued that true independence meant no foreign troops on Philippine soil.[3][4]
+
+{{photo:3}}
 
 ## The protests
 

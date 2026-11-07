@@ -5,7 +5,31 @@ date: { year: 1962, month: 5, day: 12 }
 era: third
 topics: [politics]
 summary: President Diosdado Macapagal moved Philippine Independence Day from 4 July, when the United States recognized independence, to 12 June, when Filipino revolutionaries declared it in 1898.
-images: []
+images:
+  - file: june-12-1.webp
+    caption: "President Diosdado Macapagal"
+    alt: "Portrait of Diosdado Macapagal"
+    author: "National Library of the Philippines (distributed by Philippine Presidential Museum and Library)"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Diosdado_Macapagal_photo.jpg
+  - file: june-12-2.webp
+    caption: "Macapagal departing for Malacañang"
+    alt: "Old photograph of a man leaving a house"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Diosdado_Macapagal_departing_for_Malaca%C3%B1ang.jpg
+  - file: june-12-3.webp
+    caption: "Macapagal on a state visit, 1962"
+    alt: "Old photograph of officials"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Macapagal_Segni_1962.jpg
+  - file: june-12-4.webp
+    caption: "Macapagal plaque at the Pampanga Capitol"
+    alt: "Historical plaque"
+    author: "Judgefloro"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Diosdado_Macapagal_historical_plaque_at_the_Pampanga_Capitol.jpg
 sources:
   - { title: "Proclamation No. 28, s. 1962", publisher: "The LawPhil Project", url: "https://lawphil.net/executive/proc/proc1962/proc_28_1962.html", accessed: 2026-11-06 }
   - { title: "Independence: declared, taken away, given back (Ambeth Ocampo)", publisher: "Philippine Daily Inquirer, Opinion", url: "https://opinion.inquirer.net/85845/independence-declared-taken-away-given-back", accessed: 2026-11-06 }
@@ -21,6 +45,8 @@ For sixteen years after 1946, the Philippines celebrated its independence on 4 J
 
 But there was another date. On 12 June 1898, in Kawit, Cavite, Emilio Aguinaldo's revolutionary government had declared the Philippines independent of Spain. That declaration had never been recognized by Spain or the United States, but to many Filipinos it was the true birth of the nation.[2]
 
+{{photo:2}}
+
 ## A president's decision
 
 Diosdado Macapagal, elected president in 1961, was a lawyer from Lubao, Pampanga, who had risen from a poor family and who spoke often about national identity and pride. On 12 May 1962 he signed Proclamation No. 28, declaring 12 June a special public holiday as Independence Day.[1][3]
@@ -34,6 +60,8 @@ That year the first 12 June celebration was held, with Aguinaldo himself, then 9
 The timing had another side. In early 1962, the US Congress had rejected a bill to pay $73 million in war damage claims that Filipinos had been waiting on since the end of the Second World War. Many Filipinos were angry.[2][3]
 
 Some historians see the move to 12 June partly as a protest: a way of telling the United States, politely, that Philippine independence was not an American gift. Macapagal himself said it was mainly about national pride.[2]
+
+{{photo:3}}
 
 ## The Kawit connection
 

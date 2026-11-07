@@ -9,7 +9,37 @@ place:
   lat: 14.61
   lng: 121.06
 summary: For four days, hundreds of thousands of unarmed people filled Epifanio de los Santos Avenue to protect rebel soldiers. Marcos left the country, and Corazon Aquino became president without a full-scale battle.
-images: []
+images:
+  - file: edsa-1.webp
+    caption: "The Aquinos campaigning"
+    alt: "Old photograph of a couple at a rally"
+    author: "National Library of the Philippines (distributed by Philippine Presidential Museum and Library)"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aquinos_campaigning.png
+  - file: edsa-2.webp
+    caption: "Corazon Aquino's inauguration"
+    alt: "Woman taking an oath"
+    author: "Malacañang Palace archives"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Corazon_Aquino_inauguration.jpg
+  - file: edsa-3.webp
+    caption: "Corazon Aquino in 1986"
+    alt: "Portrait of Corazon Aquino"
+    author: "Airman Gerald B. Johnson"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Corazon_Aquino_1986.jpg
+  - file: edsa-4.webp
+    caption: "EDSA People Power historical marker"
+    alt: "Historical marker"
+    author: "Kej Andrés (Ryomaandres)"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:EDSA_People_Power_historical_marker.jpg
+  - file: edsa-5.webp
+    caption: "The Spirit of EDSA monument"
+    alt: "Monument of people with raised arms"
+    author: "Ralff Nestor Nacor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:The_Spirit_of_EDSA_Monument,_Makati_City,_Jul_2024.jpg
 sources:
   - { title: "Timeline: Feb. 22, 1986, Day One", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/?p=579772", accessed: 2026-11-06 }
   - { title: "People Power Revolution Timeline, Feb. 23, 1986, Day Two", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/?p=579955", accessed: 2026-11-06 }
@@ -28,6 +58,8 @@ That afternoon, Defense Minister Juan Ponce Enrile, who was close to the RAM off
 
 They were badly outnumbered. If Marcos sent his loyal troops, they could not hold out.
 
+{{photo:2}}
+
 ## Cardinal Sin's call
 
 That evening, Cardinal Jaime Sin, Archbishop of Manila, spoke on Radio Veritas, the Catholic radio station. He asked the people to go to EDSA to support the rebels and to protect them with their bodies, and to bring food.[1][3]
@@ -41,6 +73,8 @@ On 23 February, the crowd grew. Ramos moved his forces to Camp Crame, and people
 That afternoon, marines with tanks and armored vehicles approached along Ortigas Avenue. They were met by a sea of people, many kneeling and praying in the road. Nuns knelt in front of the tanks. People offered soldiers flowers, food and cigarettes. The marines stopped.[2][3]
 
 Over the next day, more and more units of the armed forces switched sides. On 24 February, helicopter gunships sent to attack Camp Crame landed there instead, and their crews joined the rebels.[3][5]
+
+{{photo:3}}
 
 ## The fear behind the courage
 

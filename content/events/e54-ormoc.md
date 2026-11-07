@@ -9,7 +9,19 @@ place:
   lat: 11.01
   lng: 124.61
 summary: Heavy rain from a weak tropical storm sent a wall of water and logs down two rivers into Ormoc City in minutes. Thousands died, many never found, in one of the deadliest floods in Philippine history.
-images: []
+images:
+  - file: ormoc-1.webp
+    caption: "Ormoc City today"
+    alt: "City view"
+    author: "M M"
+    license: CC BY-SA 2.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ormoc_Philippines.jpg
+  - file: ormoc-2.webp
+    caption: "The Ormoc seaside"
+    alt: "Seaside promenade"
+    author: "ax"
+    license: CC BY-SA 2.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ormoc_seaside_view_2.jpg
 sources:
   - { title: "Ormoc tragedies (cultural mapping)", publisher: "City Government of Ormoc", url: "https://ormoc.gov.ph/culturalmapping/tragedies-detail.php?s=7", accessed: 2026-11-06 }
   - { title: "Rising: remembering Ormoc 28 years after deadly flood", publisher: "VERA Files", url: "https://verafiles.org/articles/rising-remembering-ormoc-28-years-after-deadly-flood", accessed: 2026-11-06 }
@@ -24,6 +36,8 @@ verified: true
 Ormoc is a port city on the western coast of Leyte, built on a plain where two rivers, the Anilao and the Malbasag, flow down from the mountains into Ormoc Bay. In 1991 it was a busy town of sugar fields, markets and fishing boats, with many families living along the riverbanks.[1][2]
 
 The hills above the city had once been covered in forest. By the 1990s, much of that forest had been cut down for timber, fuel and farmland.[1]
+
+{{photo:2}}
 
 ## A weak storm, a lot of rain
 

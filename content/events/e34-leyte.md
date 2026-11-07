@@ -9,7 +9,37 @@ place:
   lat: 11.16
   lng: 125.01
 summary: Two and a half years after leaving the Philippines, General Douglas MacArthur waded ashore at Palo, Leyte, with President Sergio Osmeña, and announced, "People of the Philippines, I have returned."
-images: []
+images:
+  - file: leyte-1.webp
+    caption: "MacArthur wades ashore at Leyte"
+    alt: "Soldiers and officers wading through shallow water to a beach"
+    author: "U.S. Army Signal Corps officer Gaetano Faillace [1]"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Douglas_MacArthur_lands_Leyte1.jpg
+  - file: leyte-2.webp
+    caption: "X Corps landing, 20 October 1944"
+    alt: "Landing craft at a beach"
+    author: "M. Hamlin Cannon"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Leyte_Landing,_X_Corps_-_20_October,_1944.jpg
+  - file: leyte-3.webp
+    caption: "Landing craft off Leyte"
+    alt: "Many ships and boats off the coast"
+    author: "USN"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Landing_craft_off_Leyte_in_October_1944.jpg
+  - file: leyte-4.webp
+    caption: "Filipino volunteers in the Battle of Leyte"
+    alt: "Old photograph of Filipino men with supplies"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Battle_of_Leyte_Filipino_volunteers.jpg
+  - file: leyte-5.webp
+    caption: "The Leyte beachhead"
+    alt: "Supplies and soldiers on a beach"
+    author: "US Army"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Leyte_beachhead.jpg
 sources:
   - { title: "Leyte 1944: The day General MacArthur returned", publisher: "Manila Bulletin", url: "https://mb.com.ph/2019/10/21/leyte-1944-the-day-general-macarthur-returned-2", accessed: 2026-11-06 }
   - { title: "'I have returned': General Douglas MacArthur wades ashore at Palo on Leyte", publisher: "Pacific Wrecks", url: "https://www.pacificwrecks.com/people/veterans/macarthur/macarthur-leyte-landing.html", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ When General Douglas MacArthur left Corregidor for Australia in March 1942, he m
 
 In the Philippines, the war never fully stopped. Guerrilla groups across the islands kept fighting, gathered intelligence and sent radio reports to MacArthur's headquarters. On Leyte, guerrillas led by Colonel Ruperto Kangleon controlled much of the countryside.[3]
 
+{{photo:2}}
+
 ## Why Leyte
 
 By the middle of 1944, American planners had to decide where to strike. Some wanted to bypass the Philippines and attack Formosa. MacArthur argued that America had a moral duty to free the Filipinos first, and he won the argument.[3]
@@ -36,6 +68,8 @@ Leyte, in the eastern Visayas, was chosen for the first landings. It had deep wa
 On 20 October 1944, after heavy bombardment from warships offshore, American troops of the Sixth Army landed on beaches along Leyte's east coast, at Palo, Tacloban and Dulag. More than a hundred thousand soldiers came ashore in the first days.[1][3]
 
 That afternoon, MacArthur came in on a landing craft to Red Beach, near Palo. The boat ran aground in shallow water, and he waded the last stretch to shore. With him were President Sergio Osmeña, who had succeeded Manuel Quezon after Quezon's death in August, and General Carlos P. Romulo. The scene was photographed and filmed, and the pictures were seen around the world.[1][2]
+
+{{photo:3}}
 
 ## "I have returned"
 

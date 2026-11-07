@@ -9,7 +9,31 @@ place:
   lat: 14.51
   lng: 121.02
 summary: Returning from exile, opposition leader Benigno "Ninoy" Aquino Jr. was shot dead on the airport tarmac within minutes of landing. His death turned years of quiet anger into a mass movement.
-images: []
+images:
+  - file: ninoy-1.webp
+    caption: "Benigno \"Ninoy\" Aquino Jr."
+    alt: "Portrait of Ninoy Aquino"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ninoy_Aquino.jpg
+  - file: ninoy-2.webp
+    caption: "Plaque at the airport where Aquino was killed"
+    alt: "Plaque on the floor"
+    author: "Jidanni"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aquino_Assassination_Plaque_213035.jpg
+  - file: ninoy-3.webp
+    caption: "Ninoy Aquino with Ramon Magsaysay, 1951"
+    alt: "Old photograph of two men"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ramon_Magsaysay_and_Ninoy_Aquino_1951.jpg
+  - file: ninoy-4.webp
+    caption: "NHCP historical marker for Ninoy Aquino"
+    alt: "Historical marker"
+    author: "Ryomaandres"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Benigno_S._Aquino,_Jr._%22Ninoy%22_NHCP_Historical_Marker.jpg
 sources:
   - { title: "Agrava report on Ninoy Aquino slay: groundbreaking search for truth", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/1476905/agrava-report-on-ninoy-slay-truth-seeking-groundbreaking/amp", accessed: 2026-11-06 }
   - { title: "Aug. 21, 1983: voices tell the story", publisher: "VERA Files", url: "https://verafiles.org/articles/aug-21-1983-voices-tell-the-story", accessed: 2026-11-06 }
@@ -25,6 +49,8 @@ Benigno "Ninoy" Aquino Jr. had been the youngest senator in the country and the 
 
 In 1980, after he suffered a heart attack in his cell, Marcos allowed him to go to the United States for surgery. He stayed there in exile with his wife, Corazon, and their children, teaching at universities and speaking against the regime.[4]
 
+{{photo:2}}
+
 ## Going home
 
 By 1983 Aquino believed he had to return. Marcos was ill, the economy was in decline, and Aquino feared that without a peaceful opposition the country would fall into violence. He hoped to persuade Marcos to restore democracy.[2][4]
@@ -36,6 +62,8 @@ Friends and family warned him he would be killed. The government refused him a p
 On the afternoon of Sunday, 21 August 1983, his China Airlines plane landed at Manila International Airport. Soldiers came on board and led Aquino out, down the stairs that led directly to the tarmac, out of sight of the waiting journalists.[2][4]
 
 Seconds later, shots rang out. Aquino fell dead on the tarmac. Beside him lay another man, Rolando Galman, who was also shot dead by soldiers.[2] Thousands of supporters waiting in the terminal, with yellow ribbons, did not at first understand what had happened.
+
+{{photo:3}}
 
 ## "The Filipino is worth dying for"
 

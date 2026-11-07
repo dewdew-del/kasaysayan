@@ -9,7 +9,37 @@ place:
   lat: 10.47
   lng: 123.75
 summary: The presidential plane Mt. Pinatubo crashed on Mount Manunggal in Cebu, killing President Ramon Magsaysay, one of the most popular leaders in Philippine history. Only one person on board survived.
-images: []
+images:
+  - file: magsaysay-1.webp
+    caption: "Ramon Magsaysay"
+    alt: "Portrait of Ramon Magsaysay"
+    author: "U.S. Marine Corps photo by Staff Sgt. Ricardo Morales"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ramon_Magsaysay.jpg
+  - file: magsaysay-2.webp
+    caption: "Magsaysay's inauguration, 1953"
+    alt: "Inauguration crowd"
+    author: "Philippine Presidential Museum and Library"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Ramon_Magsaysay_inauguration.jpg
+  - file: magsaysay-3.webp
+    caption: "Magsaysay in his study at Malacañang"
+    alt: "Man at a desk"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:President_Magsaysay_at_his_study_at_Malaca%C3%B1ang_Palace_c.1953.jpg
+  - file: magsaysay-4.webp
+    caption: "Magsaysay with Vice President Carlos Garcia"
+    alt: "Two men in suits"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Magsaysay_and_Garcia.jpg
+  - file: magsaysay-5.webp
+    caption: "Magsaysay's tomb"
+    alt: "Tomb with flowers"
+    author: "Exec8"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Magsaysay_Tomb.jpg
 sources:
   - { title: "Remembering the crash that killed Pres. Ramon Magsaysay", publisher: "The Philippine Star (The Freeman)", url: "https://www.philstar.com/the-freeman/cebu-news/2013/03/17/920738/remembering-crash-killed-pres-ramon-magsaysay", accessed: 2026-11-06 }
   - { title: "Journalist Nestor Mata dies at 92", publisher: "ABS-CBN News", url: "https://www.abs-cbn.com/news/04/13/18/journalist-nestor-mata-dies-at-92", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ Ramon Magsaysay was unlike the presidents before him. Born in Iba, Zambales, in 
 
 As president he opened Malacañang Palace to ordinary people, traveled constantly to the provinces, and set up a complaints office where farmers and workers could bring their problems directly to the government. His style made him enormously popular. People called him the "Champion of the Masses."[1]
 
+{{photo:2}}
+
 ## A trip to Cebu
 
 In March 1957, Magsaysay was nearing the end of his term and preparing to run for re-election that November. On 16 March he flew to Cebu, where he spoke at the commencement of three universities and met with local leaders.[1][4]
@@ -36,6 +68,8 @@ In the early hours of 17 March, he boarded the presidential plane for the flight
 At about 1:40 a.m., minutes after taking off from Lahug airport, the plane failed to gain enough height over the mountains behind Cebu City. It crashed into the slopes of Mount Manunggal, in the town of Balamban, and burst into flames.[1][3]
 
 Of the people on board, 25 were killed, among them President Magsaysay. Accounts give slightly different totals for the number on board.[2][3]
+
+{{photo:3}}
 
 ## The only survivor
 
