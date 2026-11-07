@@ -24,5 +24,6 @@ export default async function EventPage({ params }: Props) {
   const events = getPublishedEvents();
   const i = events.findIndex((x) => x.id === id);
   if (i < 0) notFound();
-  return <EventArticle event={events[i]} prev={events[i - 1]} next={events[i + 1]} />;
+  const slim = (x?: (typeof events)[number]) => (x ? { id: x.id, title: x.title } : undefined);
+  return <EventArticle event={events[i]} prev={slim(events[i - 1])} next={slim(events[i + 1])} />;
 }

@@ -1,7 +1,7 @@
 ---
 id: edsa
 title: The People Power Revolution
-date: { label: "22–25 February 1986", sort: 1986.15, approx: true }
+date: { label: "22–25 February 1986", sort: 1986.15, approx: true, start: { year: 1986, month: 2, day: 22 } }
 era: edsa
 topics: [politics]
 place:

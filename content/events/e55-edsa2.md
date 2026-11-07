@@ -1,7 +1,7 @@
 ---
 id: edsa2
 title: EDSA II
-date: { label: "16–20 January 2001", sort: 2001.05, approx: true }
+date: { label: "16–20 January 2001", sort: 2001.05, approx: true, start: { year: 2001, month: 1, day: 16 } }
 era: modern
 topics: [politics]
 place:

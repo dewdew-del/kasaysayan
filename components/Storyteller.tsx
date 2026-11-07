@@ -7,7 +7,7 @@ import { toCard, type EventCard } from "@/lib/card";
 import { ERAS, ERA_LABELS, type TopicId } from "@/lib/schema";
 import { dateLabel, sortKey } from "@/lib/dates";
 import { filterByTopic, parseTopic } from "@/lib/filter";
-import { markerPositions } from "@/lib/map";
+import { markerPositions, type MarkerPos } from "@/lib/map";
 import { centerView, fullView, isComfortablyInView, panView, zoomLevel, zoomView, type View } from "@/lib/zoom";
 import StoryMap from "./StoryMap";
 import StoryStep from "./StoryStep";
@@ -18,8 +18,6 @@ import MusicToggle from "./MusicToggle";
 
 export const PLAY_INTERVAL_MS = 2200;
 const ZOOM_STEP = 1.6;
-/** Events within this many map units of each other count as "the same place". */
-const SAME_PLACE = 30;
 
 export const toCards = (events: Event[]): EventCard[] => events.map(toCard);
 
@@ -82,22 +80,19 @@ function StorytellerView({ events: all, topic, onTopicChange: setTopic }: ViewPr
   }, [events, playing]);
 
   // Play: advance every PLAY_INTERVAL_MS and stop at the last event.
+  const currentRef = useRef(current);
+  currentRef.current = current;
   useEffect(() => {
     if (!playing) return;
     const t = setInterval(() => {
-      setCurrent((c) => {
-        if (c >= events.length - 1) {
-          setPlaying(false);
-          return c;
-        }
-        const next = c + 1;
-        stepRefs.current[next]?.scrollIntoView({ block: "center", behavior: "smooth" });
-        if (next >= events.length - 1) setPlaying(false);
-        return next;
-      });
+      const c = currentRef.current;
+      if (c >= events.length - 1) return setPlaying(false);
+      currentRef.current = c + 1;
+      goTo(c + 1);
+      if (c + 1 >= events.length - 1) setPlaying(false);
     }, PLAY_INTERVAL_MS);
     return () => clearInterval(t);
-  }, [playing, events.length]);
+  }, [playing, events.length, goTo]);
 
   // When zoomed in, keep the current event in view.
   useEffect(() => {
@@ -195,6 +190,8 @@ function ZoomableMap({ view, setView, children }: { view: View; setView: (f: (v:
     const el = wrap.current;
     if (!el) return;
     const onWheel = (ev: WheelEvent) => {
+      // A plain wheel scrolls the story; ctrl/cmd + wheel (and trackpad pinch) zooms the map.
+      if (!ev.ctrlKey && !ev.metaKey) return;
       ev.preventDefault();
       const p = toMap(ev.clientX, ev.clientY);
       setView((v) => zoomView(v, ev.deltaY < 0 ? 1.25 : 0.8, p?.[0] ?? v.x + v.w / 2, p?.[1] ?? v.y + v.h / 2));
@@ -287,17 +284,14 @@ function PlaceCard({
 }: {
   id: string;
   events: EventCard[];
-  pos: Map<string, { x: number; y: number }>;
+  pos: Map<string, MarkerPos>;
   onPick: (id: string) => void;
   onClose: () => void;
 }) {
   const e = events.find((x) => x.id === id);
   const p = pos.get(id);
   if (!e || !p) return null;
-  const others = events.filter((x) => {
-    const q = pos.get(x.id);
-    return x.id !== id && q && Math.hypot(q.x - p.x, q.y - p.y) < SAME_PLACE;
-  });
+  const others = events.filter((x) => x.id !== id && pos.get(x.id)?.cluster === p.cluster);
   const cover = e.images[0];
   return (
     <div className="place-card" role="dialog" aria-label={e.title}>
@@ -323,7 +317,7 @@ function PlaceCard({
         </Link>
         {others.length > 0 && (
           <div className="also">
-            <small>Also at this place</small>
+            <small>Also here and nearby</small>
             {others.map((o) => (
               <button type="button" key={o.id} onClick={() => onPick(o.id)}>
                 {o.images[0] && (

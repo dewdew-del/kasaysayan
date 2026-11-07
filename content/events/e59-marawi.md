@@ -1,7 +1,7 @@
 ---
 id: marawi
 title: The siege of Marawi
-date: { label: "23 May – 23 October 2017", sort: 2017.39, approx: true }
+date: { label: "23 May – 23 October 2017", sort: 2017.39, approx: true, start: { year: 2017, month: 5, day: 23 } }
 era: modern
 topics: [war]
 place:

@@ -27,3 +27,17 @@ describe("dates", () => {
     expect(dateLabel({ year: 1896, month: 8 })).toBe("August 1896");
   });
 });
+
+describe("range dates and edge days", () => {
+  test("a range with a start date sorts by its start", () => {
+    const edsa: EventDate = { label: "22–25 February 1986", sort: 0, approx: true, start: { year: 1986, month: 2, day: 22 } };
+    const snap: EventDate = { year: 1986, month: 2, day: 7 };
+    expect(sortKey(snap)).toBeLessThan(sortKey(edsa));
+    const gulf: EventDate = { label: "23–26 October 1944", sort: 0, approx: true, start: { year: 1944, month: 10, day: 23 } };
+    expect(sortKey({ year: 1944, month: 10, day: 20 })).toBeLessThan(sortKey(gulf));
+  });
+
+  test("31 December sorts before a year-only event of the next year", () => {
+    expect(sortKey({ year: 1898, month: 12, day: 31 })).toBeLessThan(sortKey({ year: 1899 }));
+  });
+});

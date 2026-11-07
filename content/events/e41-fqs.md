@@ -1,7 +1,7 @@
 ---
 id: fqs
 title: The First Quarter Storm
-date: { label: "January–March 1970", sort: 1970.07, approx: true }
+date: { label: "January–March 1970", sort: 1970.07, approx: true, start: { year: 1970, month: 1, day: 26 } }
 era: third
 topics: [politics]
 place:

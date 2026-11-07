@@ -16,7 +16,9 @@ import ReadingProgress from "./ReadingProgress";
 const EventMiniMap = dynamic(() => import("./EventMiniMap"), { ssr: false });
 
 /** The long-read page for one event. */
-export default function EventArticle({ event: e, prev, next }: { event: Event; prev?: Event; next?: Event }) {
+type Neighbour = Pick<Event, "id" | "title">;
+
+export default function EventArticle({ event: e, prev, next }: { event: Event; prev?: Neighbour; next?: Neighbour }) {
   const [open, setOpen] = useState<number | null>(null);
   const onOpen = useCallback((i: number) => setOpen(i), []);
   const onClose = useCallback(() => setOpen(null), []);

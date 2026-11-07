@@ -18,7 +18,13 @@ export default function MusicToggle() {
   const stop = useRef<(() => void) | null>(null);
 
   useEffect(() => setSupported(Boolean(getCtor())), []);
-  useEffect(() => () => stop.current?.(), []);
+  useEffect(
+    () => () => {
+      stop.current?.();
+      void ctx.current?.close().catch(() => {});
+    },
+    [],
+  );
 
   if (!supported) return null;
 
@@ -32,7 +38,7 @@ export default function MusicToggle() {
     try {
       const Ctor = getCtor()!;
       ctx.current ??= new Ctor();
-      void ctx.current.resume();
+      ctx.current.resume().catch(() => {});
       stop.current = startWaltz(ctx.current);
       setOn(true);
     } catch {

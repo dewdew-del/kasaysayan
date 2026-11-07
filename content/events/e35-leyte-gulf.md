@@ -1,7 +1,7 @@
 ---
 id: leyte-gulf
 title: The Battle of Leyte Gulf
-date: { label: "23–26 October 1944", sort: 1944.81, approx: true }
+date: { label: "23–26 October 1944", sort: 1944.81, approx: true, start: { year: 1944, month: 10, day: 23 } }
 era: japanese
 topics: [war, visayas]
 place:

@@ -1,7 +1,7 @@
 ---
 id: galleon
 title: The Manila galleons cross the Pacific
-date: { label: "1565–1815", sort: 1565.5, approx: true }
+date: { label: "1565–1815", sort: 1565.5, approx: true, start: { year: 1565, month: 6 } }
 era: spanish
 topics: [culture, politics]
 place:

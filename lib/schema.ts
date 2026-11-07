@@ -24,15 +24,17 @@ export const MAX_IMAGES = 8;
 
 const text = z.string().trim().min(1, "required");
 
-const DateSchema = z.union([
-  z.object({ label: text, sort: z.number(), approx: z.literal(true) }).strict(),
-  z
+const ExactDateSchema = z
     .object({
       year: z.number().int(),
       month: z.number().int().min(1).max(12).optional(),
       day: z.number().int().min(1).max(31).optional(),
     })
-    .strict(),
+    .strict();
+
+const DateSchema = z.union([
+  z.object({ label: text, sort: z.number(), approx: z.literal(true), start: ExactDateSchema.optional() }).strict(),
+  ExactDateSchema,
 ]);
 
 const ImageSchema = z.object({

@@ -116,6 +116,11 @@ describe("EventArticle", () => {
     expect(screen.getByRole("link", { name: /Later.*The Commonwealth begins/ })).toHaveAttribute("href", "/events/commonwealth");
   });
 
+  test("Earlier/Later links work with just id and title", () => {
+    render(<EventArticle event={kawit} prev={{ id: "gomburza", title: "Execution of Gomburza" }} next={undefined} />);
+    expect(screen.getByRole("link", { name: /Earlier.*Execution of Gomburza/ })).toHaveAttribute("href", "/events/gomburza");
+  });
+
   test("shows the reading time", () => {
     render(<EventArticle event={kawit} prev={prev} next={next} />);
     expect(screen.getByText(/1 min read/)).toBeInTheDocument();

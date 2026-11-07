@@ -1,7 +1,7 @@
 ---
 id: dagohoy
 title: Dagohoy's revolt in Bohol
-date: { label: "1744–1829", sort: 1744.1, approx: true }
+date: { label: "1744–1829", sort: 1744.1, approx: true, start: { year: 1744, month: 1 } }
 era: spanish
 topics: [war, visayas]
 place:

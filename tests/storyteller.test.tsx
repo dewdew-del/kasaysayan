@@ -84,6 +84,39 @@ describe("Storyteller", () => {
     expect(screen.queryByRole("dialog")).toBeNull();
   });
 
+  test("place card lists every event at a crowded spot", () => {
+    const crowd = Array.from({ length: 15 }, (_, i) => makeEvent({ id: `c${i}`, title: `Crowd ${i}`, date: { year: 1900 + i }, place: manila }));
+    render(<Storyteller events={crowd} />);
+    fireEvent.click(screen.getByRole("button", { name: "Crowd 0, Manila" }));
+    const card = screen.getByRole("dialog", { name: "Crowd 0" });
+    expect(within(card).getAllByRole("button", { name: /Crowd/ })).toHaveLength(14);
+  });
+
+  test("a plain wheel over the map scrolls the page; ctrl+wheel zooms", () => {
+    const { container } = render(<Storyteller events={events} />);
+    const wrap = container.querySelector(".mapwrap")!;
+    const plain = new WheelEvent("wheel", { deltaY: -100, bubbles: true, cancelable: true });
+    wrap.dispatchEvent(plain);
+    expect(plain.defaultPrevented).toBe(false);
+    expect(screen.getByText("1.0×")).toBeInTheDocument();
+    act(() => void wrap.dispatchEvent(new WheelEvent("wheel", { deltaY: -100, ctrlKey: true, bubbles: true, cancelable: true })));
+    expect(screen.queryByText("1.0×")).toBeNull();
+  });
+
+  test("Play respects reduced motion", () => {
+    vi.useFakeTimers();
+    const mm = window.matchMedia;
+    window.matchMedia = ((q: string) => ({ matches: q.includes("reduce"), media: q, addEventListener() {}, removeEventListener() {} })) as never;
+    const spy = vi.spyOn(Element.prototype, "scrollIntoView");
+    spy.mockClear();
+    render(<Storyteller events={events} />);
+    fireEvent.click(screen.getByRole("button", { name: /Play/ }));
+    act(() => vi.advanceTimersByTime(2200));
+    expect(spy).toHaveBeenCalled();
+    for (const call of spy.mock.calls) expect(call[0]).toMatchObject({ behavior: "auto" });
+    window.matchMedia = mm;
+  });
+
   test("zoom buttons change the zoom level", () => {
     render(<Storyteller events={events} />);
     expect(screen.getByText("1.0×")).toBeInTheDocument();

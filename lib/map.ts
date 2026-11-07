@@ -68,17 +68,62 @@ export function doodles(seed: number, attempts = 400): Doodle[] {
   return out;
 }
 
-/** Marker position per event id. Events at the same spot are fanned out so each stays clickable. */
-export function markerPositions(events: Pick<Event, "id" | "place">[]): Map<string, { x: number; y: number }> {
-  const out = new Map<string, { x: number; y: number }>();
-  const stack = new Map<string, number>();
+/** Events whose true points are closer than this (map units, about 0.3°) share one cluster. */
+export const CLUSTER_RADIUS = 16;
+/** Spacing of the spiral that fans a cluster out around its centre. */
+const SPIRAL_STEP = 7.2;
+
+export type MarkerPos = { x: number; y: number; tx: number; ty: number; cluster: number };
+
+/**
+ * Marker position per event id. Events near each other are grouped into a cluster and
+ * fanned out on a small spiral around the cluster centre, so each stays visible and clickable
+ * without drifting far from where it happened. tx/ty keep the true projected point.
+ */
+export function markerPositions(events: Pick<Event, "id" | "place">[]): Map<string, MarkerPos> {
+  const clusters: { cx: number; cy: number; ids: { id: string; tx: number; ty: number }[] }[] = [];
   for (const e of events) {
     if (!e.place) continue;
-    const [x, y] = project(e.place.lng, e.place.lat);
-    const key = `${Math.round(x / 14)},${Math.round(y / 14)}`;
-    const n = stack.get(key) ?? 0;
-    stack.set(key, n + 1);
-    out.set(e.id, { x: x + n * 9, y: y - n * 7 });
+    const [tx, ty] = project(e.place.lng, e.place.lat);
+    const c = clusters.find((k) => Math.hypot(k.cx - tx, k.cy - ty) < CLUSTER_RADIUS);
+    if (c) c.ids.push({ id: e.id, tx, ty });
+    else clusters.push({ cx: tx, cy: ty, ids: [{ id: e.id, tx, ty }] });
   }
+  const out = new Map<string, MarkerPos>();
+  clusters.forEach((c, ci) => {
+    c.ids.forEach((m, n) => {
+      // Vogel spiral: n=0 at the centre, then outward at the golden angle.
+      const r = n === 0 ? 0 : SPIRAL_STEP * Math.sqrt(n);
+      const a = n * 2.39996;
+      out.set(m.id, { x: c.cx + r * Math.cos(a), y: c.cy + r * Math.sin(a), tx: m.tx, ty: m.ty, cluster: ci });
+    });
+  });
+  relax([...out.values()]);
   return out;
+}
+
+/** Minimum gap between any two markers, in map units. */
+const MIN_GAP = 7;
+
+/** Nudges markers that sit closer than MIN_GAP apart (for example from neighbouring clusters). */
+function relax(ps: MarkerPos[]) {
+  for (let iter = 0; iter < 40; iter++) {
+    let moved = false;
+    for (let i = 0; i < ps.length; i++)
+      for (let j = i + 1; j < ps.length; j++) {
+        const dx = ps[j].x - ps[i].x;
+        const dy = ps[j].y - ps[i].y;
+        const d = Math.hypot(dx, dy);
+        if (d >= MIN_GAP) continue;
+        const ux = d ? dx / d : 1;
+        const uy = d ? dy / d : 0;
+        const push = (MIN_GAP - d) / 2 + 0.01;
+        ps[i].x -= ux * push;
+        ps[i].y -= uy * push;
+        ps[j].x += ux * push;
+        ps[j].y += uy * push;
+        moved = true;
+      }
+    if (!moved) break;
+  }
 }

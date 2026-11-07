@@ -433,3 +433,7 @@
 @media (max-width: 420px) {
   .site-header nav a:first-child { display: none; }
 }
+
+/* keep the first and last scale-bar labels inside the bar */
+.track .ticks span:first-child { transform: none; }
+.track .ticks span:last-child { transform: translateX(-100%); }

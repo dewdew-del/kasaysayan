@@ -1,7 +1,7 @@
 ---
 id: battle-manila
 title: The Battle of Manila
-date: { label: "3 February – 3 March 1945", sort: 1945.1, approx: true }
+date: { label: "3 February – 3 March 1945", sort: 1945.1, approx: true, start: { year: 1945, month: 2, day: 3 } }
 era: japanese
 topics: [war]
 place:

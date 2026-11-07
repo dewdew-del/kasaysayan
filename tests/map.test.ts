@@ -44,7 +44,7 @@ describe("map geometry", () => {
     const pts = ["a", "b", "c"].map((id) => pos.get(id)!);
     for (let i = 0; i < pts.length; i++)
       for (let j = i + 1; j < pts.length; j++) {
-        expect(Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y)).toBeGreaterThanOrEqual(8);
+        expect(Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y)).toBeGreaterThanOrEqual(7);
       }
   });
 
@@ -63,5 +63,32 @@ describe("map geometry", () => {
       expect(["palm", "hill"]).toContain(d.kind);
       expect(isOnLand(d.x, d.y)).toBe(true);
     }
+  });
+});
+
+describe("marker clustering on real-sized stacks", () => {
+  const manila = { lat: 14.59, lng: 120.98 };
+  const many = Array.from({ length: 19 }, (_, i) => ev(`m${i}`, manila));
+
+  test("19 events at one spot stay close to the true point and apart from each other", () => {
+    const pos = markerPositions(many);
+    const [tx, ty] = project(manila.lng, manila.lat);
+    const pts = many.map((e) => pos.get(e.id)!);
+    for (const p of pts) expect(Math.hypot(p.x - tx, p.y - ty)).toBeLessThanOrEqual(32);
+    for (let i = 0; i < pts.length; i++)
+      for (let j = i + 1; j < pts.length; j++) expect(Math.hypot(pts[i].x - pts[j].x, pts[i].y - pts[j].y)).toBeGreaterThanOrEqual(7);
+  });
+
+  test("every marker keeps its true position for same-place lookups", () => {
+    const pos = markerPositions(many);
+    const [tx, ty] = project(manila.lng, manila.lat);
+    for (const e of many) expect(pos.get(e.id)).toMatchObject({ tx, ty });
+  });
+
+  test("nearby but different places are fanned apart so neither hides the other", () => {
+    const pos = markerPositions([ev("mactan", { lat: 10.31, lng: 123.98 }), ev("legazpi", { lat: 10.29, lng: 123.9 })]);
+    const a = pos.get("mactan")!;
+    const b = pos.get("legazpi")!;
+    expect(Math.hypot(a.x - b.x, a.y - b.y)).toBeGreaterThanOrEqual(7);
   });
 });
