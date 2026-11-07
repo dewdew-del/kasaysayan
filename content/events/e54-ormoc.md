@@ -63,6 +63,6 @@ The tragedy led to new attention to forest protection and watershed management, 
 
 ## Remembered every November
 
-Every 5 November, Ormoc remembers. Families gather at memorials and mass graves, light candles and lay flowers for relatives lost in the flood.[2]
+Every 5 November, the people of Ormoc remember. Families gather at memorials and mass graves, light candles and lay flowers for relatives lost in the flood.[2]
 
 The city has rebuilt, and the river channels were widened and lined to carry floodwaters. But the memory of 1991 is still a reminder of how deadly rain can be when the land that should hold it has been stripped bare.[1][2]
