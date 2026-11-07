@@ -1,15 +1,10 @@
-import { Suspense } from "react";
 import { getPublishedEvents } from "@/lib/events";
-import Storyteller, { StorytellerFallback } from "@/components/Storyteller";
+import { toCard } from "@/lib/card";
+import Storyteller from "@/components/Storyteller";
 
-// Server component: reads and validates the event files at build time.
+// Server component: reads and validates the event files at build time,
+// then hands the client only the small card data the home page needs.
 export default function Home() {
-  const events = getPublishedEvents();
-  return (
-    // useSearchParams (for ?topic=) needs a Suspense boundary in a static export.
-    // The fallback is the full page, so the static HTML is never empty.
-    <Suspense fallback={<StorytellerFallback events={events} />}>
-      <Storyteller events={events} />
-    </Suspense>
-  );
+  const cards = getPublishedEvents().map(toCard);
+  return <Storyteller events={cards} />;
 }

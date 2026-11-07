@@ -1,7 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
-import type { Event } from "@/lib/events";
+import type { EventCard } from "@/lib/card";
 import { MAP_H, MAP_W, coastPaths, doodles, markerPositions, project } from "@/lib/map";
 
 // Drawn once per module: the coast and doodles never change.
@@ -29,7 +29,7 @@ const SHIPS: [number, number, number][] = [
 ];
 
 export type StoryMapProps = {
-  events: Event[];
+  events: EventCard[];
   current: number;
   onMarkerClick: (id: string) => void;
   /** Optional zoomed viewBox; defaults to the whole map. */

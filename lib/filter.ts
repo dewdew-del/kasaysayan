@@ -1,4 +1,4 @@
-import type { Event } from "./events";
+import type { EventCard } from "./card";
 import { TOPICS, type TopicId } from "./schema";
 
 export const TOPIC_LABELS: Record<TopicId, string> = {
@@ -9,7 +9,7 @@ export const TOPIC_LABELS: Record<TopicId, string> = {
   visayas: "Bohol & Visayas",
 };
 
-export function filterByTopic(events: Event[], topic: TopicId | null): Event[] {
+export function filterByTopic<T extends Pick<EventCard, "topics">>(events: T[], topic: TopicId | null): T[] {
   return topic ? events.filter((e) => e.topics.includes(topic)) : events;
 }
 

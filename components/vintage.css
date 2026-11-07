@@ -417,3 +417,7 @@
 .rule { background: #fbf5e3; border: 1px solid #b9a47a; padding: 14px; }
 .rule h2 { font-size: 20px; margin: 0 0 4px; }
 .rule p { margin: 0; font-size: 16px; color: var(--faded); }
+
+/* keep tall portraits from filling the screen */
+.photo.hero img { width: auto; max-width: 100%; max-height: 460px; margin: 0 auto; object-fit: contain; }
+.photo.inline img { max-height: 360px; object-fit: cover; }

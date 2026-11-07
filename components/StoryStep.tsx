@@ -1,10 +1,10 @@
 import Link from "next/link";
-import type { Event } from "@/lib/events";
+import type { EventCard } from "@/lib/card";
 import { ERA_LABELS } from "@/lib/schema";
 import { dateLabel } from "@/lib/dates";
 import Engraving from "./Engraving";
 
-export type StoryStepProps = { event: Event; index: number; active: boolean };
+export type StoryStepProps = { event: EventCard; index: number; active: boolean };
 
 /** One event on the storyteller page: cover photo, era, year, title, summary and one Read button. */
 export default function StoryStep({ event: e, index, active }: StoryStepProps) {

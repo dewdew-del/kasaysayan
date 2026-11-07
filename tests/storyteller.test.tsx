@@ -2,18 +2,7 @@ import { afterEach, beforeEach, describe, expect, test, vi } from "vitest";
 import { act, fireEvent, render, screen, within } from "@testing-library/react";
 import { img, makeEvent } from "./helpers";
 
-// next/navigation is not available outside Next: a tiny fake keeps ?topic= in a variable.
-let search = "";
-const replace = vi.fn((url: string) => {
-  search = url.split("?")[1] ?? "";
-});
-vi.mock("next/navigation", () => ({
-  useSearchParams: () => new URLSearchParams(search),
-  useRouter: () => ({ replace }),
-  usePathname: () => "/",
-}));
-
-import Storyteller from "@/components/Storyteller";
+import Storyteller, { toCards } from "@/components/Storyteller";
 
 const manila = { name: "Manila", lat: 14.59, lng: 120.98 };
 const events = [
@@ -26,8 +15,7 @@ const events = [
 const currentStep = () => document.querySelector('.step[aria-current="step"]')?.getAttribute("data-index");
 
 beforeEach(() => {
-  search = "";
-  replace.mockClear();
+  window.history.replaceState(null, "", "/");
 });
 afterEach(() => vi.useRealTimers());
 
@@ -38,7 +26,7 @@ describe("Storyteller", () => {
   });
 
   test("shows empty state when no event matches topic", () => {
-    search = "topic=science";
+    window.history.replaceState(null, "", "/?topic=science");
     render(<Storyteller events={events} />);
     expect(screen.getByText("No events for this topic yet.")).toBeInTheDocument();
   });
@@ -46,7 +34,8 @@ describe("Storyteller", () => {
   test("choosing a topic filters the steps and writes ?topic=", () => {
     render(<Storyteller events={events} />);
     fireEvent.click(screen.getByRole("button", { name: "War" }));
-    expect(replace).toHaveBeenCalledWith("/?topic=war", { scroll: false });
+    expect(window.location.search).toBe("?topic=war");
+    expect(document.querySelectorAll(".step")).toHaveLength(1);
   });
 
   test("Play advances current and stops at end", () => {
@@ -105,10 +94,18 @@ describe("Storyteller", () => {
   });
 });
 
-describe("static first paint", () => {
-  test("StorytellerFallback renders every story without reading the URL", async () => {
-    const { StorytellerFallback } = await import("@/components/Storyteller");
-    render(<StorytellerFallback events={events} />);
+describe("home page payload", () => {
+  test("toCards keeps only what the story list and map need", () => {
+    const cards = toCards(events);
+    expect(cards).toHaveLength(4);
+    expect(cards[1].images).toHaveLength(1);
+    expect(cards[1]).not.toHaveProperty("body");
+    expect(cards[1]).not.toHaveProperty("story");
+    expect(cards[1]).not.toHaveProperty("sources");
+  });
+
+  test("renders every story with no topic in the URL", () => {
+    render(<Storyteller events={events} />);
     expect(screen.getByRole("heading", { name: "Battle of Mactan" })).toBeInTheDocument();
     expect(screen.getAllByRole("link", { name: /Read the story/ })).toHaveLength(4);
   });

@@ -2,8 +2,8 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import type { Event } from "@/lib/events";
+import { toCard, type EventCard } from "@/lib/card";
 import { ERAS, ERA_LABELS, type TopicId } from "@/lib/schema";
 import { dateLabel } from "@/lib/dates";
 import { filterByTopic, parseTopic } from "@/lib/filter";
@@ -21,26 +21,28 @@ const ZOOM_STEP = 1.6;
 /** Events within this many map units of each other count as "the same place". */
 const SAME_PLACE = 30;
 
-/** Reads and writes ?topic= in the URL. Needs a Suspense boundary (see app/page.tsx). */
-export default function Storyteller({ events }: { events: Event[] }) {
-  const params = useSearchParams();
-  const router = useRouter();
-  const pathname = usePathname();
-  const topic = parseTopic(params.get("topic"));
-  const setTopic = (t: TopicId | null) => router.replace(t ? `${pathname}?topic=${t}` : pathname, { scroll: false });
+export const toCards = (events: Event[]): EventCard[] => events.map(toCard);
+
+/**
+ * The storyteller home page. ?topic= is read from the address bar after the page loads,
+ * so the static HTML (and first paint) always shows every event.
+ */
+export default function Storyteller({ events }: { events: EventCard[] }) {
+  const [topic, setTopicState] = useState<TopicId | null>(null);
+  useEffect(() => {
+    const read = () => setTopicState(parseTopic(new URLSearchParams(window.location.search).get("topic")));
+    read();
+    window.addEventListener("popstate", read);
+    return () => window.removeEventListener("popstate", read);
+  }, []);
+  const setTopic = (t: TopicId | null) => {
+    window.history.replaceState(null, "", t ? `${window.location.pathname}?topic=${t}` : window.location.pathname);
+    setTopicState(t);
+  };
   return <StorytellerView events={events} topic={topic} onTopicChange={setTopic} />;
 }
 
-/**
- * Same page without reading the URL, so the static HTML contains every story
- * (shown before JavaScript loads, and to search engines).
- */
-export function StorytellerFallback({ events }: { events: Event[] }) {
-  const go = (t: TopicId | null) => window.location.assign(t ? `/?topic=${t}` : "/");
-  return <StorytellerView events={events} topic={null} onTopicChange={go} />;
-}
-
-type ViewProps = { events: Event[]; topic: TopicId | null; onTopicChange: (t: TopicId | null) => void };
+type ViewProps = { events: EventCard[]; topic: TopicId | null; onTopicChange: (t: TopicId | null) => void };
 
 function StorytellerView({ events: all, topic, onTopicChange: setTopic }: ViewProps) {
   const events = useMemo(() => filterByTopic(all, topic), [all, topic]);
@@ -164,7 +166,7 @@ function StorytellerView({ events: all, topic, onTopicChange: setTopic }: ViewPr
 }
 
 /** About seven evenly spaced year labels under the scale bar. */
-function pickTicks(events: Event[]) {
+function pickTicks(events: EventCard[]) {
   if (!events.length) return [];
   const n = Math.min(7, events.length);
   const idx = [...new Set(Array.from({ length: n }, (_, k) => Math.round((k * (events.length - 1)) / Math.max(1, n - 1))))];
@@ -281,7 +283,7 @@ function PlaceCard({
   onClose,
 }: {
   id: string;
-  events: Event[];
+  events: EventCard[];
   pos: Map<string, { x: number; y: number }>;
   onPick: (id: string) => void;
   onClose: () => void;
