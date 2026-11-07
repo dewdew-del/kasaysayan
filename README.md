@@ -38,7 +38,7 @@ Every event is checked before it goes on the site.
 | Content | One Markdown file per event, validated with Zod |
 | Map | Custom SVG from Natural Earth (public domain), plus Leaflet + OpenStreetMap on event pages |
 | Photos | Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA), converted to WebP with sharp |
-| Tests | Vitest + Testing Library (99 tests) |
+| Tests | Vitest + Testing Library (108 tests) |
 | Hosting | Vercel Hobby (free), GitHub Actions CI (free) |
 
 ## Run it locally
