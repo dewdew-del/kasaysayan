@@ -9,7 +9,31 @@ place:
   lat: 14.60
   lng: 120.98
 summary: Filipinos elected their first national legislature under American rule. When the Philippine Assembly opened in a Manila theater, a 29-year-old Sergio Osmeña became its speaker.
-images: []
+images:
+  - file: assembly-1.webp
+    caption: "William Howard Taft addressing the First Philippine Assembly, 1907"
+    alt: "Old photograph of a man speaking in a crowded hall"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Taft_Addressing_First_Philippine_Assembly_1907.jpg
+  - file: assembly-2.webp
+    caption: "The First Philippine Assembly, 1907"
+    alt: "Old group photograph of legislators"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:First_Philippine_Assembly_1907.jpg
+  - file: assembly-3.webp
+    caption: "Marker for the inauguration of the Assembly"
+    alt: "Historical marker plaque"
+    author: "Ramon FVelasquez"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Inauguration_of_the_First_Philippine_Assembly_historical_marker.jpg
+  - file: assembly-4.webp
+    caption: "Birthplace of Sergio Osmeña marker, Cebu City"
+    alt: "Historical marker plaque"
+    author: "Ralff Nestor Nacor"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Birthplace_of_Sergio_Osme%C3%B1a_Sr._Historical_Marker,_Cebu_City.jpg
 sources:
   - { title: "Oct. 16, 1907: First session of Philippine Assembly commences", publisher: "Inquirer USA", url: "https://usa.inquirer.net/181339/oct-16-1907-first-session-of-ph-commission-assembly-commences", accessed: 2026-11-06 }
   - { title: "Did You Know: First Philippine Assembly", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/731080/did-you-know-first-philippine-assembly/amp", accessed: 2026-11-06 }
@@ -24,6 +48,8 @@ By 1907, organized fighting against American rule had mostly ended in the lowlan
 
 The US Congress had passed the Philippine Organic Act in 1902. It promised that once peace was established and a census taken, Filipinos would be able to elect a lower house of a legislature. The census was completed in 1905, and the way was open.[1][2]
 
+{{photo:2}}
+
 ## The first election
 
 On 30 July 1907, Filipino voters went to the polls to elect 80 members of the new Philippine Assembly. Voting was limited to men who were literate in English or Spanish, owned property or paid a certain amount in taxes, or had held public office. Only a small share of the population could vote.[1][2]
@@ -37,6 +63,8 @@ The result surprised many Americans. Filipino voters had used their first electi
 On 16 October 1907, the Philippine Assembly held its first session at the Manila Grand Opera House on Plaza Cervantes. There was no building yet big enough or grand enough, so the legislature met in a theater.[2]
 
 The American secretary of war, William Howard Taft, who had been the first civilian governor of the islands, came to Manila for the occasion and gave a speech.[1]
+
+{{photo:3}}
 
 ## Osmeña and Quezon
 

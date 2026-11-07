@@ -9,7 +9,37 @@ place:
   lat: 14.59
   lng: 120.98
 summary: Under a US law promising independence after ten years, Manuel L. Quezon was inaugurated as president of the Philippine Commonwealth before a crowd of hundreds of thousands in Manila.
-images: []
+images:
+  - file: commonwealth-1.webp
+    caption: "Manuel L. Quezon's first inauguration, 1935"
+    alt: "Old photograph of a crowd at an inauguration"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Manuel_Quezon_first_inauguration.jpg
+  - file: commonwealth-2.webp
+    caption: "Signing the Commonwealth Constitution, 1935"
+    alt: "Officials signing a document"
+    author: "This file is a work of a U.S. Army soldier or employee, taken or made as part of that person's official duties."
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Signing_the_Constitution_of_the_Philippine_Commonwealth,_23_March_1935.jpg
+  - file: commonwealth-3.webp
+    caption: "Aguinaldo and Quezon in 1935"
+    alt: "Old photograph of two men"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Aguinaldo_and_Quezon_in_1935.JPG
+  - file: commonwealth-4.webp
+    caption: "Preparing the inauguration, 15 November 1935"
+    alt: "Stage being prepared"
+    author: "The Tribune Manila"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:The_Tribune_Preparing_for_Inauguration_Ceremonies_November_15_1935.jpg
+  - file: commonwealth-5.webp
+    caption: "The Legislative Building"
+    alt: "Neoclassical government building"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Central_facade_of_the_Legislative_Building.jpg
 sources:
   - { title: "November 15, 1935 (diary entries and context)", publisher: "The Philippine Diary Project", url: "https://philippinediaryproject.com/1935/11/15/november-15-1935/", accessed: 2026-11-06 }
   - { title: "Proclamation No. 2148, s. 1935 (establishing the Commonwealth)", publisher: "The LawPhil Project", url: "https://lawphil.net/executive/proc/proc1935/proc_2148_1935.html", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ For three decades after the Philippine Assembly opened, Filipino leaders lobbied
 
 American motives were mixed. Some Americans supported Filipino independence on principle. Others, especially farmers and labor groups during the Great Depression, wanted to stop tax-free imports of Philippine sugar and the arrival of Filipino workers.[3]
 
+{{photo:2}}
+
 ## A constitution
 
 A constitutional convention met in Manila from July 1934. Its delegates wrote a constitution with a president, a single-chamber National Assembly and a bill of rights, modeled partly on the American system. It was approved by President Franklin D. Roosevelt in March 1935 and by Filipino voters in a plebiscite in May.[1][2]
@@ -34,6 +66,8 @@ A constitutional convention met in Manila from July 1934. Its delegates wrote a 
 In September 1935, Filipinos elected their first president. Manuel L. Quezon, who had been Senate president for nearly twenty years, ran with Sergio Osmeña as his running mate. They easily defeated Emilio Aguinaldo, the old revolutionary general, and Bishop Gregorio Aglipay, founder of the Philippine Independent Church.[3]
 
 Quezon wrote in his autobiography that he saw his election as the fulfillment of a lifetime's work.[3]
+
+{{photo:3}}
 
 ## Fifteenth of November
 

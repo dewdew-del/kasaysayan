@@ -9,7 +9,37 @@ place:
   lat: 14.59
   lng: 120.97
 summary: A transport ship named Thomas brought about 500 American teachers to Manila to set up a public school system taught in English, a change that shaped the Philippines for generations.
-images: []
+images:
+  - file: thomasites-1.webp
+    caption: "Schoolgirls in Surigao, 1901"
+    alt: "Old photograph of girls in a classroom"
+    author: "Francinehihao"
+    license: CC0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Surigaonon_schoolgirls_1901.jpg
+  - file: thomasites-2.webp
+    caption: "Thomasites memorial marker in Manila"
+    alt: "Historical marker plaque"
+    author: "JoRitchChT (Wikipedia Takes Manila participant)"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Thomasites_Memorial_historical_marker_in_Manila.jpg
+  - file: thomasites-3.webp
+    caption: "Burial plot of the Thomasites in Manila"
+    alt: "Graves in a cemetery"
+    author: "CNEcija12345"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Burial_plot_of_the_Thomasites_CNE_01.jpg
+  - file: thomasites-4.webp
+    caption: "American teachers memorial"
+    alt: "Memorial with plaques"
+    author: "KC Sacramento (Wikipedia Takes Manila participant)"
+    license: CC BY-SA 3.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:American_Teachers_Memorial_with_plaques.jpg
+  - file: thomasites-5.webp
+    caption: "An Ilocano family in Vigan, about 1907"
+    alt: "Old photograph of a family"
+    author: "Rev. Oliver C. Miller"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:An_Ilocano_family_in_Vigan,_Ilocos_Sur,_c.1907.jpg
 sources:
   - { title: "August 21, 1901: The arrival of the Thomasites", publisher: "Inquirer USA", url: "https://usa.inquirer.net/155379/august-21-1901-the-arrival-of-the-thomasites", accessed: 2026-11-06 }
   - { title: "A Brief History of the Thomasites", publisher: "University of Michigan, Michigan in the World exhibit", url: "https://philippines.michiganintheworld.history.lsa.umich.edu/s/exhibit/page/a-brief-history-of-the-thomasites", accessed: 2026-11-06 }
@@ -27,6 +57,8 @@ In January 1901, the Philippine Commission passed Act No. 74, which created a De
 
 There was one problem: there were very few teachers who could teach in English. The government decided to bring them from the United States.
 
+{{photo:2}}
+
 ## The voyage of the Thomas
 
 On 23 July 1901, the US Army transport ship Thomas left San Francisco carrying hundreds of young American teachers, men and women, many of them recent college graduates. Sources give different totals, but the group was usually counted at around 500.[1][2]
@@ -38,6 +70,8 @@ After a stop in Honolulu, the Thomas reached Manila Bay on 21 August 1901. Becau
 The teachers were sent all over the archipelago, from big provincial towns to remote villages in the mountains and on small islands. Many lived far from other Americans, learning local languages and adjusting to unfamiliar food, climate and customs.[2][3]
 
 Life was hard. Some caught tropical diseases. Some were killed in the ongoing fighting. Others gave up and went home. But many stayed for years, building schools and training Filipino teachers who would gradually take over.[2]
+
+{{photo:3}}
 
 ## English, everywhere
 

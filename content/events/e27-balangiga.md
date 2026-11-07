@@ -9,7 +9,37 @@ place:
   lat: 11.11
   lng: 125.39
 summary: Townspeople and guerrillas in Balangiga, Samar, surprised an American garrison at breakfast, killing most of the company. The American reprisals that followed devastated Samar. The town's church bells, taken as trophies, came home only in 2018.
-images: []
+images:
+  - file: balangiga-1.webp
+    caption: "Survivors of Company C after the attack"
+    alt: "Old photograph of American soldiers"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Balangiga_survivors.jpg
+  - file: balangiga-2.webp
+    caption: "The bells displayed in Wyoming"
+    alt: "Bells in a brick wall display"
+    author: "Unknown author"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:FE_Warren_bells.jpg
+  - file: balangiga-3.webp
+    caption: "The Balangiga bells arrive in the Philippines, 2018"
+    alt: "Old church bells at an airport ceremony"
+    author: "Joey O. Razon for the Philippine News Agency"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Balangiga_Bells_arrives_in_PH.jpg
+  - file: balangiga-4.webp
+    caption: "The bells back at San Lorenzo de Martir Church"
+    alt: "Old bells at a church"
+    author: "Patrickroque01"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:San_Lorenzo_De_Martir_Church_Balangiga_Bells_(San_Lorenzo_Street,_Balangiga,_Eastern_Samar;_04-28-2023).jpg
+  - file: balangiga-5.webp
+    caption: "Marker for Eugenio Daza, a leader of the attack"
+    alt: "Historical marker plaque"
+    author: "Leocvlauzon"
+    license: CC BY-SA 4.0
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Eugenio_Daza_NHI_Historical_Marker.jpg
 sources:
   - { title: "FAST FACTS: Balangiga Massacre", publisher: "Rappler", url: "https://www.rappler.com/newsbreak/iq/things-to-know-balangiga-massacre", accessed: 2026-11-06 }
   - { title: "Town in frenzy over return of Balangiga bells after 117 years", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/1061440/town-in-frenzy-over-return-of-balangiga-bells-after-117-years/amp", accessed: 2026-11-06 }
@@ -25,6 +55,8 @@ Balangiga is a small fishing and farming town on the southern coast of Samar, fa
 
 At first relations were calm. But the soldiers' presence became harsh. They forced the town's men to cut brush and clear land, confiscated food and, according to Filipino accounts, mistreated residents, including women. Anger grew.[1][4]
 
+{{photo:2}}
+
 ## The plan
 
 The town's leaders, working with the guerrillas, prepared a surprise. In the weeks before the attack, men from the surrounding area came into town, some disguised as laborers. On the night before, some of them reportedly dressed as women and carried bolos hidden in small coffins, saying they were taking dead children to the church.[1]
@@ -36,6 +68,8 @@ The signal would be the church bells.
 Early on Sunday, 28 September 1901, while most of the American soldiers were eating breakfast without their rifles, a local police chief grabbed a sentry's gun and the church bells began to ring. Hundreds of attackers armed with bolos rushed the soldiers from the church, the town hall and the nearby houses.[1][2]
 
 The fight was short and brutal. Of about 74 Americans in the company, roughly 48 were killed and most of the rest wounded. A few escaped by boat along the coast to the next American garrison.[1][3] It was one of the worst single defeats of the US Army in the war.
+
+{{photo:3}}
 
 ## "A howling wilderness"
 

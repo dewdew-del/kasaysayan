@@ -5,7 +5,31 @@ date: { year: 1937, month: 4, day: 30 }
 era: american
 topics: [politics]
 summary: In a special vote held only for women, nearly half a million Filipinas said yes to women's suffrage, winning the right to vote and run for office after decades of campaigning.
-images: []
+images:
+  - file: suffrage-1.webp
+    caption: "President Quezon signing the women's suffrage bill"
+    alt: "Old photograph of a man signing at a desk with women watching"
+    author: "Malacañang Palace"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:President_Quezon_signing_the_Women%E2%80%99s_Suffrage_Bill.jpg
+  - file: suffrage-2.webp
+    caption: "Suffragist Sofía Reyes de Veyra"
+    alt: "Portrait of a woman"
+    author: "Underwood &amp; Underwood, Washington, D.C. (Photographer)"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Madame_J._C._De_Veyra_158001v.jpg
+  - file: suffrage-3.webp
+    caption: "League of Women Voters historical marker"
+    alt: "Historical marker plaque"
+    author: "Judgefloro"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:League_of_Women_Voters_of_the_Philippines_historical_marker.jpg
+  - file: suffrage-4.webp
+    caption: "Marker for Clemencia Castelo López"
+    alt: "Historical marker plaque"
+    author: "National Historical Commission of the Philippines"
+    license: Public domain
+    sourceUrl: https://commons.wikimedia.org/wiki/File:Clemencia_Castelo_Lopez_historical_marker.jpg
 sources:
   - { title: "DID YOU KNOW: Filipino women first allowed to vote in 1937", publisher: "Philippine Daily Inquirer", url: "https://newsinfo.inquirer.net/986282/did-you-know-filipino-women-first-allowed-to-vote-in-1937/amp", accessed: 2026-11-06 }
   - { title: "The Debate on Women's Suffrage in the Philippines", publisher: "UP Halalan, University of the Philippines", url: "https://halalan.up.edu.ph/the-debate-on-womens-suffrage-in-the-philippines/", accessed: 2026-11-06 }
@@ -21,6 +45,8 @@ The fight for women's votes in the Philippines began early in the American perio
 
 Through the 1910s and 1920s, Filipino women's groups lobbied the legislature again and again. Bills to give women the vote were introduced several times, and each time they failed. Many male politicians argued that women belonged at home, that politics would corrupt them, or that they would simply vote as their husbands or priests told them.[2]
 
+{{photo:2}}
+
 ## A clause in the constitution
 
 When the 1935 Constitution was written, women's suffrage was one of its most argued-over questions. The delegates, all men, reached a compromise. The constitution did not give women the vote outright. Instead, it said women would gain the right if, within two years, at least 300,000 women voted for it in a special plebiscite.[1][2]
@@ -34,6 +60,8 @@ Women's groups launched a nationwide campaign. They traveled to towns and provin
 Leaders of the movement included women such as Pura Villanueva Kalaw, Concepción Felix-Rodríguez and Encarnación Alzona, a historian who later became the first Filipina to earn a doctorate. They had support from some male politicians, including President Manuel L. Quezon, who backed the cause.[2][3]
 
 The National Assembly set the details in Commonwealth Act No. 34, passed in 1936, which scheduled the plebiscite for 30 April 1937.[4]
+
+{{photo:3}}
 
 ## The arguments for and against
 
