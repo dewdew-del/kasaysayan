@@ -1,6 +1,6 @@
 # Kasaysayan
 
-**Live demo:** coming soon (deploying to Vercel)
+**Live demo:** https://kasaysayan-topaz.vercel.app
 
 *Kasaysayan* means "history" in Filipino. It's an illustrated, sourced history of the Philippines, told event by event on an old-style pictorial map of the islands.
 
