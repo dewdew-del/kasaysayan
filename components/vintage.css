@@ -312,11 +312,17 @@
   .zoomctl { right: 14px; bottom: 14px; }
 }
 
+/* music: pinned to the bottom-left corner of every page, so it keeps playing while you read */
+.music-box {
+  position: fixed;
+  left: 18px;
+  bottom: 18px;
+  z-index: 35;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 2px 2px 0 var(--ink);
+}
 .music {
-  position: absolute;
-  left: 20px;
-  top: 20px;
-  z-index: 5;
   background: var(--paper);
   color: var(--ink);
   border: 2px solid var(--ink);
@@ -324,10 +330,26 @@
   font-size: 15px;
   padding: 5px 12px;
   cursor: pointer;
-  box-shadow: 2px 2px 0 var(--ink);
 }
 .music[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
-@media (max-width: 860px) { .music { left: 14px; top: 14px; } }
+.music.next { border-left: 0; padding: 5px 10px; font-size: 17px; line-height: 1; }
+.tune-name {
+  display: flex;
+  align-items: center;
+  background: var(--paper);
+  border: 2px solid var(--ink);
+  border-left: 0;
+  padding: 0 10px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--faded);
+  white-space: nowrap;
+}
+@media (max-width: 860px) {
+  .music-box { left: 12px; bottom: 12px; }
+  .music { font-size: 14px; padding: 4px 10px; }
+  .tune-name { display: none; }
+}
 
 /* ---------- event page (long read) ---------- */
 .reading-progress { position: fixed; top: 0; left: 0; right: 0; height: 4px; background: var(--red); transform-origin: 0 50%; z-index: 40; }

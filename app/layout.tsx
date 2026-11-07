@@ -3,6 +3,7 @@ import { IM_Fell_English, IM_Fell_English_SC } from "next/font/google";
 import "./globals.css";
 import "@/components/vintage.css";
 import SiteHeader from "@/components/SiteHeader";
+import MusicToggle from "@/components/MusicToggle";
 
 const body = IM_Fell_English({
   weight: "400",
@@ -28,6 +29,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <body>
         <SiteHeader />
         {children}
+        <MusicToggle />
       </body>
     </html>
   );
