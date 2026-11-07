@@ -82,7 +82,7 @@
 .storymap .marker:focus-visible .dot { stroke: var(--ink); stroke-width: 3; }
 .storymap .ring { fill: none; stroke: var(--red); stroke-width: 2; }
 @media (prefers-reduced-motion: no-preference) {
-  .storymap .ring { animation: ring-pulse 1.8s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+  .storymap .ring { animation: ring-pulse 1.8s ease-out 3s infinite; transform-box: fill-box; transform-origin: center; }
 }
 @keyframes ring-pulse {
   0% { transform: scale(0.7); opacity: 1; }
@@ -356,7 +356,7 @@
 .chapter h2 .num { color: var(--red); font-size: 18px; }
 .chapter p { margin: 0 0 16px; }
 .chapter:first-child p:first-of-type::first-letter { font-family: var(--font-display), Georgia, serif; font-size: 3.4em; float: left; line-height: 0.8; margin: 6px 8px 0 0; color: var(--red); }
-.chapter sup a { text-decoration: none; font-size: 0.75em; }
+.chapter sup a { text-decoration: underline; text-underline-offset: 2px; font-size: 0.75em; }
 .photo.inline { width: 46%; margin: 6px 0 12px; }
 .photo.inline.left { float: left; margin-right: 24px; transform: rotate(-0.9deg); }
 .photo.inline.right { float: right; margin-left: 24px; transform: rotate(0.8deg); }

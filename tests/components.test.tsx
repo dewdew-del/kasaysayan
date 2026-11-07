@@ -72,6 +72,15 @@ describe("StoryStep", () => {
     expect(screen.queryByText(/photos/)).toBeNull();
   });
 
+  test("only the first StoryStep loads its photo eagerly", () => {
+    const e = makeEvent({ id: "a", images: [img(1, "a")] });
+    const { container, unmount } = render(<StoryStep event={e} index={0} active />);
+    expect(container.querySelector("img")).toHaveAttribute("loading", "eager");
+    unmount();
+    const { container: c2 } = render(<StoryStep event={e} index={3} active={false} />);
+    expect(c2.querySelector("img")).toHaveAttribute("loading", "lazy");
+  });
+
   test("StoryStep shows era, date, title, summary and place", () => {
     render(<StoryStep event={makeEvent({ id: "a" })} index={0} active={false} />);
     expect(screen.getByText("Revolution")).toBeInTheDocument();

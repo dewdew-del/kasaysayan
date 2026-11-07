@@ -18,7 +18,7 @@ export default function StoryStep({ event: e, index, active }: StoryStepProps) {
           <figure className="print">
             {/* Static export: plain img, already sized WebP. */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={`/images/events/${cover.file}`} alt="" loading="lazy" />
+            <img src={`/images/events/${cover.file}`} alt="" loading={index === 0 ? "eager" : "lazy"} fetchPriority={index === 0 ? "high" : "auto"} />
           </figure>
         ) : (
           <Engraving era={e.era} />
