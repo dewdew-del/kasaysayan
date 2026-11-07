@@ -26,8 +26,8 @@ Kasaysayan is a free, static website with 60 events from about 67,000 years ago 
 - **Fully static:** Next.js static export, so there's no backend or database, and hosting costs ₱0.
 - **Map:** drawn as SVG from public-domain Natural Earth coastline data. I wrote my own zoom and pan, and the markers and labels keep a constant size at any zoom.
 - **Content as Markdown:** each event is a Markdown file validated with a Zod schema, which makes the content easy to review in Git.
-- **Tests:** more than 100 tests with Vitest and Testing Library, written before the code (TDD).
-- **Licensed photos only:** about 190 public domain and Creative Commons photos from Wikimedia Commons, downloaded with scripts that check licenses and rate limits and convert to WebP.
+- **Tests:** 99 tests with Vitest and Testing Library, written before the code (TDD).
+- **Licensed photos only:** 250 public domain and Creative Commons photos from Wikimedia Commons, downloaded with scripts that check licenses and rate limits and convert to WebP.
 - **Accessibility:** alt text is required, the map's markers can be reached with a keyboard, reduced motion is respected, and music never autoplays.
 
 ## What I'd do next

@@ -6,7 +6,7 @@
 
 Scroll through 60 events, from the first people in Callao Cave about 67,000 years ago to the Bangsamoro vote of 2019. As you read, each event is inked onto the map where it happened. Every event opens into a long-read story with chapters, a photo gallery, a street map of the place, and numbered sources.
 
-![Kasaysayan home page](docs/screenshots/home.png)
+![Kasaysayan home page](docs/screenshots/home.jpg)
 
 ## What's in it
 
@@ -16,10 +16,10 @@ Scroll through 60 events, from the first people in Callao Cave about 67,000 year
 - **Topic filter**: war, politics, culture, science, and Bohol & Visayas. The filter is saved in the URL.
 - **Long-read event pages**: 600–1,000 word stories in chapters, with photos placed in the text, a gallery and lightbox, a sepia OpenStreetMap mini map, and numbered sources.
 - **Sources differ notes** on 20 contested events, such as Pugad Lawin, Bonifacio's death, Bataan's death toll, Plaza Miranda and the 1973 ratification.
-- **About 190 public domain and Creative Commons photos**, each credited with its author, license and source. They're all listed on the Credits page.
+- **250 public domain and Creative Commons photos**, each credited with its author, license and source. They're all listed on the Credits page.
 - **Original music**: a slow waltz generated live with the Web Audio API. It's off by default.
 
-![An event page](docs/screenshots/event.png)
+![An event page](docs/screenshots/event-mactan.jpg)
 
 ## How facts are checked
 
@@ -38,7 +38,7 @@ Every event is checked before it goes on the site.
 | Content | One Markdown file per event, validated with Zod |
 | Map | Custom SVG from Natural Earth (public domain), plus Leaflet + OpenStreetMap on event pages |
 | Photos | Wikimedia Commons (public domain, CC0, CC BY, CC BY-SA), converted to WebP with sharp |
-| Tests | Vitest + Testing Library (100+ tests) |
+| Tests | Vitest + Testing Library (99 tests) |
 | Hosting | Vercel Hobby (free), GitHub Actions CI (free) |
 
 ## Run it locally

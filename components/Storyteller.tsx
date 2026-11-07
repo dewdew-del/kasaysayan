@@ -5,7 +5,7 @@ import Link from "next/link";
 import type { Event } from "@/lib/events";
 import { toCard, type EventCard } from "@/lib/card";
 import { ERAS, ERA_LABELS, type TopicId } from "@/lib/schema";
-import { dateLabel } from "@/lib/dates";
+import { dateLabel, sortKey } from "@/lib/dates";
 import { filterByTopic, parseTopic } from "@/lib/filter";
 import { markerPositions } from "@/lib/map";
 import { centerView, fullView, isComfortablyInView, panView, zoomLevel, zoomView, type View } from "@/lib/zoom";
@@ -165,12 +165,15 @@ function StorytellerView({ events: all, topic, onTopicChange: setTopic }: ViewPr
   );
 }
 
-/** About seven evenly spaced year labels under the scale bar. */
-function pickTicks(events: EventCard[]) {
+/** About seven evenly spaced, short year labels under the scale bar. */
+export function pickTicks(events: Pick<EventCard, "date">[]) {
   if (!events.length) return [];
   const n = Math.min(7, events.length);
   const idx = [...new Set(Array.from({ length: n }, (_, k) => Math.round((k * (events.length - 1)) / Math.max(1, n - 1))))];
-  return idx.map((index) => ({ index, label: dateLabel(events[index].date).replace(/^c\. /, "").replace(/^\d+ \w+ /, "") }));
+  return idx.map((index) => {
+    const year = Math.floor(sortKey(events[index].date));
+    return { index, label: year < 0 ? `${Math.abs(year).toLocaleString("en-US")} BP` : String(year) };
+  });
 }
 
 function ZoomableMap({ view, setView, children }: { view: View; setView: (f: (v: View) => View) => void; children: React.ReactNode }) {

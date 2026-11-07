@@ -47,3 +47,16 @@ describe("zoom math", () => {
     expect(clampView({ x: -500, y: -500, w: MAP_W, h: MAP_H }).x).toBeGreaterThanOrEqual(-MAP_W * 0.05);
   });
 });
+
+describe("scale bar ticks", () => {
+  test("tick labels are short years, with BP for prehistoric dates", async () => {
+    const { pickTicks } = await import("@/components/Storyteller");
+    const cards = [
+      { date: { label: "c. 67,000–50,000 years ago", sort: -67000, approx: true as const } },
+      { date: { year: 900, month: 4, day: 21 } },
+      { date: { label: "1565–1815", sort: 1565.5, approx: true as const } },
+      { date: { year: 2019, month: 1, day: 21 } },
+    ];
+    expect(pickTicks(cards as never).map((t) => t.label)).toEqual(["67,000 BP", "900", "1565", "2019"]);
+  });
+});
