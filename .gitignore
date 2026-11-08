@@ -48,4 +48,3 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 
-/docs/build-log.md
