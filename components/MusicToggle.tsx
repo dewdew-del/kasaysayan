@@ -1,7 +1,8 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { startPlaylist, TUNES, type Player } from "@/lib/music";
+import { startPlaylist, type Player } from "@/lib/music";
+import { TRACKS } from "@/lib/tracks";
 
 type AudioCtor = typeof AudioContext;
 const getCtor = (): AudioCtor | undefined =>
@@ -9,6 +10,7 @@ const getCtor = (): AudioCtor | undefined =>
 
 export const MUSIC_PREF_KEY = "kasaysayan-music";
 const GESTURES = ["pointerdown", "keydown", "touchend", "click"] as const;
+const VOLUME = 0.6;
 
 function readPref(): "on" | "off" {
   try {
@@ -26,49 +28,65 @@ function savePref(v: "on" | "off") {
 }
 
 /**
- * Music, on by default. Browsers only allow sound after the visitor interacts with the page,
- * so it starts on the first click, tap or key press anywhere. It lives in the site layout,
- * so it keeps playing while you move between the map and the stories. Turning it off is
- * remembered in this browser. Hidden if Web Audio is missing.
+ * Music, on by default: old Philippine recordings plus one original waltz, one after another.
+ * Browsers only allow sound after the visitor interacts with the page, so it starts on the
+ * first click, tap or key press anywhere. It lives in the site layout, so it keeps playing
+ * while you move between the map and the stories. Turning it off is remembered.
  */
 export default function MusicToggle() {
   const [supported, setSupported] = useState(false);
   const [state, setState] = useState<"off" | "waiting" | "on">("off");
-  const [tune, setTune] = useState(0);
+  const [track, setTrack] = useState(0);
+  const trackRef = useRef(0);
+  const audio = useRef<HTMLAudioElement | null>(null);
   const ctx = useRef<AudioContext | null>(null);
-  const player = useRef<Player | null>(null);
-  const tuneRef = useRef(0);
+  const synth = useRef<Player | null>(null);
 
-  const onTune = useCallback((i: number) => {
-    tuneRef.current = i;
-    setTune(i);
+  const silence = useCallback(() => {
+    audio.current?.pause();
+    synth.current?.stop();
+    synth.current = null;
   }, []);
 
-  const play = useCallback(() => {
-    try {
-      const Ctor = getCtor()!;
+  /** Starts track `i`; resolves once sound is allowed, rejects if the browser blocks it. */
+  const startTrack = useCallback(
+    (i: number): Promise<void> => {
+      silence();
+      const n = ((i % TRACKS.length) + TRACKS.length) % TRACKS.length;
+      trackRef.current = n;
+      setTrack(n);
+      const t = TRACKS[n];
+      if (t.src) {
+        if (!audio.current) {
+          audio.current = new Audio();
+          audio.current.volume = VOLUME;
+          audio.current.preload = "auto";
+          audio.current.onended = () => void startTrack(trackRef.current + 1).catch(() => {});
+        }
+        audio.current.src = t.src;
+        return Promise.resolve(audio.current.play());
+      }
+      const Ctor = getCtor();
+      if (!Ctor) return startTrack(n + 1);
       ctx.current ??= new Ctor();
       const c = ctx.current;
-      player.current ??= startPlaylist(c, { start: tuneRef.current, onTune });
-      // resume() only succeeds inside a real user gesture; until then keep waiting.
-      c.resume()
-        .then(() => {
-          if (c.state === "running" && player.current) setState("on");
-        })
-        .catch(() => {});
-      if (c.state === "running") setState("on");
-    } catch {
-      setSupported(false);
-    }
-  }, [onTune]);
+      // The waltz plays its loops once; when it moves on, go to the next track.
+      synth.current = startPlaylist(c, { onTune: () => void startTrack(trackRef.current + 1).catch(() => {}) });
+      return c.resume().then(() => {
+        if (c.state !== "running") throw new Error("blocked");
+      });
+    },
+    [silence],
+  );
 
-  const stop = useCallback(() => {
-    player.current?.stop();
-    player.current = null;
-  }, []);
+  const play = useCallback(() => {
+    startTrack(trackRef.current)
+      .then(() => setState("on"))
+      .catch(() => silence()); // still blocked: keep waiting for the next interaction
+  }, [startTrack, silence]);
 
   useEffect(() => {
-    const ok = Boolean(getCtor());
+    const ok = typeof window !== "undefined" && typeof window.Audio === "function";
     setSupported(ok);
     if (ok && readPref() === "on") setState("waiting");
   }, []);
@@ -90,10 +108,14 @@ export default function MusicToggle() {
   useEffect(() => {
     if (state !== "on") return;
     const onVis = () => {
-      const c = ctx.current;
-      if (!c) return;
-      if (document.hidden) c.suspend?.().catch(() => {});
-      else c.resume().catch(() => {});
+      if (document.hidden) {
+        audio.current?.pause();
+        ctx.current?.suspend?.().catch(() => {});
+      } else if (TRACKS[trackRef.current].src) {
+        void audio.current?.play().catch(() => {});
+      } else {
+        ctx.current?.resume().catch(() => {});
+      }
     };
     document.addEventListener("visibilitychange", onVis);
     return () => document.removeEventListener("visibilitychange", onVis);
@@ -101,7 +123,8 @@ export default function MusicToggle() {
 
   useEffect(
     () => () => {
-      player.current?.stop();
+      audio.current?.pause();
+      synth.current?.stop();
       void ctx.current?.close().catch(() => {});
     },
     [],
@@ -111,7 +134,7 @@ export default function MusicToggle() {
 
   const toggle = () => {
     if (state === "on") {
-      stop();
+      silence();
       savePref("off");
       setState("off");
       return;
@@ -120,7 +143,7 @@ export default function MusicToggle() {
     play();
   };
 
-  const current = TUNES[tune];
+  const current = TRACKS[track];
   const label = state === "on" ? "Music on" : state === "waiting" ? "Start music" : "Music off";
 
   return (
@@ -130,10 +153,10 @@ export default function MusicToggle() {
       </button>
       {state === "on" && (
         <>
-          <span className="tune-name" title={current.title}>
+          <span className="tune-name" title={`${current.about}. ${current.performer}.`}>
             {current.name}
           </span>
-          <button type="button" className="music next" aria-label={`Next tune (now playing ${current.name})`} onClick={() => player.current?.next()}>
+          <button type="button" className="music next" aria-label={`Next track (now playing ${current.name})`} onClick={() => void startTrack(trackRef.current + 1).catch(() => {})}>
             »
           </button>
         </>

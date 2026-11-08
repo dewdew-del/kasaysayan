@@ -17,7 +17,7 @@ Scroll through 60 events, from the first people in Callao Cave about 67,000 year
 - **Long-read event pages**: 600–1,000 word stories in chapters, with photos placed in the text, a gallery and lightbox, a sepia OpenStreetMap mini map, and numbered sources.
 - **Sources differ notes** on 20 contested events, such as Pugad Lawin, Bonifacio's death, Bataan's death toll, Plaza Miranda and the 1973 ratification.
 - **250 public domain and Creative Commons photos**, each credited with its author, license and source. They're all listed on the Credits page.
-- **Original music**: five original tunes (waltz, harana, kundiman, rondalla, lullaby) generated live with the Web Audio API. On by default: it starts on your first click or tap, keeps playing while you read, and can be turned off from the corner button.
+- **Old Philippine music**: real recordings from 1908 to 1921 (Maria Evangelista Carpena, the Philippine Constabulary Band, the Victor Band), a Maguindanao kulintang piece and an original waltz, all public domain or CC BY-SA and credited on the Credits page. On by default: it starts on your first click or tap, keeps playing while you read, and can be turned off from the corner button.
 
 ![An event page](docs/screenshots/event-mactan.jpg)
 

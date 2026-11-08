@@ -25,7 +25,9 @@ describe("Credits", () => {
     expect(screen.getByText(/Natural Earth/)).toBeInTheDocument();
     expect(screen.getByText(/OpenStreetMap contributors/)).toBeInTheDocument();
     expect(screen.getByText(/IM Fell/)).toBeInTheDocument();
-    expect(screen.getByText(/original composition/i)).toBeInTheDocument();
+    expect(screen.getByText(/Maria Evangelista Carpena/)).toBeInTheDocument();
+    expect(screen.getByText(/Philippine Constabulary Band/)).toBeInTheDocument();
+    expect(screen.getByText(/Lumang Balse/)).toBeInTheDocument();
   });
 });
 
